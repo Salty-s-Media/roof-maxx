@@ -1,0 +1,65 @@
+.main {
+  display: flex;
+  margin: 20% auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  font-size: 20px;
+  color: var(--t-m);
+  font-family: var(--font-inter), sans-serif;
+  margin: auto;
+  word-spacing: normal;
+  margin-bottom: 0.5rem;
+  line-height: 30px;
+  margin-top: 20px;
+  max-width: 540px;
+}
+
+.videoContainer {
+  display: flex;
+  position: fixed;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.heading {
+  text-align: center;
+  color: var(--bg);
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+}
+
+.main span {
+  color: var(--btn-h2);
+}
+
+.ctaArea {
+  margin: 2rem auto;
+}
+
+.ctaArea button {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 300px) {
+  .ctaArea {
+    text-align: center;
+  }
+  .ctaArea button {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
