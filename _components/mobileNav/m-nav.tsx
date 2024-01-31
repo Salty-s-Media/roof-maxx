@@ -18,7 +18,6 @@ export const MobileNav = () => {
           <button
             className="btn menuButton"
             style={{
-              marginRight: "auto",
               paddingLeft: "40px",
               paddingRight: "40px",
             }}
@@ -28,10 +27,10 @@ export const MobileNav = () => {
           </button>
           <button
             className="btn2"
+            onClick={() => window.open("tel:6123805285")}
             style={{
               backgroundColor: "var(--tsp)",
               color: "var(--text-color)",
-              marginRight: "auto",
               paddingLeft: "40px",
               paddingRight: "40px",
             }}

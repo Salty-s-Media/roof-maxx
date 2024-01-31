@@ -1,0 +1,36 @@
+.ld {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loaderContainer {
+  width: 50%;
+  height: 10px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.loader {
+  height: 100%;
+  width: 0;
+  background-color: black;
+  animation: load 2.5s ease-in-out forwards;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

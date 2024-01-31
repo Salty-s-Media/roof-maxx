@@ -6,7 +6,7 @@ export const Header = () => {
     <div className={styles.main}>
       <div className={styles.videoContainer}>
         <Image
-          src="/bg2.jpg"
+          src="/heroBG.png"
           alt="bg"
           width={1320}
           height={1080}
@@ -23,6 +23,7 @@ export const Header = () => {
           replacement, utilizing our advanced restoration approach.
         </p>
       </div>
+      <Image src="/greviews.svg" alt="reviews" width={300} height={30} />
       <div className={styles.ctaArea}>
         <button className="btn" aria-label="Watch Video">
           Call Now
