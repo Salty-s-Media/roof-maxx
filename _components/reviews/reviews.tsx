@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./Reviews.module.css";
+import styles from "./reviews.module.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
