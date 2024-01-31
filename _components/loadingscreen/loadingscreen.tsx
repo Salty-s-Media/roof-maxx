@@ -2,6 +2,7 @@
 
 import { useEffect, useState, ReactNode } from "react";
 import styles from "./ls.module.css";
+import { usePathname } from "next/navigation";
 
 interface LoadingScreenProps {
   children: ReactNode;
@@ -17,6 +18,7 @@ const LoadingComponent: React.FC = () => (
 
 export const LoadingScreen: React.FC<LoadingScreenProps> = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
+  const pathname = usePathname();
 
   useEffect(() => {
     setTimeout(() => {
@@ -24,5 +26,9 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ children }) => {
     }, 2500);
   }, []);
 
-  return isLoading ? <LoadingComponent /> : children;
+  if (pathname === "/") {
+    return isLoading ? <LoadingComponent /> : children;
+  } else {
+    return children;
+  }
 };

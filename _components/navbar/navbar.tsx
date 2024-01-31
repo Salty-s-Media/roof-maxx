@@ -13,7 +13,7 @@ export const Navbar = () => {
       </div>
       <div className={styles.linksContainer} aria-label="Menu Area">
         <Link href="/">Home</Link>
-        <Link href="/">About</Link>
+        <Link href="/about">About</Link>
         <Link href="/">Contact</Link>
       </div>
     </nav>

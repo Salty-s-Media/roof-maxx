@@ -42,7 +42,7 @@ export const MobileNav = () => {
       {showMenu && (
         <div className={styles.fullMenuPg}>
           <Link href="/">Home</Link>
-          <Link href="/">About</Link>
+          <Link href="/about">About</Link>
           <Link href="/">FAQ</Link>
         </div>
       )}

@@ -5,14 +5,14 @@ export const Header = () => {
   return (
     <div className={styles.main}>
       <div className={styles.videoContainer}>
-        <Image
+        {/* <Image
           src="/heroBG.png"
           alt="bg"
           width={1320}
           height={1080}
           className={styles.imag}
           priority={true}
-        />
+        /> */}
       </div>
       <div className={styles.heading}>
         <h1>

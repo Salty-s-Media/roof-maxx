@@ -19,7 +19,7 @@
 
 .videoContainer {
   display: flex;
-  position: absolute; /* fixed for sticky parallax, absolute for top justified */
+  position: absolute;
   margin: auto;
   align-items: center;
   justify-content: center;
