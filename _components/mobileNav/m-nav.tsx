@@ -18,8 +18,8 @@ export const MobileNav = () => {
           <button
             className="btn menuButton"
             style={{
-              paddingLeft: "40px",
-              paddingRight: "40px",
+              paddingLeft: "20px",
+              paddingRight: "20px",
             }}
             onClick={toggleMenu}
           >
@@ -31,8 +31,8 @@ export const MobileNav = () => {
             style={{
               backgroundColor: "var(--tsp)",
               color: "var(--text-color)",
-              paddingLeft: "40px",
-              paddingRight: "40px",
+              paddingLeft: "20px",
+              paddingRight: "20px",
             }}
           >
             &#9742; 123-123-1234

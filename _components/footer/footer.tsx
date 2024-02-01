@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.lg}>
-          <Link href="#">
+          <Link href="/">
             <Image src={logo} alt="logo" />
           </Link>
         </div>

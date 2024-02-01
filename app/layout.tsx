@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { LoadingScreen } from "@/_components/loadingscreen/loadingscreen";
+import { MobileNav } from "@/_components/mobileNav/m-nav";
+import { Navbar } from "@/_components/navbar/navbar";
+import { Footer } from "@/_components/footer/footer";
 
 const pjs = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -25,7 +28,12 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" sizes="any" />
       </head>
       <body className={pjs.className}>
-        <LoadingScreen>{children}</LoadingScreen>
+        <LoadingScreen>
+          <Navbar />
+          <MobileNav />
+          {children}
+          <Footer />
+        </LoadingScreen>
       </body>
     </html>
   );

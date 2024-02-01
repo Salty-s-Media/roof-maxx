@@ -23,7 +23,8 @@ export const Header = () => {
           replacement, utilizing our advanced restoration approach.
         </p>
       </div>
-      <Image src="/greviews.svg" alt="reviews" width={300} height={30} />
+      {/* <Image src="/greviews.svg" alt="reviews" width={300} height={30} /> */}
+      <p style={{ color: "var(--tmf)" }}>Roof Maxx | Google ★★★★★</p>
       <div className={styles.ctaArea}>
         <button className="btn" aria-label="Watch Video">
           Call Now
