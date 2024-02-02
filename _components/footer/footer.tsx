@@ -16,6 +16,7 @@ export const Footer = () => {
           <p>&copy; 2024 Roof Maxx Technologies LLC</p>
         </div>
       </div>
+      <div className={styles.spacer} />
     </footer>
   );
 };

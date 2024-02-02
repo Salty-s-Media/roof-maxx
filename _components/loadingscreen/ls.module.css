@@ -8,16 +8,16 @@
 }
 
 .loaderContainer {
-  width: 50%;
-  height: 10px;
-  background-color: #ddd;
+  width: 60%;
+  height: 5px;
+  background-color: #000000;
   overflow: hidden;
 }
 
 .loader {
   height: 100%;
   width: 0;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   animation: load 2.5s ease-in-out forwards;
 }
 

@@ -7,14 +7,29 @@ export const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.logoContainer}>
-        <Link href="/">
+        <a href="/">
           <Image src={logo} alt="logo" />
-        </Link>
+        </a>
       </div>
       <div className={styles.linksContainer} aria-label="Menu Area">
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/">Contact</Link>
+        <Link href="/" className={styles.hoverUnderline}>
+          Home
+        </Link>
+        <Link href="/process" className={styles.hoverUnderline}>
+          Process
+        </Link>
+        <Link href="/services" className={styles.hoverUnderline}>
+          Service Areas
+        </Link>
+        <Link href="/dealer" className={styles.hoverUnderline}>
+          Local Dealer
+        </Link>
+        <Link href="/about" className={styles.hoverUnderline}>
+          About
+        </Link>
+        <Link href="/faq" className={styles.hoverUnderline}>
+          FAQ
+        </Link>
       </div>
     </nav>
   );

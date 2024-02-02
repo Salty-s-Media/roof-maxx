@@ -11,6 +11,26 @@
   z-index: 10;
 }
 
+.hoverUnderline {
+  display: inline-block;
+  position: relative;
+}
+
+.hoverUnderline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.5px;
+  bottom: -5px;
+  left: 0;
+  background-color: #000;
+  transition: width 0.15s ease-out;
+}
+
+.hoverUnderline:hover::after {
+  width: 100%;
+}
+
 .nav button {
   color: var(--text-color);
 }
@@ -32,10 +52,19 @@
 
 .linksContainer {
   display: flex;
-  gap: 20px;
+  font-size: 18px;
+  word-spacing: 3px;
+  gap: 2.5rem;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 1000px) {
+  .linksContainer {
+    font-size: 16px;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 870px) {
   .linksContainer {
     display: none;
   }

@@ -17,10 +17,7 @@ export const MobileNav = () => {
         <div className={styles.linksContainer} aria-label="Menu Area">
           <button
             className="btn menuButton"
-            style={{
-              paddingLeft: "20px",
-              paddingRight: "20px",
-            }}
+            style={{ fontSize: "16px" }}
             onClick={toggleMenu}
           >
             Menu
@@ -29,21 +26,35 @@ export const MobileNav = () => {
             className="btn2"
             onClick={() => window.open("tel:6123805285")}
             style={{
+              fontSize: "16px",
               backgroundColor: "var(--tsp)",
               color: "var(--text-color)",
-              paddingLeft: "20px",
-              paddingRight: "20px",
             }}
           >
-            &#9742; 123-123-1234
+            123-123-1234
           </button>
         </div>
       </div>
       {showMenu && (
-        <div className={styles.fullMenuPg}>
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/">FAQ</Link>
+        <div className={styles.fullMenuPg} onClick={toggleMenu}>
+          <Link href="/" onClick={toggleMenu}>
+            Home
+          </Link>
+          <Link href="/process" onClick={toggleMenu}>
+            Process
+          </Link>
+          <Link href="/services" onClick={toggleMenu}>
+            Service Areas
+          </Link>
+          <Link href="/dealer" onClick={toggleMenu}>
+            Local Dealer
+          </Link>
+          <Link href="/about" onClick={toggleMenu}>
+            About
+          </Link>
+          <Link href="/faq" onClick={toggleMenu}>
+            FAQ
+          </Link>
         </div>
       )}
     </>

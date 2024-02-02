@@ -29,8 +29,11 @@
   padding-right: 2rem;
 }
 
-@media (max-width: 560px) {
-  .footer {
+@media (max-width: 870px) {
+  .footerContent {
     display: none;
+  }
+  .footer {
+    margin-top: 2rem;
   }
 }
