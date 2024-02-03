@@ -2,6 +2,6 @@
   display: flex;
   margin: auto;
   min-height: 100vh;
-  max-width: 90%;
+  max-width: 80%;
   flex-direction: column;
 }

@@ -24,14 +24,14 @@ export const MobileNav = () => {
           </button>
           <button
             className="btn2"
-            onClick={() => window.open("tel:6123805285")}
+            onClick={() => window.open("tel:3863562866")}
             style={{
               fontSize: "16px",
               backgroundColor: "var(--tsp)",
               color: "var(--text-color)",
             }}
           >
-            123-123-1234
+            386-356-2866
           </button>
         </div>
       </div>
@@ -39,9 +39,6 @@ export const MobileNav = () => {
         <div className={styles.fullMenuPg} onClick={toggleMenu}>
           <Link href="/" onClick={toggleMenu}>
             Home
-          </Link>
-          <Link href="/process" onClick={toggleMenu}>
-            Process
           </Link>
           <Link href="/services" onClick={toggleMenu}>
             Service Areas

@@ -5,14 +5,16 @@ export const Header = () => {
   return (
     <div className={styles.main}>
       <div className={styles.videoContainer}>
-        {/* <Image
-          src="/heroBG.png"
-          alt="bg"
-          width={1320}
-          height={1080}
+        <video
+          src="/spray.mp4"
+          width="100%"
+          height="100%"
           className={styles.imag}
-          priority={true}
-        /> */}
+          autoPlay={true}
+          muted={true}
+          loop={true}
+          playsInline={true}
+        />
       </div>
       <div className={styles.heading}>
         <h1>
@@ -23,10 +25,14 @@ export const Header = () => {
           replacement, utilizing our advanced restoration approach.
         </p>
       </div>
-      {/* <Image src="/greviews.svg" alt="reviews" width={300} height={30} /> */}
-      <p style={{ color: "var(--tmf)" }}>Roof Maxx | Google ★★★★★</p>
+      <Image src="/grev.svg" alt="reviews" width={150} height={50} />
+      <p style={{ color: "var(--tmg)" }}>5.0 of 1072 Google Reviews</p>
       <div className={styles.ctaArea}>
-        <button className="btn" aria-label="Watch Video">
+        <button
+          className="btn"
+          onClick={() => window.open("tel:3863562866")}
+          aria-label="Watch Video"
+        >
           Call Now
         </button>
         <button className="btn2" aria-label="Subscribe">

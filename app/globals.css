@@ -14,9 +14,10 @@
   --btn-h2: #fe9415;
   --btn-h3: #fe941570;
   --tmf: #acacac75;
+  --tmg: #acacac;
   --tsp: #00000000;
 
-  --grad: linear-gradient(#ffffff, #67803b);
+  --grad: linear-gradient(143deg, #ffde9db5, #c8e19cb5);
 }
 
 * {

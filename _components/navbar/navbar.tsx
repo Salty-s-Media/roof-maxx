@@ -15,9 +15,6 @@ export const Navbar = () => {
         <Link href="/" className={styles.hoverUnderline}>
           Home
         </Link>
-        <Link href="/process" className={styles.hoverUnderline}>
-          Process
-        </Link>
         <Link href="/services" className={styles.hoverUnderline}>
           Service Areas
         </Link>
