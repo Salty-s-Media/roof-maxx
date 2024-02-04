@@ -1,6 +1,6 @@
 :root {
   --bg: #ffffff;
-  --bg-d: #222222;
+  --bg-d: #e0e0e0;
   --navbg: #ffffff;
   --footbg: #ffffff;
   --element-mid-d: #282828;
@@ -11,10 +11,11 @@
   --btn-bg: #698041;
   --btn-bg2: #67803b;
   --btn-h1: #67803b70;
-  --btn-h2: #fe9415;
+  --btn-h2: #ff8c00;
   --btn-h3: #fe941570;
   --tmf: #acacac75;
   --tmg: #acacac;
+  --tme: #fcfeff;
   --tsp: #00000000;
 
   --grad: linear-gradient(143deg, #ffde9db5, #c8e19cb5);

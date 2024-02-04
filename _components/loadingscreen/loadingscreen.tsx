@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, ReactNode } from "react";
+import { useState, ReactNode } from "react";
 import styles from "./ls.module.css";
 import { usePathname } from "next/navigation";
 
@@ -20,11 +20,10 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const pathname = usePathname();
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2500);
-  }, []);
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 500);
+  //reducing tti... maybe not so great.
 
   if (pathname === "/") {
     return isLoading ? <LoadingComponent /> : children;

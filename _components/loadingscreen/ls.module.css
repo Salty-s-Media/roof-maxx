@@ -18,7 +18,7 @@
   height: 100%;
   width: 0;
   background-color: rgb(255, 255, 255);
-  animation: load 2.5s ease-in-out forwards;
+  animation: load 0.5s ease-in-out forwards;
 }
 
 .fadeOut {

@@ -28,12 +28,10 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" sizes="any" />
       </head>
       <body className={pjs.className}>
-        <LoadingScreen>
-          <Navbar />
-          <MobileNav />
-          {children}
-          <Footer />
-        </LoadingScreen>
+        <Navbar />
+        <MobileNav />
+        {children}
+        <Footer />
       </body>
     </html>
   );

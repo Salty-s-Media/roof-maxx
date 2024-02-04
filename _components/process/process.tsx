@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./process.module.css";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,16 +52,16 @@ export const Process = () => {
           </p>
           <div className={styles.cgrid}>
             <div className={styles.col}>
-              <h3>1. We Assess Your Roof</h3>
-              <div className={styles.card}>img</div>
+              <div style={{ fontWeight: "600" }}>1. We Assess Your Roof</div>
+              <div className={styles.card}></div>
             </div>
             <div className={styles.col}>
-              <h3>2. We Apply Roof Maxx</h3>
-              <div className={styles.card}>img</div>
+              <div style={{ fontWeight: "600" }}>2. We Apply Roof Maxx</div>
+              <div className={styles.card}></div>
             </div>
             <div className={styles.col}>
-              <h3>3. Five Years, Guaranteed</h3>
-              <div className={styles.card}>img</div>
+              <div style={{ fontWeight: "600" }}>3. Five Years, Guaranteed</div>
+              <div className={styles.card}></div>
             </div>
           </div>
         </div>

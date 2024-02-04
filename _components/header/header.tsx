@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./header.module.css";
 import Image from "next/image";
 
@@ -6,7 +7,7 @@ export const Header = () => {
     <div className={styles.main}>
       <div className={styles.videoContainer}>
         <video
-          src="/spray.mp4"
+          src="/fadehero.mp4"
           width="100%"
           height="100%"
           className={styles.imag}
@@ -14,11 +15,14 @@ export const Header = () => {
           muted={true}
           loop={true}
           playsInline={true}
+          disablePictureInPicture={true}
         />
       </div>
       <div className={styles.heading}>
         <h1>
-          Think you need a new roof? <span>Think again.</span>
+          Think you need a new roof?
+          <br />
+          <span>Think again.</span>
         </h1>
         <p className={styles.desc}>
           Experience a seamless and non-disruptive alternative to costly roof

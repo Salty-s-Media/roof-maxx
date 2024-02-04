@@ -1,7 +1,7 @@
 .cont {
   height: auto;
   width: 100%;
-  background-color: var(--bg);
+  background-color: var(--tme);
   margin-bottom: 1rem;
   padding: 2rem;
 }
