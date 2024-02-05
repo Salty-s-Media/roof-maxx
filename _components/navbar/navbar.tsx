@@ -39,20 +39,23 @@ export const Navbar = () => {
               className={styles.dropdownContent}
               onMouseLeave={toggleDropdown}
             >
+              <Link href="/services/ormond" className={styles.dropdownItem}>
+                Ormond Beach
+              </Link>
+              <Link href="/services/daytona" className={styles.dropdownItem}>
+                Daytona Beach
+              </Link>
+              <Link href="/services/augustine" className={styles.dropdownItem}>
+                St. Augustine
+              </Link>
+              <Link href="/services/palmcoast" className={styles.dropdownItem}>
+                Palm Coast
+              </Link>
+              <Link href="/services/newsmyrna" className={styles.dropdownItem}>
+                New Smyrna Beach
+              </Link>
               <Link href="/services" className={styles.dropdownItem}>
                 All Service Areas
-              </Link>
-              <Link href="/services/area1" className={styles.dropdownItem}>
-                Area 1
-              </Link>
-              <Link href="/services/area2" className={styles.dropdownItem}>
-                Area 2
-              </Link>
-              <Link href="/services/area3" className={styles.dropdownItem}>
-                Area 3
-              </Link>
-              <Link href="/services/area4" className={styles.dropdownItem}>
-                Area 4
               </Link>
             </div>
           )}
