@@ -1,10 +1,21 @@
-import Link from "next/link";
+"use client";
+
 import styles from "./header.module.css";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export const Header = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 0);
+  }, []);
+
   return (
     <div className={styles.main}>
+      {isLoading && <div className={styles.loadOverlay} />}
       <div className={styles.videoContainer}>
         <video
           src="/fadehero.mp4"
