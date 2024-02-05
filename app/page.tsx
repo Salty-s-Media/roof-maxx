@@ -8,7 +8,7 @@ import { Rev } from "@/_components/revcopy/reviews";
 
 import { Lenis, useLenis } from "@studio-freight/react-lenis";
 import { Router } from "next/router";
-import { Suspense, useEffect } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
   const lenis = useLenis();
@@ -30,6 +30,7 @@ export default function Home() {
     <Lenis root>
       <div className={styles.page}>
         <Header />
+        <Process />
         <Rev />
       </div>
     </Lenis>

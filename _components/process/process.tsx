@@ -1,12 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import gsap from "gsap";
+import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./process.module.css";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export const Process = () => {
   const [activeDay, setActiveDay] = useState<number | null>(null);

@@ -2,6 +2,7 @@
   width: 100%;
   margin: auto;
   position: relative;
+  padding: 2rem;
   margin-bottom: 2rem;
   background-color: white;
   color: var(--text-color);

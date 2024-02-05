@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import { LoadingScreen } from "@/_components/loadingscreen/loadingscreen";
 import { MobileNav } from "@/_components/mobileNav/m-nav";
 import { Navbar } from "@/_components/navbar/navbar";
 import { Footer } from "@/_components/footer/footer";
