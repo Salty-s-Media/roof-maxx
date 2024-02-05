@@ -5,3 +5,9 @@
   max-width: 80%;
   flex-direction: column;
 }
+
+@media (max-width: 870px) {
+  .page {
+    max-width: 90%;
+  }
+}

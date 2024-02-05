@@ -43,10 +43,9 @@ export const Rev = () => {
     <div className="gc">
       <div className="ac">
         <div className={styles.cont}>
-          <h1>Process</h1>
+          <h1>Reviews</h1>
           <div className={styles.cgrid}>
             <div className={styles.card}>
-              {/* image container here, rounded, same margin as others h2 and p */}
               <h2>Header</h2>
               <p>This is a description about a product and its really good.</p>
             </div>

@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 
 import { Header } from "@/_components/header/header";
 import { Process } from "@/_components/process/process";
+import { Rev } from "@/_components/revcopy/reviews";
 
 import { Lenis, useLenis } from "@studio-freight/react-lenis";
 import { Router } from "next/router";
@@ -29,7 +30,7 @@ export default function Home() {
     <Lenis root>
       <div className={styles.page}>
         <Header />
-        <Process />
+        <Rev />
       </div>
     </Lenis>
   );
