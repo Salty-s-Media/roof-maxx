@@ -3,7 +3,6 @@
 import styles from "./page.module.css";
 
 import { Header } from "@/_components/header/header";
-import { LoadingScreen } from "@/_components/loadingscreen/loadingscreen";
 import { Process } from "@/_components/process/process";
 import { Rev } from "@/_components/revcopy/reviews";
 
@@ -30,9 +29,7 @@ export default function Home() {
   return (
     <Lenis root>
       <div className={styles.page}>
-        <LoadingScreen>
-          <Header />
-        </LoadingScreen>
+        <Header />
         <Process />
         <Rev />
       </div>

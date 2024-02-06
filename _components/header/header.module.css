@@ -72,6 +72,12 @@
   margin-left: 0.5rem;
 }
 
+@media (max-height: 2560px) {
+  .main {
+    margin: 15% auto;
+  }
+}
+
 @media (max-width: 740px) {
   .videoContainer {
     min-height: auto;

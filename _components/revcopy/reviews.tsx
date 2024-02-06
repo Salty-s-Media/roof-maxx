@@ -13,8 +13,8 @@ export const Rev = () => {
           </div>
           <div className={styles.btmn}>
             <div className={styles.profileContainer}>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/95/A_cat_from_lqw.jpg"
+              <Image
+                src="/stepsToQualify.jpg"
                 alt="gg"
                 width={40}
                 height={40}
@@ -33,8 +33,8 @@ export const Rev = () => {
           </div>
           <div className={styles.btmn}>
             <div className={styles.profileContainer}>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/95/A_cat_from_lqw.jpg"
+              <Image
+                src="/stepsToQualify.jpg"
                 alt="gg"
                 width={40}
                 height={40}
@@ -53,8 +53,8 @@ export const Rev = () => {
           </div>
           <div className={styles.btmn}>
             <div className={styles.profileContainer}>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/95/A_cat_from_lqw.jpg"
+              <Image
+                src="/stepsToQualify.jpg"
                 alt="gg"
                 width={40}
                 height={40}

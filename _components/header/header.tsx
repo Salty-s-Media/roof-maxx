@@ -8,7 +8,9 @@ export const Header = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setIsLoading(false);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1);
   }, []);
 
   return (
