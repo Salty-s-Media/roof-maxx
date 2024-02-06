@@ -10,7 +10,7 @@ export const Header = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 0);
+    }, 1);
   }, []);
 
   return (

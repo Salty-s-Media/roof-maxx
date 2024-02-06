@@ -2,6 +2,7 @@
   display: flex;
   margin: 20% auto;
   height: 100%;
+  max-width: 85%;
   flex-direction: column;
   align-items: center;
 }
@@ -25,7 +26,7 @@
   min-height: 1024px;
   background-color: var(--text-color);
   z-index: -2;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 
 .videoContainer {
@@ -69,6 +70,12 @@
 .ctaArea button {
   font-size: 1rem;
   margin-left: 0.5rem;
+}
+
+@media (max-height: 2560px) {
+  .main {
+    margin: 15% auto;
+  }
 }
 
 @media (max-width: 740px) {

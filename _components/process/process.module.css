@@ -4,8 +4,9 @@
   position: relative;
   padding: 2rem;
   margin-bottom: 2rem;
-  background-color: white;
+  background-color: var(--bg);
   color: var(--text-color);
+  border-radius: var(--border-rad);
 }
 
 .heading {
@@ -32,12 +33,14 @@
   padding: 1rem;
   cursor: pointer;
   text-align: left;
+  background-image: var(--grad2);
 }
 
 .dayheader h2 {
   margin: 0;
   word-spacing: 3px;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .chevron-icons {
@@ -62,7 +65,7 @@
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out,
+  transition: max-height 0.3s ease-in-out, opacity 1s ease-in-out,
     padding 0.3s ease-in-out;
 }
 
@@ -70,7 +73,7 @@
   max-height: 500px;
   opacity: 1;
   padding: 1rem;
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out,
+  transition: max-height 0.3s ease-in-out, opacity 1s ease-in-out,
     padding 0.3s ease-in-out;
 }
 
