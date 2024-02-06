@@ -1,9 +1,8 @@
 :root {
   --bg: #ffffff;
-  --bg-d: #ffffff;
   --navbg: #ffffff;
   --footbg: #ffffff;
-  --element-mid-d: #282828;
+  --eld: #4e4e4e;
   --text-color: #000000;
   --text-color-d: #ffffff;
   --max-width: 80%;
@@ -18,7 +17,8 @@
   --tme: #fcfeff;
   --tsp: #00000000;
   --bxs: #00000033;
-  --grad: linear-gradient(143deg, #ffde9db5, #c8e19cb5);
+  --grad: linear-gradient(143deg, #ffde9db5, #b5db73b5);
+  --grad2: linear-gradient(160deg, #ffffff, var(--tmf));
 }
 
 * {
@@ -75,8 +75,8 @@ a {
     color-scheme: dark;
   }
   body {
-    color: var(--text-color-d);
-    background: var(--bg-d);
+    color: var(--text-color);
+    background: var(--bg);
   }
 }
 @media (prefers-color-scheme: light) {

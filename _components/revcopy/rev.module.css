@@ -19,7 +19,7 @@
 .top {
   margin: 1rem;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .profileContainer {
@@ -37,6 +37,7 @@
   height: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 1rem;
   min-width: max-content;
 }
 
@@ -51,6 +52,7 @@
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
+  color: var(--eld);
 }
 
 .sep {
@@ -58,7 +60,7 @@
   width: 2px;
   max-width: 2px;
   margin: 1rem;
-  background-color: var(--text-color);
+  background-color: var(--tmf);
 }
 
 .card {
@@ -92,6 +94,9 @@
   }
   .btmnp {
     font-size: 0.9rem;
+  }
+  .btmn {
+    padding-bottom: 0.5rem;
   }
   .sep {
     margin: 0.5rem;

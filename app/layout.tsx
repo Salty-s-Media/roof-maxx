@@ -4,6 +4,7 @@ import "./globals.css";
 import { MobileNav } from "@/_components/mobileNav/m-nav";
 import { Navbar } from "@/_components/navbar/navbar";
 import { Footer } from "@/_components/footer/footer";
+import { LoadingScreen } from "@/_components/loadingscreen/loadingscreen";
 
 const pjs = Plus_Jakarta_Sans({
   subsets: ["latin"],

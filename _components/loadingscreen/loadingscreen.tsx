@@ -22,8 +22,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ children }) => {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 500);
-  //reducing tti... maybe not so great.
+  }, 300);
 
   if (pathname === "/") {
     return isLoading ? <LoadingComponent /> : children;

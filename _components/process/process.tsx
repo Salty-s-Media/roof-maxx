@@ -8,7 +8,7 @@ export const Process = () => {
   const [activeDay, setActiveDay] = useState<number | null>(null);
 
   const dayNames = [
-    "1. We Assess your Roof",
+    "1. We Assess Your Roof",
     "2. We Apply Roof Maxx",
     "3. Five Years, Guaranteed",
   ];
