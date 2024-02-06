@@ -1,62 +1,69 @@
-"use client";
-
+import Image from "next/image";
 import styles from "./rev.module.css";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from "react";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export const Rev = () => {
-  useEffect(() => {
-    const animWrapper = document.querySelector(".gc"); //without this, CLS!!!
-
-    const trigger = ScrollTrigger.create({
-      trigger: ".ac",
-      pin: false,
-      start: "bottom bottom",
-      end: "+=5",
-    });
-
-    let tl = gsap.timeline();
-
-    tl.to(animWrapper, {
-      y: "-50",
-      ease: "power1.inOut",
-    });
-
-    ScrollTrigger.create({
-      animation: tl,
-      trigger: ".ac",
-      start: () => trigger?.start,
-      end: () => trigger?.end,
-      scrub: 1,
-    });
-
-    return () => {
-      trigger?.kill();
-      tl.kill();
-    };
-  }, []);
-
   return (
-    <div className="gc">
-      <div className="ac">
-        <div className={styles.cont}>
-          <h1>Reviews</h1>
-          <div className={styles.cgrid}>
-            <div className={styles.card}>
-              <h2>Header</h2>
-              <p>This is a description about a product and its really good.</p>
+    <div className={styles.cont}>
+      <h1>Reviews</h1>
+      <div className={styles.cgrid}>
+        <div className={styles.card}>
+          <div className={styles.top}>
+            "This was a great experience overall, and it was very efficient and
+            fast. Very friendly service."
+          </div>
+          <div className={styles.btmn}>
+            <div className={styles.profileContainer}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/95/A_cat_from_lqw.jpg"
+                alt="gg"
+                width={40}
+                height={40}
+                className={styles.circularProfile}
+              />
             </div>
-            <div className={styles.card}>
-              <h2>Header</h2>
-              <p>This is a description about a product and its really good.</p>
+            <div className={styles.btmnp}>Christine G.</div>
+            <div className={styles.sep} />
+            <Image src="/grev.svg" alt="reviews" width={120} height={50} />
+          </div>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.top}>
+            "This was a great experience overall, and it was very efficient and
+            fast. Very friendly service."
+          </div>
+          <div className={styles.btmn}>
+            <div className={styles.profileContainer}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/95/A_cat_from_lqw.jpg"
+                alt="gg"
+                width={40}
+                height={40}
+                className={styles.circularProfile}
+              />
             </div>
-            <div className={styles.card}>
-              <h2>Header</h2>
-              <p>This is a description about a product and its really good.</p>
+            <div className={styles.btmnp}>Christine G.</div>
+            <div className={styles.sep} />
+            <Image src="/grev.svg" alt="reviews" width={120} height={50} />
+          </div>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.top}>
+            "This was a great experience overall, and it was very efficient and
+            fast. Very friendly service."
+          </div>
+          <div className={styles.btmn}>
+            <div className={styles.profileContainer}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/95/A_cat_from_lqw.jpg"
+                alt="gg"
+                width={40}
+                height={40}
+                className={styles.circularProfile}
+              />
             </div>
+            <div className={styles.btmnp}>Christine G.</div>
+            <div className={styles.sep} />
+            <Image src="/grev.svg" alt="reviews" width={120} height={50} />
           </div>
         </div>
       </div>

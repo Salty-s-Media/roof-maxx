@@ -1,19 +1,15 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import gsap from "gsap";
+import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./process.module.css";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export const Process = () => {
   const [activeDay, setActiveDay] = useState<number | null>(null);
 
   const dayNames = [
     "1. We Assess your Roof",
-    "2. We Apply RoofMaxx",
+    "2. We Apply Roof Maxx",
     "3. Five Years, Guaranteed",
   ];
 
@@ -44,9 +40,11 @@ export const Process = () => {
             >
               {index === 0 && (
                 <>
-                  <h3>Professional Assessment</h3>
+                  <div className={styles.systemcontainerh3}>
+                    Professional Assessment
+                  </div>
                   <li className={styles.task}>
-                    We’ll assess your roof And decide if it’s a good candidate
+                    We’ll assess your roof and decide if it’s a good candidate
                     for Roof Maxx. If it is, we’ll make an appointment to apply
                     it. If it’s not, we’ll let you know why and whether we’ve
                     discovered leaks or other major issues that need repairing.
@@ -55,7 +53,9 @@ export const Process = () => {
               )}
               {index === 1 && (
                 <>
-                  <h3>Bio-Oil Treatment</h3>
+                  <div className={styles.systemcontainerh3}>
+                    Bio-Oil Treatment
+                  </div>
                   <li className={styles.task}>
                     We’ll perform a roof tune-up during our appointment and then
                     apply Roof Maxx. The whole process usually takes a couple of
@@ -65,7 +65,7 @@ export const Process = () => {
               )}
               {index === 2 && (
                 <>
-                  <h3>Our Guarantee</h3>
+                  <div className={styles.systemcontainerh3}>Our Guarantee</div>
                   <li className={styles.task}>
                     Our rejuvenating oil will restore your shingles’ flexibility
                     and waterproofing for five years, ensuring maximum property

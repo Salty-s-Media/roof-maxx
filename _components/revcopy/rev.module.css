@@ -1,6 +1,7 @@
 .cont {
   height: auto;
   width: 100%;
+  color: var(--text-color);
   background-color: var(--bg);
   margin-bottom: 1rem;
   padding: 2rem;
@@ -15,34 +16,61 @@
   line-height: 1;
 }
 
+.top {
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.profileContainer {
+  display: block;
+}
+
+.btmn {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  grid-row: 3;
+  justify-self: start;
+  align-self: end;
+  align-items: center;
+  height: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-width: max-content;
+}
+
+.circularProfile {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.btmnp {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sep {
+  height: 25px;
+  width: 2px;
+  max-width: 2px;
+  margin: 1rem;
+  background-color: var(--text-color);
+}
+
 .card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: stretch;
   background-color: #ffffff;
   margin-bottom: 1rem;
   width: 100%;
   height: 15rem;
   border-radius: 15px;
-  box-shadow: 0px 0px 2px 4px #00000015;
-}
-
-.card2 {
-  background-image: var(--grad);
-  color: var(--text-color);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  height: 15rem;
-  border-radius: 15px;
-  border: solid 2px var(--tmf);
-}
-
-.card h2 {
-  margin: 1rem;
-  color: var(--text-color);
-}
-
-.card p {
-  margin: 1rem;
-  color: var(--text-color);
+  box-shadow: 0px 8px 16px 0px var(--bxs);
 }
 
 .cgrid {
@@ -51,8 +79,21 @@
   gap: 1rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1224px) {
   .cgrid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 870px) {
+  .circularProfile {
+    scale: 0.9;
+    margin-right: 0.5rem;
+  }
+  .btmnp {
+    font-size: 0.9rem;
+  }
+  .sep {
+    margin: 0.5rem;
   }
 }

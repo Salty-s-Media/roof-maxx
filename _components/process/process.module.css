@@ -2,6 +2,7 @@
   width: 100%;
   margin: auto;
   position: relative;
+  padding: 2rem;
   margin-bottom: 2rem;
   background-color: white;
   color: var(--text-color);
@@ -9,23 +10,19 @@
 
 .heading {
   margin-right: auto;
-  margin-top: 2rem;
   text-align: left;
 }
 
-.heading h1 {
-  margin-left: 1rem;
-}
-
-.heading h3 {
-  font-size: 24px;
+.systemcontainerh3 {
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .systemcontainer {
   margin-top: 2rem;
   background: var(--bg);
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px var(--bxs);
 }
 
 .dayheader {
@@ -39,7 +36,8 @@
 
 .dayheader h2 {
   margin: 0;
-  font-size: 1.25rem;
+  word-spacing: 3px;
+  font-size: 1.5rem;
 }
 
 .chevron-icons {
@@ -78,11 +76,12 @@
 
 .task {
   margin-bottom: 5px;
-  font-size: 1rem;
+  word-spacing: 3px;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 870px) {
   .task {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
