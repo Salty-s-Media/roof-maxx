@@ -1,0 +1,49 @@
+@keyframes spinHorizontally {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.carousel {
+  display: flex;
+  margin: auto;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+  min-height: 3.14rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    var(--tsp),
+    var(--bg) 50%,
+    var(--tsp) 100%
+  );
+  mask-size: 100% 100%;
+  mask-repeat: repeat;
+  mask-position: 0 0;
+}
+
+.carousel-inner {
+  display: flex;
+  animation: spinHorizontally 60s linear infinite;
+  gap: 3rem;
+  width: 300%;
+}
+
+.logo {
+  flex: 0 0 10%;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 870px) {
+  .carousel {
+    width: 95%;
+  }
+}
