@@ -7,15 +7,6 @@
   }
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .carousel {
   display: flex;
   margin: auto;
@@ -37,7 +28,7 @@
 
 .carousel-inner {
   display: flex;
-  animation: spinHorizontally 30s linear infinite;
+  animation: spinHorizontally 60s linear infinite;
   gap: 3rem;
   width: 300%;
 }
