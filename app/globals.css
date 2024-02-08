@@ -14,11 +14,14 @@
   --btn-h3: #fe941570;
   --tmf: #acacac75;
   --tmg: #acacac;
+  --tg: #727372;
   --tme: #fcfeff;
   --tsp: #00000000;
   --bxs: #00000033;
+  --g3: #67803b60;
   --grad: linear-gradient(143deg, #ffde9db5, #b5db73b5);
   --grad2: linear-gradient(160deg, #ffffff, var(--tmf));
+  --grad3: linear-gradient(180deg, #ffffff, var(--g3));
 }
 
 * {
