@@ -26,6 +26,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  padding-bottom: 6rem;
 }
 
 .dsc {
@@ -72,7 +73,8 @@
 }
 
 .header h1 {
-  padding: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
   min-width: max-content;
 }
