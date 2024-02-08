@@ -27,7 +27,7 @@ export default function Page() {
                 the natural oils in aging shingles, extending their lifespan and
                 saving homeowners money on costly roof replacements. In a recent
                 Roof Maxx job in Ormond Beach, Florida, a team of certified
-                technicians assessed the condition of the client's roof and
+                technicians assessed the condition of the clients roof and
                 determined that it could benefit from Roof Maxx treatment. They
                 applied the treatment using a state-of-the-art sprayer, and the
                 process was quick, safe, and effective. The client was pleased
