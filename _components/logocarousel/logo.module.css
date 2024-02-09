@@ -1,9 +1,17 @@
+.carousel-inner {
+  display: flex;
+  animation: spinHorizontally 60s linear infinite;
+  gap: 3rem;
+  width: 100%;
+  padding-left: calc(100% / 11);
+}
+
 @keyframes spinHorizontally {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
   100% {
-    transform: translate3d(-100%, 0, 0);
+    transform: translateX(-2640px);
   }
 }
 
@@ -26,15 +34,10 @@
   mask-position: 0 0;
 }
 
-.carousel-inner {
-  display: flex;
-  animation: spinHorizontally 60s linear infinite;
-  gap: 3rem;
-  width: 300%;
-}
-
 .logo {
-  flex: 0 0 10%;
+  flex: 0 0 auto; /* Use 'auto' instead of percentage to maintain aspect ratio */
+  width: calc(100% / 11); /* Set a fixed width based on the number of logos */
+  margin: auto; /* Center-align the logos */
 }
 
 .logo img {
@@ -42,7 +45,7 @@
   height: auto;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 930px) {
   .carousel {
     width: 95%;
   }

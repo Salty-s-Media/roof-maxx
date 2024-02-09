@@ -25,6 +25,9 @@ export const Navbar = () => {
         <Link href="/" className={styles.hoverUnderline}>
           Home
         </Link>
+        <Link href="/how" className={styles.hoverUnderline}>
+          How It Works
+        </Link>
         <div
           className={`${styles.dropdownContainer} ${styles.dropdownToggle}`}
           onClick={toggleDropdown}
@@ -60,6 +63,7 @@ export const Navbar = () => {
             </div>
           )}
         </div>
+
         <Link href="/dealer" className={styles.hoverUnderline}>
           Local Dealer
         </Link>

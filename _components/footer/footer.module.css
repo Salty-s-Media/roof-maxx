@@ -30,7 +30,7 @@
   padding-right: 2rem;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 930px) {
   .footerContent {
     display: none;
   }

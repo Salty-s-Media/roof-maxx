@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 930px) {
   .page {
     max-width: 100%;
   }

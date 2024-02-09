@@ -12,6 +12,7 @@ import { Lenis, useLenis } from "@studio-freight/react-lenis";
 import { Router } from "next/router";
 import { useEffect } from "react";
 import { GoogleReviews } from "@/_components/GoogRev/googrev";
+import { Adds } from "@/_components/addsUp/adds";
 
 export default function Home() {
   const lenis = useLenis();
@@ -36,7 +37,9 @@ export default function Home() {
         <Process />
         <Carousel />
         <Rev />
+        <Adds />
         <BioCard />
+
         <GoogleReviews />
       </div>
     </Lenis>

@@ -18,7 +18,7 @@
   left: 0;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 930px) {
   .cont {
     max-width: 90%;
     padding-bottom: 6rem;

@@ -83,7 +83,7 @@
   font-size: 1.1rem;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 930px) {
   .task {
     font-size: 0.9rem;
   }

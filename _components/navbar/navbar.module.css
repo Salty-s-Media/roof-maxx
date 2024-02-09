@@ -41,7 +41,7 @@
 
 .linksContainer {
   display: flex;
-  font-size: 18px;
+  font-size: 1rem;
   word-spacing: 3px;
   gap: 2.5rem;
 }
@@ -107,7 +107,7 @@
   }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 930px) {
   .linksContainer {
     display: none;
   }
