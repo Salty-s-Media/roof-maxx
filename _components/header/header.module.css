@@ -1,6 +1,8 @@
 .main {
   display: flex;
-  margin: 20% auto;
+  margin: auto;
+  margin-top: 248px;
+  margin-bottom: 8rem;
   height: 100%;
   max-width: 85%;
   flex-direction: column;
@@ -72,22 +74,16 @@
   margin-left: 0.5rem;
 }
 
-@media (max-height: 2560px) {
-  .main {
-    margin: 15% auto;
-  }
-}
-
 @media (max-width: 740px) {
   .videoContainer {
     min-height: auto;
   }
+  .main {
+    margin-top: 150px;
+  }
 }
 
 @media (max-width: 575px) {
-  .main {
-    margin: 10% auto;
-  }
   .ctaArea {
     margin: 1rem auto;
   }
@@ -97,6 +93,9 @@
   .videoContainer video {
     width: 512px;
     height: 512px;
+  }
+  .main {
+    margin-top: 120px;
   }
 }
 

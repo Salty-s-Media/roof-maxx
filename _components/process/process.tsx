@@ -21,6 +21,13 @@ export const Process = () => {
     <div className={styles.top}>
       <div className={styles.heading}>
         <h1>How It Works</h1>
+        <p>
+          Asphalt shingles have changed from what they once were, containing
+          less asphalt, which causes them to dry out and fail faster. But,
+          thanks to Roof Maxx's innovative technology, which uses 100% natural
+          plant-based bio-oil, shingles can regain their flexibility and
+          increase a roof's lifespan by five years immediately.
+        </p>
       </div>
       <div className={styles.systemcontainer}>
         {dayNames.map((day, index) => (

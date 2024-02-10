@@ -1,0 +1,40 @@
+.gutter {
+  padding: 2rem;
+}
+
+.cont {
+  display: flex;
+  margin: auto;
+  min-height: 25vh;
+  width: 100%;
+  justify-content: center;
+  border-radius: var(--border-rad);
+  background: var(--grad);
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.item {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 930px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item {
+    padding-top: 2rem;
+  }
+  .item:nth-child(3) {
+    padding-bottom: 2rem;
+  }
+}

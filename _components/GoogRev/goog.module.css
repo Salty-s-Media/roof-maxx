@@ -1,0 +1,27 @@
+.cont {
+  display: flex;
+  min-height: 1240px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.cont iframe {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  border: 0px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 930px) {
+  .cont {
+    max-width: 90%;
+    padding-bottom: 6rem;
+    min-height: 2180px;
+  }
+}

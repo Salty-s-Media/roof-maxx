@@ -19,7 +19,7 @@
 .top {
   margin: 1rem;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .profileContainer {
@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 930px) {
   .circularProfile {
     scale: 0.9;
     margin-right: 0.5rem;
