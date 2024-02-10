@@ -17,7 +17,6 @@
 
 .carousel {
   display: flex;
-  margin: auto;
   width: 95%;
   justify-content: center;
   align-items: center;
@@ -35,9 +34,9 @@
 }
 
 .logo {
-  flex: 0 0 auto; /* Use 'auto' instead of percentage to maintain aspect ratio */
-  width: calc(100% / 11); /* Set a fixed width based on the number of logos */
-  margin: auto; /* Center-align the logos */
+  flex: 0 0 auto;
+  width: calc(100% / 11);
+  margin: auto;
 }
 
 .logo img {
