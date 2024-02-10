@@ -6,6 +6,12 @@
   flex-direction: column;
 }
 
+@media (min-width: 1920px) {
+  .page {
+    max-width: 1400px;
+  }
+}
+
 @media (max-width: 930px) {
   .page {
     max-width: 100%;

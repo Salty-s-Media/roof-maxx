@@ -4,6 +4,7 @@
   min-height: 100vh;
   max-width: 90%;
   flex-direction: column;
+  margin-top: 130px;
 }
 
 .hm {
@@ -69,6 +70,7 @@
   background-image: var(--grad3);
   font-size: 1.25rem;
   color: var(--btn-bg2);
+  margin-top: 130px;
 }
 
 .header h1 {

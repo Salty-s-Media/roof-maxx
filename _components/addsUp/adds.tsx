@@ -1,4 +1,3 @@
-// Adds.tsx
 import React from "react";
 import Image from "next/image";
 import styles from "./adds.module.css";
@@ -39,9 +38,8 @@ export const Adds: React.FC = () => {
   ];
 
   return (
-    <div>
+    <div className={styles.spc}>
       <h2 className={styles.header}>It All Adds Up</h2>
-
       <div className={styles.gridContainer}>
         {gridItems.map((item, index) => (
           <div key={index} className={styles.gridItem}>
@@ -55,7 +53,8 @@ export const Adds: React.FC = () => {
                   width={50}
                   height={50}
                 />
-                <h1>{item.title}</h1>
+                <br />
+                <h2>{item.title}</h2>
                 <p>{item.description}</p>
               </>
             )}

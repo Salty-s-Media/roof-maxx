@@ -6,7 +6,6 @@ import styles from "./page.module.css";
 import { Header } from "@/_components/header/header";
 import { Carousel } from "@/_components/logocarousel/logoCaro";
 import { Process } from "@/_components/process/process";
-import { Rev } from "@/_components/reviews/reviews";
 
 import { Lenis, useLenis } from "@studio-freight/react-lenis";
 import { Router } from "next/router";
@@ -36,10 +35,9 @@ export default function Home() {
         <Header />
         <Process />
         <Carousel />
-        <Rev />
+
         <Adds />
         <BioCard />
-
         <GoogleReviews />
       </div>
     </Lenis>

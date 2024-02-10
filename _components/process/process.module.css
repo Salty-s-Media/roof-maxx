@@ -14,6 +14,13 @@
   text-align: left;
 }
 
+.heading p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+
 .systemcontainerh3 {
   font-size: 1.2rem;
   font-weight: 600;

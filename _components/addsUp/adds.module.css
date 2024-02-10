@@ -1,8 +1,16 @@
 .gridContainer {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 2rem;
+}
+
+.spc {
+  margin-top: 4rem;
 }
 
 .header {
@@ -17,20 +25,35 @@
   align-items: flex-start;
   text-align: left;
   padding: 1rem;
-  border: 1px solid #ccc;
+}
+
+.gridItem:nth-child(6) {
+  justify-content: center;
+}
+
+.gridItem p {
+  font-weight: 300;
+  padding-top: 0.8rem;
 }
 
 .readMoreButton {
   display: block;
+  height: 3rem;
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: white;
-  background-color: #0070f3;
+  color: var(--bg);
+  background-color: var(--btn-bg);
   border: none;
-  border-radius: 0.25rem;
+  border-radius: var(--border-rad);
   cursor: pointer;
   margin: 0 auto;
+  border: 2px solid var(--btn-bg);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.readMoreButton:hover {
+  background-color: var(--btn-h1);
 }
 
 @media (max-width: 930px) {
