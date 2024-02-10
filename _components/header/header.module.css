@@ -80,6 +80,7 @@
   }
   .main {
     margin-top: 150px;
+    margin-bottom: 3rem;
   }
 }
 
@@ -89,6 +90,7 @@
   }
   .videoContainer {
     top: 100px;
+    background-color: var(--text-color);
   }
   .videoContainer video {
     width: 512px;
