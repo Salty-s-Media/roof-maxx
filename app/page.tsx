@@ -12,6 +12,7 @@ import { Router } from "next/router";
 import { useEffect } from "react";
 import { GoogleReviews } from "@/_components/GoogRev/googrev";
 import { Adds } from "@/_components/addsUp/adds";
+import Contact from "@/_components/contact/contactForm";
 
 export default function Home() {
   const lenis = useLenis();
@@ -35,8 +36,8 @@ export default function Home() {
         <Header />
         <Process />
         <Carousel />
-
         <Adds />
+        <Contact />
         <BioCard />
         <GoogleReviews />
       </div>
