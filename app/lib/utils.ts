@@ -9,6 +9,14 @@ export const validateString = (
   return true;
 };
 
+export const validateEmailFormat = (email: unknown): boolean => {
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (typeof email !== "string") {
+    return false;
+  }
+  return emailRegex.test(email);
+};
+
 export const validatePhoneNumber = (phoneNumber: unknown): boolean => {
   const phoneNumberPattern =
     /^(\+\d{1,2}\s?)?\(?(\d{3})\)?[-.\s]?(\d{3})[-.\s]?(\d{4})$/;

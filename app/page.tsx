@@ -38,7 +38,6 @@ export default function Home() {
         <Process />
         <Carousel />
         <Adds />
-        <Contact />
         <BioCard />
         <GoogleReviews />
         <Toaster position="bottom-right" />

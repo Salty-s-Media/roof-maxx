@@ -6,6 +6,7 @@ import {
   validateString,
   getErrorMessage,
   validatePhoneNumber,
+  validateEmailFormat,
 } from "@/app/lib/utils";
 import ContactFormEmail from "@/app/components/email-template";
 
@@ -16,13 +17,13 @@ export const sendEmail = async (formData: FormData) => {
   const message = formData.get("message");
   const senderPhone = formData.get("senderPhone");
 
-  if (!validateString(senderEmail, 500)) {
+  if (!validateString(senderEmail, 100) || !validateEmailFormat(senderEmail)) {
     return {
       error: "Invalid sender email",
     };
   }
 
-  if (typeof senderPhone !== "string" || !validatePhoneNumber(senderPhone)) {
+  if (!validateString(senderPhone, 22) || !validatePhoneNumber(senderPhone)) {
     return {
       error: "Expected Phone Format: 123 123 1234",
     };
