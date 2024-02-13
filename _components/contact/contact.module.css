@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+  margin: auto;
+  min-width: max-content;
+  flex-direction: column;
+  background-color: var(--bg);
+  box-shadow: 0 0 10px var(--bxs);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup input {
+  min-height: 30px;
+  min-width: 250px;
+  border-radius: 5px;
+  background-color: var(--tmg);
+  border: none;
+  color: var(--text-color);
+  outline: none;
+  font-size: small;
+  font-family: inherit;
+  resize: none;
+  padding: 10px;
+}
+
+.inputGroup textarea {
+  min-height: 70px;
+  min-width: 250px;
+  border-radius: 5px;
+  background-color: var(--tmg);
+  border: none;
+  color: var(--text-color);
+  outline: none;
+  font-size: small;
+  font-family: inherit;
+  resize: none;
+  padding: 10px;
+}
+
+.label {
+  margin-bottom: 3px;
+  display: block;
+  font-weight: medium;
+  color: var(--tmg);
+}
+
+.headform {
+  margin-bottom: 20px;
+}
