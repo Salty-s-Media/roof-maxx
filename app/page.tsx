@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { GoogleReviews } from "@/_components/GoogRev/googrev";
 import { Adds } from "@/_components/addsUp/adds";
 import Contact from "@/_components/contact/contactForm";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   const lenis = useLenis();
@@ -40,6 +41,7 @@ export default function Home() {
         <Contact />
         <BioCard />
         <GoogleReviews />
+        <Toaster position="bottom-right" />
       </div>
     </Lenis>
   );

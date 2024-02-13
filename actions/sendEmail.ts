@@ -2,7 +2,11 @@
 
 import React from "react";
 import { Resend } from "resend";
-import { validateString, getErrorMessage } from "@/app/lib/utils";
+import {
+  validateString,
+  getErrorMessage,
+  validatePhoneNumber,
+} from "@/app/lib/utils";
 import ContactFormEmail from "@/app/components/email-template";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -10,12 +14,20 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
+  const senderPhone = formData.get("senderPhone");
 
   if (!validateString(senderEmail, 500)) {
     return {
       error: "Invalid sender email",
     };
   }
+
+  if (typeof senderPhone !== "string" || !validatePhoneNumber(senderPhone)) {
+    return {
+      error: "Expected Phone Format: 123 123 1234",
+    };
+  }
+
   if (!validateString(message, 5000)) {
     return {
       error: "Invalid message",
@@ -23,14 +35,16 @@ export const sendEmail = async (formData: FormData) => {
   }
 
   let data;
+
   try {
     data = await resend.emails.send({
-      from: "Roof Maxx <contact@roofmaxx.com>",
+      from: "Acme <onboarding@resend.dev>",
       to: "web@saltysmedia.com",
       subject: "Message from Roof Maxx Contact Form",
       react: React.createElement(ContactFormEmail, {
         message: message,
         senderEmail: senderEmail,
+        senderPhone: senderPhone,
       }),
     });
   } catch (error: unknown) {

@@ -9,6 +9,18 @@ export const validateString = (
   return true;
 };
 
+export const validatePhoneNumber = (phoneNumber: unknown): boolean => {
+  const phoneNumberPattern =
+    /^(\+\d{1,2}\s?)?\(?(\d{3})\)?[-.\s]?(\d{3})[-.\s]?(\d{4})$/;
+  if (typeof phoneNumber !== "string") {
+    return false;
+  }
+  if (!phoneNumberPattern.test(phoneNumber)) {
+    return false;
+  }
+  return true;
+};
+
 export const getErrorMessage = (error: unknown): string => {
   let message: string;
 

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { sendEmail } from "@/app/api/send/route";
+import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submitBtn";
 import styles from "./contact.module.css";
 import { toast } from "react-hot-toast";
@@ -16,8 +16,12 @@ export default function Contact() {
           toast.error(error);
           return;
         }
+
+        // testing only
         console.log(formData.get("senderEmail"));
         console.log(formData.get("message"));
+        console.log(formData.get("senderPhone"));
+
         toast.success("Email sent successfully!");
       }}
       className={styles.form}
@@ -33,6 +37,17 @@ export default function Contact() {
           id="email"
           placeholder="@mail.com"
           name="senderEmail"
+        />
+      </div>
+      <div className={styles.inputGroup}>
+        <label className={styles.label} htmlFor="phone">
+          Phone Number
+        </label>
+        <input
+          type="phone"
+          id="phone"
+          placeholder="123-123-1234"
+          name="senderPhone"
         />
       </div>
       <div className={styles.inputGroup}>
