@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./adds.module.css";
+import Link from "next/link";
 
 export const Adds: React.FC = () => {
   const gridItems = [
@@ -44,7 +45,9 @@ export const Adds: React.FC = () => {
         {gridItems.map((item, index) => (
           <div key={index} className={styles.gridItem}>
             {index === 5 ? (
-              <button className={styles.readMoreButton}>{item.title}</button>
+              <Link href="/about" className={styles.readMoreButton}>
+                {item.title}
+              </Link>
             ) : (
               <>
                 <Image

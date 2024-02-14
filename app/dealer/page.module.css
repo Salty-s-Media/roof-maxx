@@ -4,5 +4,17 @@
   min-height: 100vh;
   max-width: 90%;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 150px;
+}
+
+@media (min-width: 1920px) {
+  .page {
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 930px) {
+  .page {
+    max-width: 90%;
+  }
 }

@@ -40,6 +40,9 @@ export const MobileNav = () => {
           <Link href="/" onClick={toggleMenu}>
             Home
           </Link>
+          <Link href="/how" onClick={toggleMenu}>
+            How It Works
+          </Link>
           <Link href="/services" onClick={toggleMenu}>
             Service Areas
           </Link>
