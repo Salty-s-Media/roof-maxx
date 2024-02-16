@@ -19,7 +19,7 @@ const VideoPlayer: React.FC<{ src: string }> = ({ src }) => {
       {iframeSrc && (
         <>
           <iframe
-            src={iframeSrc}
+            src={`https://fast.wistia.net/embed/iframe/${iframeSrc}?seo=true`}
             title="Wistia Video"
             frameBorder="0"
             scrolling="no"

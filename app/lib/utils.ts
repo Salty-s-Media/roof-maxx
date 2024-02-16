@@ -5,7 +5,6 @@ export const validateString = (
   if (!value || typeof value !== "string" || value.length > maxLength) {
     return false;
   }
-
   return true;
 };
 
@@ -17,16 +16,36 @@ export const validateEmailFormat = (email: unknown): boolean => {
   return emailRegex.test(email);
 };
 
+export const validateAge = (age: string): boolean => {
+  if (typeof age !== "string") {
+    return false;
+  }
+
+  const ageNumber = parseInt(age, 10);
+
+  if (isNaN(ageNumber)) {
+    return false;
+  }
+
+  return ageNumber >= 0 && ageNumber <= 15;
+};
+
+// lib.ts
+
+export const validateSelectOption = (value: string | null): boolean => {
+  return value !== null && value !== "";
+};
+
 export const validatePhoneNumber = (phoneNumber: unknown): boolean => {
   const phoneNumberPattern =
     /^(\+\d{1,2}\s?)?\(?(\d{3})\)?[-.\s]?(\d{3})[-.\s]?(\d{4})$/;
   if (typeof phoneNumber !== "string") {
     return false;
   }
-  if (!phoneNumberPattern.test(phoneNumber)) {
-    return false;
+  if (phoneNumberPattern.test(phoneNumber)) {
+    return true;
   }
-  return true;
+  return false;
 };
 
 export const getErrorMessage = (error: unknown): string => {

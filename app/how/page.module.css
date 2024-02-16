@@ -1,10 +1,11 @@
 .page {
   display: flex;
   margin: auto;
+  align-items: center;
   min-height: 100vh;
-  max-width: 90%;
+  max-width: 1130px;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .hiwspc {
   margin: 4rem;
@@ -53,7 +54,15 @@
   display: flex;
   width: auto;
   height: auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
   border-radius: var(--border-rad);
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 640px;
+  max-height: 350px;
 }
 
 .imag {
@@ -71,19 +80,8 @@
   height: auto;
   border-radius: var(--border-rad);
   width: 100%;
-  max-width: 25rem;
   min-height: 15rem;
   overflow: hidden;
-}
-
-.ig {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  min-width: 720px;
-  height: auto;
-  max-height: 350px;
-  border-radius: var(--border-rad);
 }
 
 .header h1 {
@@ -101,7 +99,7 @@
 }
 
 .cards {
-  margin-top: 4rem;
+  margin-top: 2rem;
   grid-column-gap: 5em;
   grid-row-gap: 5em;
   flex-direction: column;
@@ -119,6 +117,7 @@
 .description {
   width: 100%;
   text-align: left;
+  margin-bottom: auto;
 }
 
 .description p {
@@ -128,9 +127,8 @@
 }
 
 .card {
-  width: 100%;
+  width: 95%;
   margin: auto;
-  max-width: 67rem;
   grid-column-gap: 2.5rem;
   grid-row-gap: 2.5rem;
   background-color: #f6f6f6;
@@ -141,16 +139,57 @@
   display: flex;
 }
 
+@media (min-width: 1920px) {
+  .page {
+    max-width: 1130px;
+  }
+}
+
+@media (max-width: 930px) {
+  .page {
+    max-width: 90%;
+  }
+}
+
 @media screen and (max-width: 930px) {
   .cards {
     grid-template-columns: 1fr;
   }
 
+  .header {
+    height: 27rem;
+  }
+
+  .header h1 {
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+  }
+
+  .header p {
+    font-size: 1.1rem;
+    max-width: 360px;
+  }
+
   .card {
     flex-direction: column;
+    width: 100%;
   }
 
   .imag {
     order: -1;
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    height: 23rem;
+  }
+  .descriptionHeader {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 420px) {
+  .header {
+    height: 18rem;
   }
 }

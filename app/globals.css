@@ -63,10 +63,10 @@ body {
   height: 100%;
   max-width: 100vw;
   overflow-x: initial hidden;
+  -webkit-font-smoothing: antialiased;
   ::-webkit-scrollbar {
     display: none;
   }
-  -webkit-font-smoothing: antialiased;
 }
 
 a {

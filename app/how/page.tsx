@@ -1,6 +1,10 @@
+"use client";
+
 import { Carousel } from "@/_components/logocarousel/logoCaro";
 import styles from "./page.module.css";
 import Image from "next/image";
+import VideoPlayer from "@/_components/video/videoPlayer";
+import { GoogleReviews } from "@/_components/GoogRev/googrev";
 
 export default function Page() {
   return (
@@ -15,15 +19,9 @@ export default function Page() {
           </p>
         </div>
         <div className={styles.vc}>
-          {/* <video src="pathtovid.mp4" controls /> */}
-          <Image
-            src="/daytona.png"
-            alt="gg"
-            width={512}
-            height={512}
-            className={styles.ig}
-          />
+          <VideoPlayer src="35we73mbiv" />
         </div>
+        <br />
       </div>
       <div className={styles.page}>
         <Carousel />
@@ -41,7 +39,7 @@ export default function Page() {
             <div className={styles.description}>
               <div className={styles.hwH}>
                 <div className={styles.hiwN}>
-                  <h3>2</h3>
+                  <h3>1</h3>
                 </div>
                 <h2 className={styles.descriptionHeader}>
                   We Assess Your Roof
@@ -121,6 +119,22 @@ export default function Page() {
             </div>
           </div>
         </div>
+        <button
+          className="btn2"
+          onClick={() => window.open("tel:3863562866")}
+          aria-label="Call Now"
+          style={{
+            width: "95%",
+            textAlign: "center",
+            fontSize: "1rem",
+            marginTop: "2rem",
+          }}
+        >
+          Call Now
+        </button>
+        <br />
+        <br />
+        <GoogleReviews />
       </div>
       <div className={styles.hiwspc} />
     </>
