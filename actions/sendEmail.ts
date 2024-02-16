@@ -29,6 +29,29 @@ export const sendEmail = async (formData: FormData) => {
   const managed = formData.get("managed") as string;
   const asphaltRoof = formData.get("asphaltRoof") as string;
 
+  const requiredFields = [
+    "senderEmail",
+    "Fname",
+    "Lname",
+    "age",
+    "zip",
+    "street",
+    "city",
+    "state",
+    "propertyType",
+    "managed",
+    "asphaltRoof",
+    "senderPhone",
+  ];
+
+  for (const field of requiredFields) {
+    if (!formData.get(field)) {
+      return {
+        error: `The ${field} field is required.`,
+      };
+    }
+  }
+
   if (!validateSelectOption(propertyType)) {
     return {
       error: "Please select a property type",
