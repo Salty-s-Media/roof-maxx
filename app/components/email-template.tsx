@@ -12,15 +12,33 @@ import {
 } from "@react-email/components";
 
 type ContactFormEmailProps = {
-  message: string;
+  age: string;
+  fname: string;
+  lname: string;
+  zip: string;
+  street: string;
+  city: string;
+  state: string;
   senderEmail: string;
   senderPhone: string;
+  propertyType: string;
+  asphaltRoof: string;
+  managed: string;
 };
 
 export default function ContactFormEmail({
-  message,
+  age,
+  fname,
+  lname,
   senderEmail,
   senderPhone,
+  zip,
+  street,
+  city,
+  state,
+  propertyType,
+  asphaltRoof,
+  managed,
 }: ContactFormEmailProps) {
   return (
     <Html>
@@ -30,12 +48,28 @@ export default function ContactFormEmail({
         <Container>
           <Section>
             <Heading>
-              You received the following message from the contact form:
+              Roof Maxx Message: {fname} {lname} is requesting a quote!
             </Heading>
-            <Text>{message}</Text>
             <Hr />
-            <Text>The senders email is: {senderEmail}</Text>
-            <Text>The senders phone number is: {senderPhone}</Text>
+            <Text>
+              {fname} {lname}s home is an {propertyType}. {managed}, it is part
+              of a property management group.
+            </Text>
+            <Text>
+              {fname} {lname}s roof is {age} years old.
+            </Text>
+            <Text>
+              {fname} {lname}s is {asphaltRoof} roof is made of asphalt.
+            </Text>
+            <Text>
+              {fname} {lname}s lives at {street}, {city}, {state}, {zip}
+            </Text>
+            <Text>
+              {fname} {lname}s email is {senderEmail}
+            </Text>
+            <Text>
+              {fname} {lname}s phone number is {senderPhone}
+            </Text>
           </Section>
         </Container>
       </Body>
