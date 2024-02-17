@@ -15,6 +15,9 @@ import { Adds } from "@/_components/addsUp/adds";
 import Contact from "@/_components/contact/contactForm";
 import { Toaster } from "react-hot-toast";
 import { Protects } from "@/_components/protects/protects";
+import { BetterRoof } from "@/_components/betterRoof/roof";
+import { CustomerTestimony } from "@/_components/custCaro/custCaro";
+import { RoofReplacement } from "@/_components/roofRep/roofRep";
 
 export default function Home() {
   const lenis = useLenis();
@@ -38,9 +41,12 @@ export default function Home() {
         <Header />
         <Process />
         <Carousel />
+        <RoofReplacement />
         <Protects />
         <Adds />
         <BioCard />
+        <BetterRoof />
+        <CustomerTestimony />
         <GoogleReviews />
         <Toaster position="bottom-right" />
       </div>
