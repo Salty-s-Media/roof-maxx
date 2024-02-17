@@ -1,0 +1,61 @@
+.gutter {
+  padding: 2rem;
+  min-width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px var(--bxs);
+  margin-bottom: 0.5rem;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.lastCard {
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.vc {
+  position: relative;
+  width: 100%;
+}
+
+.vc VideoPlayer {
+  padding-bottom: 56.25%;
+  padding-top: 56.25%;
+}
+
+@media (max-width: 930px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    min-height: auto;
+  }
+}

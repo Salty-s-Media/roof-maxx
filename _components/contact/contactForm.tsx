@@ -119,6 +119,7 @@ export default function Contact() {
                   Do you have a{" "}
                   <a
                     style={{ textDecoration: "underline" }}
+                    target="_blank"
                     href="https://www.thespruce.com/thmb/S4qMZ7a2Y1_ewMHhGcGLBL6YycI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Fotolia_23945426_S-56a4a2c23df78cf772835cd4.jpg"
                   >
                     Traditional Asphalt Roof?

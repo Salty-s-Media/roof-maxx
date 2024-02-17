@@ -2,7 +2,6 @@
 import Image from "next/image";
 import styles from "./footer.module.css";
 import Link from "next/link";
-import logo from "@/public/logoMobile.svg";
 
 export const Footer = () => {
   const goToTop = () => {
@@ -14,7 +13,7 @@ export const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.logoContainer}>
           <Link href="/">
-            <Image src={logo} alt="logo" width={225} height={50} />
+            <Image src="/logoMobile.svg" alt="logo" width={225} height={50} />
           </Link>
         </div>
         <div className={styles.column}>

@@ -5,6 +5,9 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import VideoPlayer from "@/_components/video/videoPlayer";
 import { GoogleReviews } from "@/_components/GoogRev/googrev";
+import { CustomerTestimony } from "@/_components/custCaro/custCaro";
+
+// 1otka1flip - wistia string
 
 export default function Page() {
   return (
@@ -134,6 +137,7 @@ export default function Page() {
         </button>
         <br />
         <br />
+        <CustomerTestimony />
         <GoogleReviews />
       </div>
       <div className={styles.hiwspc} />

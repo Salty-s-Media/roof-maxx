@@ -53,9 +53,11 @@
 
 .btn:hover {
   background-color: var(--btn-h1);
+  cursor: pointer;
 }
 .btn2:hover {
   background-color: var(--btn-h3);
+  cursor: pointer;
 }
 
 html,
