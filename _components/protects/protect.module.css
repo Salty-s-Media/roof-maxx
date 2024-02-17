@@ -1,0 +1,66 @@
+.gutter {
+  padding: 2rem;
+  min-width: 100%;
+  max-width: 1400px;
+  margin: 1rem auto;
+}
+
+.cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.vc {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-rad);
+  border: 2px solid var(--bg);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description h2 {
+  word-spacing: 4px;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.description p {
+  word-spacing: 4px;
+  color: var(--eld);
+}
+
+.protections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.protections > div {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0.25rem;
+  align-items: center;
+}
+
+.protections svg {
+  margin-right: 0.5rem;
+}
+
+.protections span {
+  white-space: nowrap;
+}
+
+@media (max-width: 930px) {
+  .cont {
+    grid-template-columns: 1fr;
+  }
+  .protections {
+    grid-template-columns: 1fr;
+  }
+}
