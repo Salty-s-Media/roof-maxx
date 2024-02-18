@@ -14,7 +14,7 @@ export const CustomerTestimony = () => {
     {
       videoId: "6nt26wikvi",
       description:
-        "Since the Roof Maxx has been installed. We haven’t lost one shingle, and this roof is twenty years old.",
+        "Since the Roof Maxx has been installed. We havent lost one shingle, and this roof is twenty years old.",
       author: "James Gonte",
       title: "Not One Shingle Has Blown Off",
     },
@@ -31,16 +31,16 @@ export const CustomerTestimony = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsVisible(false); // Start fade-out transition
+      setIsVisible(false);
       setTimeout(() => {
         setCurrentTestimonialIndex(
           (prevIndex) => (prevIndex + 1) % testimonials.length
         );
-        setIsVisible(true); // Start fade-in transition
-      }, 500); // Wait for the fade-out to complete
-    }, 10000); // Change testimonial every   10 seconds
+        setIsVisible(true);
+      }, 500);
+    }, 10000);
 
-    return () => clearInterval(interval); // Clean up on component unmount
+    return () => clearInterval(interval);
   }, [testimonials.length]);
 
   const { videoId, description, author, title } =
@@ -49,7 +49,7 @@ export const CustomerTestimony = () => {
   return (
     <div className={styles.cont}>
       <div className={styles.header}>
-        <h2>Roof Maxx Works, But Don't Just Take Our Word For It</h2>
+        <h2>Roof Maxx Works, But Don&apos;t Just Take Our Word For It</h2>
         <div className={styles.buttons}>
           <button className="btn">Call Now</button>
           <button className="btn2">Get Free Quote</button>

@@ -10,7 +10,7 @@
 
 .container {
   position: relative;
-  width: 20rem; /* 320px smallest */
+  width: 20rem;
   max-width: 20rem;
   max-height: 22rem;
 }

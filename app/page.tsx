@@ -41,8 +41,8 @@ export default function Home() {
         <Header />
         <Process />
         <Carousel />
-        <RoofReplacement />
         <Protects />
+        <RoofReplacement />
         <Adds />
         <BioCard />
         <BetterRoof />

@@ -55,7 +55,7 @@
   .footer {
     background-color: var(--tsp);
     box-shadow: 0px 0px 0px 0px var(--tsp);
-    padding-top: 4rem;
+    margin-top: 7rem;
   }
 }
 

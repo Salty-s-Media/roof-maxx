@@ -2,12 +2,13 @@
   padding: 2rem;
   min-width: 100%;
   max-width: 1400px;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 .cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 2rem;
 }
 
@@ -21,6 +22,7 @@
 .description {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .description h2 {
@@ -32,11 +34,13 @@
 .description p {
   word-spacing: 4px;
   color: var(--eld);
+  flex-grow: 1;
 }
 
 .protections {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   padding: 1rem 0;
 }
@@ -56,11 +60,46 @@
   white-space: nowrap;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1230px) {
   .cont {
     grid-template-columns: 1fr;
   }
+  .description h2 {
+    font-size: 2rem;
+  }
+  .description p {
+    font-size: 1rem;
+  }
   .protections {
-    grid-template-columns: 1fr;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .vc {
+    max-width: 100%;
+  }
+  .description {
+    max-height: none;
+  }
+  .protections {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .vc {
+    max-width: 100%;
+  }
+  .description h2 {
+    font-size: 2rem;
+  }
+  .description p {
+    font-size: 1rem;
+  }
+  .protections {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
