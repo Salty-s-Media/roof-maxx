@@ -15,7 +15,7 @@ export const RoofReplacement = () => {
           <div className={styles.card}>
             <div className={styles.heading}>
               <Image src="/shield.png" width={25} height={25} alt="icon" />
-              <h3>Old Way</h3>
+              <h2>Old Way</h2>
             </div>
             <p>
               Roof replacement is a messy, expensive hassle now costing $15,000
@@ -27,14 +27,13 @@ export const RoofReplacement = () => {
           <div className={styles.card}>
             <div className={styles.heading}>
               <Image src="/blocks.png" width={25} height={25} alt="icon" />
-              <h3>New Way</h3>
+              <h2>New Way</h2>
             </div>
             <p>
-              At a savings of about 80% over replacement, a Roof Maxx roof
-              rejuvenation treatment is guaranteed to strengthen and extend the
-              life of your roof by five years per treatment. With repeated
-              treatments every five years, you can extend the life of your roof
-              up to 15 years.
+              A Roof Maxx treatment is guaranteed to strengthen and extend the
+              life of your roof by five years per treatment, saving 80% over
+              replacement. Get 15 more years out of your roof by repeating
+              treatments every five years.
             </p>
           </div>
           <div className={`${styles.card} ${styles.lastCard}`}>

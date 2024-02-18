@@ -9,7 +9,7 @@
 
 .cont h1 {
   margin: 0 0 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-align: left;
   color: var(--text-color);
@@ -100,5 +100,8 @@
   }
   .sep {
     margin: 0.5rem;
+  }
+  .cont h1 {
+    font-size: 2rem;
   }
 }

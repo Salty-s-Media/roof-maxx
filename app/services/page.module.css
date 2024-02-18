@@ -10,7 +10,8 @@
   margin: 2rem auto;
   min-height: none;
   max-height: 45rem;
-  max-width: 65rem;
+  max-width: 72rem;
+  margin-bottom: 20rem;
 }
 
 .main {
@@ -42,6 +43,7 @@
   display: flex;
   width: auto;
   height: auto;
+  max-height: 450px;
   border-radius: var(--border-rad);
 }
 
@@ -89,16 +91,10 @@
   .page {
     max-width: 100%;
   }
-}
-
-@media (max-width: 930px) {
   .main {
     grid-template-columns: 1fr;
   }
   .desc {
     font-size: 16px;
-  }
-  .descriptionAndButton {
-    padding-bottom: 6rem;
   }
 }

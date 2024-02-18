@@ -16,7 +16,11 @@
 }
 
 .header h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.card p {
+  margin-bottom: auto;
 }
 
 .card {
@@ -24,7 +28,7 @@
   border-radius: 5px;
   box-shadow: 0px 8px 16px 0px var(--bxs);
   margin-bottom: 0.5rem;
-  min-height: 300px;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -55,7 +59,7 @@
   .grid {
     grid-template-columns: 1fr;
   }
-  .card {
-    min-height: auto;
+  .header h1 {
+    font-size: 2rem;
   }
 }

@@ -14,7 +14,7 @@ export const CustomerTestimony = () => {
     {
       videoId: "6nt26wikvi",
       description:
-        "Since the Roof Maxx has been installed. We haven’t lost one shingle, and this roof is twenty years old.",
+        "Since the Roof Maxx has been installed. We havent lost one shingle, and this roof is twenty years old.",
       author: "James Gonte",
       title: "Not One Shingle Has Blown Off",
     },

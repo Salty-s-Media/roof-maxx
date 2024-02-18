@@ -7,6 +7,24 @@
   margin-top: 150px;
 }
 
+.header {
+  display: flex;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--grad3);
+  font-size: 1.25rem;
+  color: var(--btn-bg2);
+  margin-top: 100px;
+}
+
+.header h1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  min-width: max-content;
+}
+
 @media (min-width: 1920px) {
   .page {
     max-width: 1400px;

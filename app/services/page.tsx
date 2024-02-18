@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
+import { BetterRoof } from "@/_components/betterRoof/roof";
 
 export default function Page() {
   return (
@@ -17,6 +18,8 @@ export default function Page() {
             <Link href="/services/palmcoast">Palm Coast</Link>
             <Link href="/services/newsmyrna">New Smyrna Beach</Link>
           </div>
+          <BetterRoof />
+          <div style={{ height: "6rem" }} />
         </div>
       </div>
     </>

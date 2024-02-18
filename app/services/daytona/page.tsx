@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import styles from ".././page.module.css";
+import { BetterRoof } from "@/_components/betterRoof/roof";
 
 export default function Page() {
   return (
@@ -46,6 +47,8 @@ export default function Page() {
               </div>
             </div>
           </div>
+          <BetterRoof />
+          <div style={{ height: "6rem" }} />
         </div>
       </div>
     </>

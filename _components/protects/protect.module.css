@@ -2,12 +2,13 @@
   padding: 2rem;
   min-width: 100%;
   max-width: 1400px;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 .cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; /* Ensure the rows are auto-sized */
   gap: 2rem;
 }
 
@@ -20,7 +21,9 @@
 
 .description {
   display: flex;
+  max-height: 512px;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .description h2 {
@@ -32,11 +35,12 @@
 .description p {
   word-spacing: 4px;
   color: var(--eld);
+  flex-grow: 1; /* Allow the paragraph to grow and take up available space */
 }
 
 .protections {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  justify-content: space-between;
   gap: 1rem;
   padding: 1rem 0;
 }
@@ -56,11 +60,14 @@
   white-space: nowrap;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1230px) {
   .cont {
     grid-template-columns: 1fr;
   }
-  .protections {
-    grid-template-columns: 1fr;
+  .description h2 {
+    font-size: 2rem;
+  }
+  .description p {
+    font-size: 1rem; /* Scale down the font size for the paragraph */
   }
 }
