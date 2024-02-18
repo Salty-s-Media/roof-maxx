@@ -89,13 +89,34 @@
 }
 
 .task {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
   margin-bottom: 5px;
   word-spacing: 3px;
   font-size: 1.1rem;
 }
 
+.task img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-rad);
+  max-height: 260px;
+  object-fit: cover;
+}
+
+.bc {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btnC {
+  font-size: 1rem;
+}
+
 @media (max-width: 930px) {
   .task {
+    grid-template-columns: 1fr;
     font-size: 0.9rem;
   }
   .heading h1 {

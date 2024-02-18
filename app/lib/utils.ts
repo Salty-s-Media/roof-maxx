@@ -30,8 +30,6 @@ export const validateAge = (age: string): boolean => {
   return ageNumber >= 0 && ageNumber <= 15;
 };
 
-// lib.ts
-
 export const validateSelectOption = (value: string | null): boolean => {
   return value !== null && value !== "";
 };

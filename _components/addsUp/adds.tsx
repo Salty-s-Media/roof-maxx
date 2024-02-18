@@ -35,7 +35,7 @@ export const Adds: React.FC = () => {
       description:
         "Roof Maxx recommends treatments every 5 years to extend your roof's lifespan by up to 15 years and reduce environmental impact.",
     },
-    { icon: "", title: "Read More", description: "" },
+    { icon: "", title: "", description: "" },
   ];
 
   return (
@@ -45,8 +45,8 @@ export const Adds: React.FC = () => {
         {gridItems.map((item, index) => (
           <div key={index} className={styles.gridItem}>
             {index === 5 ? (
-              <Link href="/about" className={styles.readMoreButton}>
-                {item.title}
+              <Link href="/about" className={`btn && ${styles.readMoreButton}`}>
+                Read More
               </Link>
             ) : (
               <>

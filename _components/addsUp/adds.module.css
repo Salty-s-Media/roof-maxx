@@ -25,6 +25,7 @@
   align-items: flex-start;
   text-align: left;
   padding: 1rem;
+  border-top: 1px solid var(--tmf);
 }
 
 .gridItem:nth-child(6) {
@@ -37,20 +38,11 @@
 }
 
 .readMoreButton {
-  display: block;
-  height: 3rem;
   text-align: center;
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: var(--bg);
-  background-color: var(--btn-bg);
-  border: none;
-  border-radius: var(--border-rad);
-  cursor: pointer;
-  margin: 0 auto;
-  border: 2px solid var(--btn-bg);
-  transition: background-color 0.3s ease-in-out;
 }
 
 .readMoreButton:hover {

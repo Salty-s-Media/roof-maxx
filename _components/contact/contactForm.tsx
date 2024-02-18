@@ -205,7 +205,7 @@ export default function Contact() {
                 currentPage === 3 ? styles.visible : ""
               }`}
             >
-              <h2>Let's get in contact...</h2>
+              <h2>Let&apos;s get in contact...</h2>
 
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="Fname">

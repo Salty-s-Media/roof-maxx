@@ -1,6 +1,6 @@
 .cont {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns for large devices */
+  grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   align-items: center;
   min-width: 100%;
@@ -11,7 +11,7 @@
 
 @media (max-width: 930px) {
   .cont {
-    grid-template-columns: 1fr; /* One column for small devices */
+    grid-template-columns: 1fr;
   }
 }
 

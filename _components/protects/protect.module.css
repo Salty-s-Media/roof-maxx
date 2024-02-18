@@ -8,7 +8,7 @@
 .cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto; /* Ensure the rows are auto-sized */
+  grid-template-rows: auto;
   gap: 2rem;
 }
 
@@ -21,7 +21,6 @@
 
 .description {
   display: flex;
-  max-height: 512px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -35,12 +34,13 @@
 .description p {
   word-spacing: 4px;
   color: var(--eld);
-  flex-grow: 1; /* Allow the paragraph to grow and take up available space */
+  flex-grow: 1;
 }
 
 .protections {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   padding: 1rem 0;
 }
@@ -68,6 +68,38 @@
     font-size: 2rem;
   }
   .description p {
-    font-size: 1rem; /* Scale down the font size for the paragraph */
+    font-size: 1rem;
+  }
+  .protections {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .vc {
+    max-width: 100%;
+  }
+  .description {
+    max-height: none;
+  }
+  .protections {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .vc {
+    max-width: 100%;
+  }
+  .description h2 {
+    font-size: 2rem;
+  }
+  .description p {
+    font-size: 1rem;
+  }
+  .protections {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
