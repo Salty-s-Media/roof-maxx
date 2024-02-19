@@ -1,55 +1,35 @@
 "use client";
 
-import { BioCard } from "@/_components/biosavings/bio";
 import styles from "./page.module.css";
 
 import { Header } from "@/_components/header/header";
 import { Carousel } from "@/_components/logocarousel/logoCaro";
 import { Process } from "@/_components/process/process";
-
-import { Lenis, useLenis } from "@studio-freight/react-lenis";
-import { Router } from "next/router";
-import { useEffect } from "react";
+import { BioCard } from "@/_components/biosavings/bio";
 import { GoogleReviews } from "@/_components/GoogRev/googrev";
 import { Adds } from "@/_components/addsUp/adds";
-import Contact from "@/_components/contact/contactForm";
 import { Toaster } from "react-hot-toast";
 import { Protects } from "@/_components/protects/protects";
 import { BetterRoof } from "@/_components/betterRoof/roof";
 import { CustomerTestimony } from "@/_components/custCaro/custCaro";
 import { RoofReplacement } from "@/_components/roofRep/roofRep";
+import { TimeToChange } from "@/_components/timeChange/time";
 
 export default function Home() {
-  const lenis = useLenis();
-
-  useEffect(() => {
-    function onHashChangeStart(url: string) {
-      url = "#" + url.split("#").pop();
-      lenis.scrollTo(url);
-    }
-
-    Router.events.on("hashChangeStart", onHashChangeStart);
-
-    return () => {
-      Router.events.off("hashChangeStart", onHashChangeStart);
-    };
-  }, [lenis]);
-
   return (
-    <Lenis root>
-      <div className={styles.page}>
-        <Header />
-        <Process />
-        <Carousel />
-        <Protects />
-        <RoofReplacement />
-        <Adds />
-        <BioCard />
-        <BetterRoof />
-        <CustomerTestimony />
-        <GoogleReviews />
-        <Toaster position="bottom-right" />
-      </div>
-    </Lenis>
+    <div className={styles.page}>
+      <Header />
+      <Process />
+      <Carousel />
+      <Protects />
+      <RoofReplacement />
+      <Adds />
+      <BioCard />
+      <TimeToChange />
+      <BetterRoof />
+      <CustomerTestimony />
+      <GoogleReviews />
+      <Toaster position="bottom-right" />
+    </div>
   );
 }

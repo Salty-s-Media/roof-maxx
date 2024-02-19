@@ -1,0 +1,153 @@
+.gutter {
+  padding: 2rem;
+  min-width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.photoGrid {
+  grid-column: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.imag {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: var(--border-rad);
+}
+
+.contentArea {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.contentArea h3 {
+  margin-top: 1rem;
+}
+
+.contentArea h1 {
+  font-size: 2.5rem;
+}
+
+.horizontallyAlignedArea {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+}
+
+.horizontallyAlignedArea .cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontallyAlignedArea .cell .description {
+  padding-top: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.horizontallyAlignedArea .cell .number {
+  font-size: 1.8rem;
+}
+
+.featureList {
+  text-transform: none;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: auto;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listItemContainer {
+  display: flex;
+  gap: 0.1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.listItemContainer .checkIcon {
+  margin-top: 0.2rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+.listItemContainer span {
+  flex: 1;
+  margin-left: 8px;
+  font-size: 1rem;
+}
+
+.overlayImageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  scale: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imag2 {
+  display: block;
+  object-fit: contain;
+  height: 100%;
+  max-height: 400px;
+  width: 90%;
+  border-radius: var(--border-rad);
+}
+
+@media (max-width: 768px) {
+  .gutter {
+    max-width: 90%;
+  }
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+  .contentArea h1 {
+    font-size: 2rem;
+  }
+  .photoGrid,
+  .contentArea {
+    grid-column: 1;
+  }
+
+  .horizontallyAlignedArea .cell .description {
+    padding-top: 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  .horizontallyAlignedArea .cell .number {
+    font-size: 1.5rem;
+  }
+}

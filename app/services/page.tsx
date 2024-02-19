@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { BetterRoof } from "@/_components/betterRoof/roof";
+import { TimeToChange } from "@/_components/timeChange/time";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
           <Link href="/services/palmcoast">Palm Coast</Link>
           <Link href="/services/newsmyrna">New Smyrna Beach</Link>
         </div>
+        <TimeToChange />
         <BetterRoof />
         <br />
       </div>

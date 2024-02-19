@@ -26,7 +26,7 @@
 }
 
 .systemcontainerh3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -94,7 +94,8 @@
   grid-gap: 1rem;
   margin-bottom: 5px;
   word-spacing: 3px;
-  font-size: 1.1rem;
+  line-height: 1.75rem;
+  font-size: 1.15rem;
 }
 
 .task img {
@@ -118,8 +119,12 @@
   .task {
     grid-template-columns: 1fr;
     font-size: 0.9rem;
+    line-height: 1.2rem;
   }
   .heading h1 {
     font-size: 2rem;
+  }
+  .systemcontainerh3 {
+    font-size: 1.25rem;
   }
 }

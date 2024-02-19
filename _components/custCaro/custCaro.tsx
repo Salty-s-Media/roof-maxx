@@ -5,29 +5,33 @@ import styles from "./cust.module.css";
 export const CustomerTestimony = () => {
   const testimonials = [
     {
-      videoId: "plmaf0i77l",
       description:
         "They have treated my own personal house twice. Please take my word for it. It does work.",
       author: "Jerry Linkhorn",
-      title: "Ohios Top Home Inspector",
+      title: "Ohio's Top Home Inspector",
+    },
+
+    {
+      description:
+        "Roofs are costly, and we want to prolong ours as long as possible. That's why we chose Roof Maxx.",
+      author: "Angie Barton",
+      title: "Roof Maxx Protects Your Entire Home",
     },
     {
-      videoId: "6nt26wikvi",
       description:
         "Since the Roof Maxx has been installed. We havent lost one shingle, and this roof is twenty years old.",
       author: "James Gonte",
       title: "Not One Shingle Has Blown Off",
     },
-    {
-      videoId: "roq95e7pkf",
-      description: "Yet another testimonial goes here...",
-      author: "Angie Barton",
-      title: "Roof Maxx Protects Your Entire Home",
-    },
   ];
+  const videoId = ["plmaf0i77l", "6nt26wikvi", "roq95e7pkf"];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+
+  const handleTestimonialIndexChange = (index: number) => {
+    setCurrentTestimonialIndex(index);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -38,16 +42,15 @@ export const CustomerTestimony = () => {
         );
         setIsVisible(true);
       }, 500);
-    }, 10000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
-  const { videoId, description, author, title } =
-    testimonials[currentTestimonialIndex];
+  const { description, author, title } = testimonials[currentTestimonialIndex];
 
   return (
-    <div className={styles.cont}>
+    <>
       <div className={styles.header}>
         <h2>Roof Maxx Works, But Don&apos;t Just Take Our Word For It</h2>
         <div className={styles.buttons}>
@@ -55,25 +58,51 @@ export const CustomerTestimony = () => {
           <button className="btn2">Get Free Quote</button>
         </div>
       </div>
-      <div className={`${styles.card} ${isVisible ? styles.fadeIn : ""}`}>
-        <div className={styles.videoCarousel}>
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.videoId}
-              style={{
-                display: index === currentTestimonialIndex ? "block" : "none",
-              }}
-            >
-              <div className={styles.vc}>
-                <VideoPlayer src={testimonial.videoId} />
-              </div>
-              <h3>{testimonial.title}</h3>
-              <p>{testimonial.description}</p>
-              <p>{testimonial.author}</p>
+      <div
+        className={isVisible ? styles.fadeInAnimation : styles.fadeOutAnimation}
+      >
+        <div className={styles.masterContainer}>
+          <div className={styles.left}>
+            <div className={styles.vc}>
+              <VideoPlayer
+                key={currentTestimonialIndex}
+                src={videoId[currentTestimonialIndex]}
+              />
             </div>
-          ))}
+          </div>
+          <div className={styles.right}>
+            <h2>{testimonials[currentTestimonialIndex].title}</h2>
+            <p>{testimonials[currentTestimonialIndex].description}</p>
+            <h3>{testimonials[currentTestimonialIndex].author}</h3>
+          </div>
         </div>
       </div>
-    </div>
+      <div className={styles.buttonsContainer}>
+        <button
+          onClick={() => handleTestimonialIndexChange(0)}
+          className={`${styles.circleButton} ${
+            currentTestimonialIndex === 0 ? styles.activeCircleButton : ""
+          }`}
+        >
+          1
+        </button>
+        <button
+          onClick={() => handleTestimonialIndexChange(1)}
+          className={`${styles.circleButton} ${
+            currentTestimonialIndex === 1 ? styles.activeCircleButton : ""
+          }`}
+        >
+          2
+        </button>
+        <button
+          onClick={() => handleTestimonialIndexChange(2)}
+          className={`${styles.circleButton} ${
+            currentTestimonialIndex === 2 ? styles.activeCircleButton : ""
+          }`}
+        >
+          3
+        </button>
+      </div>
+    </>
   );
 };
