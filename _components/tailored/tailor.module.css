@@ -5,6 +5,7 @@
 }
 
 .top h1 {
+  font-size: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -14,6 +15,7 @@
 }
 
 .grid h1 {
+  font-size: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -40,6 +42,17 @@
 .cc {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.ac {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+}
+
+.ac h3 {
+  padding-bottom: 1rem;
 }
 
 .imag3 {
@@ -107,5 +120,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .grid h1 {
+    font-size: 2rem;
+  }
+  .top h1 {
+    font-size: 2rem;
   }
 }

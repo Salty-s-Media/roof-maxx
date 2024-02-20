@@ -38,8 +38,8 @@ export const sendEmail = async (formData: FormData) => {
     "street",
     "city",
     "state",
-    "propertyType",
     "managed",
+    "propertyType",
     "asphaltRoof",
     "senderPhone",
   ];
@@ -50,12 +50,6 @@ export const sendEmail = async (formData: FormData) => {
         error: `The ${field} field is required.`,
       };
     }
-  }
-
-  if (!validateSelectOption(propertyType)) {
-    return {
-      error: "Please select a property type",
-    };
   }
 
   if (!validateSelectOption(asphaltRoof)) {
@@ -115,6 +109,12 @@ export const sendEmail = async (formData: FormData) => {
   if (!validateString(state, 14)) {
     return {
       error: "Invalid State length",
+    };
+  }
+
+  if (typeof propertyType !== "string") {
+    return {
+      error: "Please select a valid property type",
     };
   }
 

@@ -68,13 +68,11 @@ export const Header = () => {
         </div>
       </div>
       {showModal && (
-        <div className={styles.modalOverlayVisible} onClick={toggleModal}>
-          <div onClick={(e) => e.stopPropagation()}>
-            <button className={styles.closeButton} onClick={toggleModal}>
-              Close
-            </button>
-            <Contact />
-          </div>
+        <div className={styles.modalOverlayVisible}>
+          <button className={styles.closeButton} onClick={toggleModal}>
+            Close
+          </button>
+          <Contact />
         </div>
       )}
     </>

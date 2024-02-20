@@ -54,8 +54,12 @@ export const CustomerTestimony = () => {
       <div className={styles.header}>
         <h2>Roof Maxx Works, But Don&apos;t Just Take Our Word For It</h2>
         <div className={styles.buttons}>
-          <button className="btn">Call Now</button>
-          <button className="btn2">Get Free Quote</button>
+          <button className="btn" style={{ fontSize: "1rem" }}>
+            Call Now
+          </button>
+          <button className="btn2" style={{ fontSize: "1rem" }}>
+            Get Free Quote
+          </button>
         </div>
       </div>
       <div

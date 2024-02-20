@@ -8,8 +8,8 @@
   margin-left: 2rem;
   margin-right: 2rem;
   background-image: url("/brbg.svg");
-  border: 4px solid var(--tmf);
-  border-radius: 10px;
+  border: 4px solid var(--tmg);
+  border-radius: var(--border-rad);
   padding: 1rem;
 }
 

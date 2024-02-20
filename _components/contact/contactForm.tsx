@@ -11,6 +11,7 @@ export default function Contact() {
   const [isManagedVisible, setIsManagedVisible] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [propertyType, setSelectedPropertyType] = useState("Single Family");
   const [hpv, setHPV] = useState("");
 
   const handleNext = () => {
@@ -22,9 +23,10 @@ export default function Contact() {
   };
 
   const handlePropertyTypeChange = (
-    event: React.ChangeEvent<HTMLSelectElement>
+    event: React.ChangeEvent<HTMLInputElement>
   ) => {
     const propertyType = event.target.value;
+    setSelectedPropertyType(propertyType);
     setIsManagedVisible(
       propertyType === "Apartment or Condo" ||
         propertyType === "Commercial Property"
@@ -38,8 +40,10 @@ export default function Contact() {
           action={async (formData) => {
             const { data, error } = await sendEmail(formData);
 
+            console.log(formData.get("propertyType"));
+
             if (hpv !== "") {
-              toast.error("Form submission failed. Please try again.");
+              toast.error("Form submission failed.");
               return;
             }
 
@@ -62,22 +66,48 @@ export default function Contact() {
               <h2>Tell us about your home</h2>
 
               <div className={styles.inputGroup}>
-                <label className={styles.label} htmlFor="propertyType">
-                  Property Type
+                <h3 className={styles.label}>Property Type</h3>
+                <label htmlFor="propertyType1">
+                  <i className={styles.icon} aria-hidden="true"></i>
+                  <span>Single Family</span>
                 </label>
-                <select
-                  id="propertyType"
+                <input
+                  type="radio"
+                  value="Single Family"
+                  defaultChecked={true}
+                  id="propertyType1"
                   name="propertyType"
-                  onChange={handlePropertyTypeChange}
-                >
-                  <option value="Single Family" defaultChecked={true}>
-                    Single Family
-                  </option>
-                  <option value="Apartment or Condo">Apartment or Condo</option>
-                  <option value="Commercial Property">
-                    Commercial Property
-                  </option>
-                </select>
+                  onChange={(e) => handlePropertyTypeChange(e)}
+                ></input>
+                <label htmlFor="propertyType2">
+                  <i className={styles.icon} aria-hidden="true"></i>
+                  <span>Apartment or Condo</span>
+                </label>
+                <input
+                  type="radio"
+                  value="Apartment or Condo"
+                  id="propertyType2"
+                  name="propertyType"
+                  onChange={(e) => handlePropertyTypeChange(e)}
+                ></input>
+                <label htmlFor="propertyType3">
+                  <i className={styles.icon} aria-hidden="true"></i>
+                  <span>Commercial Property</span>
+                </label>
+                <input
+                  type="radio"
+                  value="Commercial Property"
+                  id="propertyType3"
+                  name="propertyType"
+                  onChange={(e) => handlePropertyTypeChange(e)}
+                ></input>
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  name="propertyType"
+                  id="propertyType"
+                  defaultValue={propertyType}
+                />
               </div>
 
               <div style={{ display: "none" }}>

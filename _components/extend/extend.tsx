@@ -8,7 +8,9 @@ export const ExtendLifespan = () => {
         <div className={styles.textContent}>
           <h1>Call Now and Extend Your Roof's Lifespan</h1>
           <p>Give your roof the care it deserves!</p>
-          <button className="btn">Call Now</button>
+          <button className="btn" style={{ marginRight: "0.5rem" }}>
+            Call Now
+          </button>
           <button className="btn2">Free Quote</button>
         </div>
         <div className={styles.imageContent}>

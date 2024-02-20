@@ -6,6 +6,7 @@ import Image from "next/image";
 import VideoPlayer from "@/_components/video/videoPlayer";
 import { GoogleReviews } from "@/_components/GoogRev/googrev";
 import { CustomerTestimony } from "@/_components/custCaro/custCaro";
+import { ExtendLifespan } from "@/_components/extend/extend";
 
 // 1otka1flip - wistia string
 
@@ -127,7 +128,7 @@ export default function Page() {
           onClick={() => window.open("tel:3863562866")}
           aria-label="Call Now"
           style={{
-            width: "95%",
+            width: "70%",
             textAlign: "center",
             fontSize: "1rem",
             marginTop: "2rem",
@@ -139,6 +140,7 @@ export default function Page() {
         <br />
         <CustomerTestimony />
         <GoogleReviews />
+        <ExtendLifespan />
       </div>
       <div className={styles.hiwspc} />
     </>
