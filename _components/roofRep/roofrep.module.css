@@ -28,7 +28,8 @@
   border-radius: 5px;
   box-shadow: 0px 8px 16px 0px var(--bxs);
   margin-bottom: 0.5rem;
-  min-height: auto;
+  min-height: 280px;
+  word-spacing: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

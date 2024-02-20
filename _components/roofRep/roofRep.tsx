@@ -8,7 +8,9 @@ export const RoofReplacement = () => {
       <div className={styles.cont}>
         <div className={styles.header}>
           <h1>
-            Roof Replacement Is A Messy <span>Expensive Hassle</span>
+            Roof Replacement Is A Messy
+            <br />
+            <i style={{ fontWeight: "400" }}>Expensive Hassle</i>
           </h1>
         </div>
         <div className={styles.grid}>
