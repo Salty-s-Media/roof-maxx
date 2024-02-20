@@ -124,7 +124,7 @@ export const TailoredSolutions = () => {
         </div>
       </div>
       <div className={styles.grid}>
-        <div>
+        <div className={styles.ac}>
           <h3>
             The roof looks beautiful, and I couldn&apos;t be happier! From start
             to finish, the process couldn&apos;t be easier.

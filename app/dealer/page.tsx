@@ -2,7 +2,6 @@
 
 import VideoPlayer from "@/_components/video/videoPlayer";
 import styles from "./page.module.css";
-import { Carousel } from "@/_components/logocarousel/logoCaro";
 import { TailoredSolutions } from "@/_components/tailored/tailor";
 
 export default function Page() {
