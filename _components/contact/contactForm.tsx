@@ -5,13 +5,19 @@ import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submitBtn";
 import styles from "./contact.module.css";
 import { toast } from "react-hot-toast";
+import { Building, Building2, Home } from "lucide-react";
 
 export default function Contact() {
   const [currentPage, setCurrentPage] = useState(1);
   const [isManagedVisible, setIsManagedVisible] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
   const [propertyType, setSelectedPropertyType] = useState("Single Family");
+  const [managedType, setSelectedManagedType] = useState("No");
+  const [asphaltRoof, setAsphalt] = useState("Yes");
+  const [ageRoof, setRoofAge] = useState("0-4");
+
   const [hpv, setHPV] = useState("");
 
   const handleNext = () => {
@@ -31,6 +37,20 @@ export default function Contact() {
       propertyType === "Apartment or Condo" ||
         propertyType === "Commercial Property"
     );
+  };
+  const handleManagedTypeChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const managedType = event.target.value;
+    setSelectedManagedType(managedType);
+  };
+  const handleAS = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const asphaltRoof = event.target.value;
+    setAsphalt(asphaltRoof);
+  };
+  const handleRoof = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const ageRoof = event.target.value;
+    setRoofAge(ageRoof);
   };
 
   return (
@@ -63,44 +83,74 @@ export default function Contact() {
                 currentPage === 1 ? styles.visible : ""
               }`}
             >
+              {/* Property Type */}
               <h2>Tell us about your home</h2>
-
               <div className={styles.inputGroup}>
                 <h3 className={styles.label}>Property Type</h3>
-                <label htmlFor="propertyType1">
-                  <i className={styles.icon} aria-hidden="true"></i>
-                  <span>Single Family</span>
-                </label>
-                <input
-                  type="radio"
-                  value="Single Family"
-                  defaultChecked={true}
-                  id="propertyType1"
-                  name="propertyType"
-                  onChange={(e) => handlePropertyTypeChange(e)}
-                ></input>
-                <label htmlFor="propertyType2">
-                  <i className={styles.icon} aria-hidden="true"></i>
-                  <span>Apartment or Condo</span>
-                </label>
-                <input
-                  type="radio"
-                  value="Apartment or Condo"
-                  id="propertyType2"
-                  name="propertyType"
-                  onChange={(e) => handlePropertyTypeChange(e)}
-                ></input>
-                <label htmlFor="propertyType3">
-                  <i className={styles.icon} aria-hidden="true"></i>
-                  <span>Commercial Property</span>
-                </label>
-                <input
-                  type="radio"
-                  value="Commercial Property"
-                  id="propertyType3"
-                  name="propertyType"
-                  onChange={(e) => handlePropertyTypeChange(e)}
-                ></input>
+                <div className={styles.radioGroup}>
+                  <input
+                    type="radio"
+                    value="Single Family"
+                    defaultChecked={true}
+                    id="propertyType1"
+                    name="propertyType"
+                    onChange={(e) => handlePropertyTypeChange(e)}
+                  ></input>
+                  <label htmlFor="propertyType1" className={styles.labelNew}>
+                    <Home
+                      color={
+                        propertyType === "Single Family" ? "white" : "black"
+                      }
+                      size={24}
+                      className={styles.icon}
+                    />
+                    <span>
+                      Single
+                      <br />
+                      Family
+                    </span>
+                  </label>
+
+                  <input
+                    type="radio"
+                    value="Apartment or Condo"
+                    id="propertyType2"
+                    name="propertyType"
+                    onChange={(e) => handlePropertyTypeChange(e)}
+                  ></input>
+                  <label htmlFor="propertyType2" className={styles.labelNew}>
+                    <Building
+                      color={
+                        propertyType === "Apartment or Condo"
+                          ? "white"
+                          : "black"
+                      }
+                      size={24}
+                      className={styles.icon}
+                    />
+                    <span>Apartment or Condo</span>
+                  </label>
+
+                  <input
+                    type="radio"
+                    value="Commercial Property"
+                    id="propertyType3"
+                    name="propertyType"
+                    onChange={(e) => handlePropertyTypeChange(e)}
+                  ></input>
+                  <label htmlFor="propertyType3" className={styles.labelNew}>
+                    <Building2
+                      color={
+                        propertyType === "Commercial Property"
+                          ? "white"
+                          : "black"
+                      }
+                      size={24}
+                      className={styles.icon}
+                    />
+                    <span>Commercial Property</span>
+                  </label>
+                </div>
                 <input
                   type="text"
                   style={{ display: "none" }}
@@ -109,7 +159,6 @@ export default function Contact() {
                   defaultValue={propertyType}
                 />
               </div>
-
               <div style={{ display: "none" }}>
                 <input
                   type="text"
@@ -120,32 +169,51 @@ export default function Contact() {
                   tabIndex={-1}
                 />
               </div>
-
+              {/* If Property === Condo or Commercial */}
               <div
                 className={`${styles.inputGroup} ${
                   isManagedVisible ? "" : styles.hidden
                 }`}
               >
-                <label className={styles.label} htmlFor="managed">
+                <h3 className={styles.label}>
                   Does this property belong to property management group?
-                </label>
-                <select id="managed" name="managed">
-                  <option value="Yes">Yes</option>
-                  <option value="No" defaultChecked={true}>
-                    No
-                  </option>
-                </select>
+                </h3>
+                <div className={styles.radioGroup}>
+                  <input
+                    type="radio"
+                    value="Yes"
+                    id="managed1"
+                    name="managed"
+                    onChange={(e) => handleManagedTypeChange(e)}
+                  ></input>
+                  <label htmlFor="managed1" className={styles.labelNew2}>
+                    <span>Yes</span>
+                  </label>
+                  {/* No === Not an Option */}
+                  <input
+                    type="radio"
+                    value="No"
+                    id="managed2"
+                    name="managed"
+                    defaultChecked={true}
+                    onChange={(e) => handleManagedTypeChange(e)}
+                  ></input>
+                  <label htmlFor="managed2" className={styles.labelNew2}>
+                    <span>No</span>
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  name="managed"
+                  id="managed"
+                  defaultValue={managedType}
+                />
               </div>
 
+              {/* Traditional Roof */}
               <div className={styles.inputGroup}>
-                <label className={styles.label} htmlFor="age">
-                  Roof Age in Years
-                </label>
-                <input type="text" id="age" name="age" placeholder="0 - 15" />
-              </div>
-
-              <div className={styles.inputGroup}>
-                <label className={styles.label} htmlFor="asphaltRoof">
+                <h3 className={styles.label}>
                   Do you have a{" "}
                   <a
                     style={{ textDecoration: "underline" }}
@@ -154,20 +222,97 @@ export default function Contact() {
                   >
                     Traditional Asphalt Roof?
                   </a>
-                </label>
-                <select id="asphaltRoof" name="asphaltRoof">
-                  <option value="Yes" defaultChecked={true}>
-                    Yes
-                  </option>
-                  <option
-                    value="No"
-                    style={{ color: "var(--text-color)" }}
-                    disabled
+                  <p
+                    style={{
+                      textAlign: "left",
+                      marginLeft: "1.5rem",
+                      display: "inline",
+                      fontSize: "12px",
+                      color: "var(--tmg)",
+                    }}
                   >
-                    No (Roof Maxx is only meant for Asphalt Roofs)
-                  </option>
-                  <option value="Not Sure">Not Sure</option>
-                </select>
+                    If Not, Roof Maxx is not for you.
+                  </p>
+                </h3>
+
+                <div className={styles.radioGroup}>
+                  <input
+                    type="radio"
+                    value="Yes"
+                    id="asphaltRoof1"
+                    name="asphaltRoof"
+                    defaultChecked={true}
+                    onChange={(e) => handleAS(e)}
+                  ></input>
+                  <label htmlFor="asphaltRoof1" className={styles.labelNew2}>
+                    <span>Yes</span>
+                  </label>
+
+                  <input
+                    type="radio"
+                    value="Not Sure"
+                    id="asphaltRoof2"
+                    name="asphaltRoof"
+                    onChange={(e) => handleAS(e)}
+                  ></input>
+                  <label htmlFor="asphaltRoof2" className={styles.labelNew2}>
+                    <span>Not Sure</span>
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  name="asphaltRoof"
+                  id="asphaltRoof"
+                  defaultValue={asphaltRoof}
+                />
+              </div>
+
+              {/* Roof Age */}
+              <div className={styles.inputGroup}>
+                <h3 className={styles.label}>How old is your roof?</h3>
+                <div className={styles.radioGroup}>
+                  <input
+                    type="radio"
+                    value="0-4"
+                    id="age1"
+                    name="age"
+                    onChange={(e) => handleRoof(e)}
+                  ></input>
+                  <label htmlFor="age1" className={styles.labelNew2}>
+                    <span>0-4 yrs</span>
+                  </label>
+
+                  <input
+                    type="radio"
+                    value="5-15"
+                    id="age2"
+                    name="age"
+                    defaultChecked={true}
+                    onChange={(e) => handleRoof(e)}
+                  ></input>
+                  <label htmlFor="age2" className={styles.labelNew2}>
+                    <span>5-15 yrs</span>
+                  </label>
+
+                  <input
+                    type="radio"
+                    value="15+"
+                    id="age3"
+                    name="age"
+                    onChange={(e) => handleRoof(e)}
+                  ></input>
+                  <label htmlFor="age3" className={styles.labelNew2}>
+                    <span>15+ yrs</span>
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  name="age"
+                  id="age"
+                  defaultValue={ageRoof}
+                />
               </div>
 
               <div className={styles.buttonContainer}>
@@ -176,7 +321,7 @@ export default function Contact() {
                 </button>
               </div>
             </div>
-
+            {/* Page 2 */}
             <div
               className={`${styles.section} ${
                 currentPage === 2 ? styles.visible : ""
@@ -229,7 +374,7 @@ export default function Contact() {
                 </button>
               </div>
             </div>
-
+            {/* Page 3 */}
             <div
               className={`${styles.section} ${
                 currentPage === 3 ? styles.visible : ""
