@@ -18,13 +18,13 @@ export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const fname = formData.get("Fname");
   const lname = formData.get("Lname");
-  const age = formData.get("age");
   const zip = formData.get("zip");
   const street = formData.get("street");
   const city = formData.get("city");
   const state = formData.get("state");
   const senderPhone = formData.get("senderPhone");
 
+  const age = formData.get("age") as string;
   const propertyType = formData.get("propertyType") as string;
   const managed = formData.get("managed") as string;
   const asphaltRoof = formData.get("asphaltRoof") as string;
@@ -59,7 +59,7 @@ export const sendEmail = async (formData: FormData) => {
   }
   if (!validateSelectOption(managed)) {
     return {
-      error: "Please select an answer regarding your roof",
+      error: "Please select an answer regarding management",
     };
   }
 
@@ -82,11 +82,6 @@ export const sendEmail = async (formData: FormData) => {
   if (!validateString(senderPhone, 22) || !validatePhoneNumber(senderPhone)) {
     return {
       error: "Expected Phone Format: 123 123 1234",
-    };
-  }
-  if (!validateString(age, 2) || !validateAge(age)) {
-    return {
-      error: "Invalid age number or type",
     };
   }
 
@@ -115,6 +110,12 @@ export const sendEmail = async (formData: FormData) => {
   if (typeof propertyType !== "string") {
     return {
       error: "Please select a valid property type",
+    };
+  }
+
+  if (typeof age !== "string") {
+    return {
+      error: "Invalid age number or type",
     };
   }
 

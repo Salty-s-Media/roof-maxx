@@ -4,6 +4,7 @@ import styles from "./header.module.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Contact from "@/_components/contact/contactForm";
+import { X } from "lucide-react";
 
 export const Header = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -70,7 +71,7 @@ export const Header = () => {
       {showModal && (
         <div className={styles.modalOverlayVisible}>
           <button className={styles.closeButton} onClick={toggleModal}>
-            Close
+            <X color="black" size={24} />
           </button>
           <Contact />
         </div>

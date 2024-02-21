@@ -15,6 +15,71 @@
   max-height: 22rem;
 }
 
+.label {
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.labelNew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 90px;
+  border: 4px solid var(--btn-h3);
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  color: var(--text-color);
+  transition: 0.5s;
+}
+
+.labelNew2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2.75rem;
+  width: 6rem;
+  border: 4px solid var(--btn-h3);
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  color: var(--text-color);
+  transition: 0.5s;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+}
+
+.labelNew span {
+  font-size: 12px;
+  margin-top: auto;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.labelNew2 span {
+  font-size: 12px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input[type="radio"]:checked + .labelNew {
+  background-color: var(--btn-h2);
+  color: #ffffff;
+}
+input[type="radio"]:checked + .labelNew2 {
+  background-color: var(--btn-h2);
+  color: #ffffff;
+}
+
 .section {
   opacity: 0;
   pointer-events: none;
@@ -49,12 +114,46 @@
 
 .inputGroup {
   width: 100%;
-  margin-bottom: 10px;
+  margin-right: 10px;
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.inputGroup input,
-.inputGroup select {
+.radioGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.inputGroup input[type="text"] {
+  width: 100%;
+  min-height: 30px;
+  border-radius: 5px;
+  background-color: var(--tmf);
+  border: none;
+  color: var(--text-color);
+  outline: none;
+  font-size: medium;
+  font-family: inherit;
+  padding: 10px;
+  margin-top: 0.75rem;
+}
+
+.inputGroup input[type="tel"] {
+  width: 100%;
+  min-height: 30px;
+  border-radius: 5px;
+  background-color: var(--tmf);
+  border: none;
+  color: var(--text-color);
+  outline: none;
+  font-size: medium;
+  font-family: inherit;
+  padding: 10px;
+  margin-top: 0.75rem;
+}
+.inputGroup input[type="email"] {
   width: 100%;
   min-height: 30px;
   border-radius: 5px;
