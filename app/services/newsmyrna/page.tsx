@@ -32,8 +32,8 @@ export default function Page() {
               more damage-resistant by rejuvenating the natural oils in the
               shingles and extending their lifespan. The process was quick,
               safe, and effective, and the client was thrilled with the results.
-              They now have a protected roof that can withstand Florida's harsh
-              weather conditions for years. Roof Maxx is a sustainable and
+              They now have a protected roof that can withstand Florida&apos;s
+              harsh weather conditions for years. Roof Maxx is a sustainable and
               cost-effective solution for maintaining a healthy roof, saving
               homeowners thousands of dollars in replacement costs.
             </div>

@@ -14,6 +14,7 @@ import { BetterRoof } from "@/_components/betterRoof/roof";
 import { CustomerTestimony } from "@/_components/custCaro/custCaro";
 import { RoofReplacement } from "@/_components/roofRep/roofRep";
 import { TimeToChange } from "@/_components/timeChange/time";
+import { Blogs } from "@/_components/blogs/blogs";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <TimeToChange />
       <BetterRoof />
       <CustomerTestimony />
+      <Blogs />
       <GoogleReviews />
       <Toaster position="bottom-right" />
     </div>

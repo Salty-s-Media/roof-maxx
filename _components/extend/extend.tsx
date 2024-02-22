@@ -6,7 +6,7 @@ export const ExtendLifespan = () => {
     <div className={styles.gutter}>
       <div className={styles.grid}>
         <div className={styles.textContent}>
-          <h1>Call Now and Extend Your Roof's Lifespan</h1>
+          <h1>Call Now and Extend Your Roof&apos;s Lifespan</h1>
           <p>Give your roof the care it deserves!</p>
           <button className="btn" style={{ marginRight: "0.5rem" }}>
             Call Now

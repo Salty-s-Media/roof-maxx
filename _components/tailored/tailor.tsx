@@ -105,10 +105,10 @@ export const TailoredSolutions = () => {
             Roofing Solutions
           </h1>
           <p>
-            Noah's approach to roofing and home inspections is centered around
-            helping homeowners save money and make informed decisions about
-            their property. He understands that a roof replacement can be a
-            significant expense, and he works diligently to provide
+            Noah&apos;s approach to roofing and home inspections is centered
+            around helping homeowners save money and make informed decisions
+            about their property. He understands that a roof replacement can be
+            a significant expense, and he works diligently to provide
             cost-effective solutions that will extend the life of a roof and
             save homeowners money in the long run.
           </p>
