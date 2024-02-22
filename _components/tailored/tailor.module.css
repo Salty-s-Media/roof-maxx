@@ -11,16 +11,17 @@
 }
 
 .top p {
+  color: var(--tg);
   padding-bottom: 1rem;
 }
 
 .grid h1 {
   font-size: 2.5rem;
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .grid p {
+  color: var(--tg);
   padding-bottom: 1rem;
 }
 
@@ -39,11 +40,6 @@
   border-radius: var(--border-rad);
 }
 
-.cc {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .ac {
   display: flex;
   justify-content: center;
@@ -52,6 +48,7 @@
 }
 
 .ac h3 {
+  font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
@@ -66,15 +63,39 @@
 
 .topgrid {
   display: grid;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-flow: row;
   gap: 1rem;
+  justify-items: center; /* Center the items in their grid cells */
+}
+
+.imag2 {
+  display: flex;
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  border-radius: var(--border-rad);
+  transform: translateY(-5%); /* Offset the first image */
+}
+
+.imag2:nth-child(2) {
+  transform: translateY(5%); /* Offset the second image */
+}
+
+.imag2:nth-child(3) {
+  transform: translateY(-5%); /* Offset the third image */
+}
+
+.imag2:nth-child(4) {
+  transform: translateY(5%); /* Offset the fourth image */
 }
 
 .grid {
   display: grid;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: dense;
   gap: 20px;
@@ -126,5 +147,9 @@
   }
   .top h1 {
     font-size: 2rem;
+  }
+  .topgrid {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 }

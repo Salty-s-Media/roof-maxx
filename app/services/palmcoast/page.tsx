@@ -23,16 +23,19 @@ export default function Page() {
           </div>
           <div className={styles.descriptionAndButton}>
             <div className={styles.desc}>
-              Roof Maxx is a sustainable roofing treatment that helps restore
-              the natural oils in aging shingles, extending their lifespan and
-              saving homeowners money on costly roof replacements. In a recent
-              Roof Maxx job in Ormond Beach, Florida, a team of certified
-              technicians assessed the condition of the clients roof and
-              determined that it could benefit from Roof Maxx treatment. They
-              applied the treatment using a state-of-the-art sprayer, and the
-              process was quick, safe, and effective. The client was pleased
-              with the results and happy to know that they could prolong the
-              life of their roof without compromising on quality or durability.
+              Palm Coast, Florida, is a coastal city with beautiful homes and
+              scenic views. Recently, a Roof Maxx job was done in Palm Coast to
+              rejuvenate an aging roof. Our team of certified technicians
+              inspected the roof and determined that it could benefit from the
+              eco-friendly Roof Maxx treatment. They applied the treatment using
+              a state-of-the-art sprayer, ensuring the shingles were evenly
+              coated. The treatment restored the natural oils in the shingles,
+              making them more durable and resistant to damage. The client was
+              happy with the results, and they now know that their roof is
+              protected and can withstand the harsh Florida weather for years to
+              come. The Roof Maxx treatment is a cost-effective and sustainable
+              solution for maintaining a roof's health, and it can save
+              homeowners thousands of dollars in replacement costs.
             </div>
             <div className={styles.dsc}>
               <button

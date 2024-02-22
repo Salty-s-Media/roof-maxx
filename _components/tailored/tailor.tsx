@@ -9,37 +9,37 @@ import { ExtendLifespan } from "../extend/extend";
 export const TailoredSolutions = () => {
   return (
     <>
+      <div className={styles.topgrid}>
+        <Image
+          src="/aug.png"
+          width={300}
+          height={300}
+          alt="gg"
+          className={styles.imag2}
+        />
+        <Image
+          src="/nsb.png"
+          width={300}
+          height={300}
+          alt="gg"
+          className={styles.imag2}
+        />
+        <Image
+          src="/local.png"
+          width={300}
+          height={300}
+          alt="gg"
+          className={styles.imag2}
+        />
+        <Image
+          src="/pc.png"
+          width={300}
+          height={300}
+          alt="gg"
+          className={styles.imag2}
+        />
+      </div>
       <div className={styles.top}>
-        <div className={styles.topgrid}>
-          <Image
-            src="/deal.JPG"
-            width={300}
-            height={300}
-            alt="gg"
-            className={styles.imag2}
-          />
-          <Image
-            src="/deal.JPG"
-            width={300}
-            height={300}
-            alt="gg"
-            className={styles.imag2}
-          />
-          <Image
-            src="/deal.JPG"
-            width={300}
-            height={300}
-            alt="gg"
-            className={styles.imag2}
-          />
-          <Image
-            src="/deal.JPG"
-            width={300}
-            height={300}
-            alt="gg"
-            className={styles.imag2}
-          />
-        </div>
         <h1>Tailored Solutions for Maximum Satisfaction</h1>
         <p>
           As a certified Roof Maxx Dealer, Noah is committed to providing his
@@ -115,7 +115,7 @@ export const TailoredSolutions = () => {
         </div>
         <div className={styles.imageContent2}>
           <Image
-            src="/local.png"
+            src="/noah.jpg"
             width={450}
             height={450}
             alt="gg"
@@ -127,15 +127,19 @@ export const TailoredSolutions = () => {
         <div className={styles.ac}>
           <h3>
             The roof looks beautiful, and I couldn&apos;t be happier! From start
-            to finish, the process couldn&apos;t be easier.
+            to finish,{" "}
+            <span style={{ color: "var(--btn-bg)" }}>
+              the process couldn&apos;t be easier.
+            </span>
           </h3>
-          <p>Tim D.</p>
+          <p>- Tim D.</p>
         </div>
         <div className={styles.vc}>
           <VideoPlayer src="orviqeak2o" />
         </div>
       </div>
-      <div className={styles.cc}>{/* creative grid of images of Noah */}</div>
+
+      <br />
       <ExtendLifespan />
     </>
   );
