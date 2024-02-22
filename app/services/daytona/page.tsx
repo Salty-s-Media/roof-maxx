@@ -31,8 +31,8 @@ export default function Page() {
               resistant to damage and wear. The process is simple, safe, and
               effective and can be completed in just a few hours, depending on
               the roof size. Our team of certified Roof Maxx technicians will
-              assess the roof's condition and determine if it is suitable for
-              treatment. We will then apply the treatment using a
+              assess the roof&apos;s condition and determine if it is suitable
+              for treatment. We will then apply the treatment using a
               state-of-the-art sprayer, covering the entire top evenly.
               Homeowners in Daytona Beach who have received the Roof Maxx
               treatment report that their roofs look new. They are pleased with

@@ -27,8 +27,8 @@ export default function Page() {
               to extend the life of aging shingles, saving homeowners money on
               costly roof replacements. Recently, a Roof Maxx job was done in
               St. Augustine, Florida, where our team of certified technicians
-              assessed the condition of the client's roof and determined that it
-              could benefit from the treatment. Using a state-of-the-art
+              assessed the condition of the client&apos;s roof and determined
+              that it could benefit from the treatment. Using a state-of-the-art
               sprayer, we applied the eco-friendly Roof Maxx treatment,
               restoring the natural oils in the shingles and making them more
               resistant to damage and wear. The process was quick, safe, and

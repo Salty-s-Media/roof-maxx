@@ -12,7 +12,7 @@ export default function Page() {
         <h1>All Service Areas</h1>
       </div>
       <div className={styles.page}>
-        <div className={styles.main}>
+        <div className={styles.main2}>
           <Link href="/services/ormond" className={styles.lnk}>
             <div className={styles.locationCard}>
               <Image

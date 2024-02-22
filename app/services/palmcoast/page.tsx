@@ -34,7 +34,7 @@ export default function Page() {
               happy with the results, and they now know that their roof is
               protected and can withstand the harsh Florida weather for years to
               come. The Roof Maxx treatment is a cost-effective and sustainable
-              solution for maintaining a roof's health, and it can save
+              solution for maintaining a roof&apos;s health, and it can save
               homeowners thousands of dollars in replacement costs.
             </div>
             <div className={styles.dsc}>
