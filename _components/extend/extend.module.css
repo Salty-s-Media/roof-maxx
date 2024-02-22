@@ -4,6 +4,8 @@
   min-width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .textContent h1 {

@@ -23,16 +23,21 @@ export default function Page() {
           </div>
           <div className={styles.descriptionAndButton}>
             <div className={styles.desc}>
-              Roof Maxx is a sustainable roofing treatment that helps restore
-              the natural oils in aging shingles, extending their lifespan and
-              saving homeowners money on costly roof replacements. In a recent
-              Roof Maxx job in Ormond Beach, Florida, a team of certified
-              technicians assessed the condition of the clients roof and
-              determined that it could benefit from Roof Maxx treatment. They
-              applied the treatment using a state-of-the-art sprayer, and the
-              process was quick, safe, and effective. The client was pleased
-              with the results and happy to know that they could prolong the
-              life of their roof without compromising on quality or durability.
+              Getting a Roof Maxx treatment in Daytona Beach, Florida, can be an
+              excellent investment for homeowners looking to extend the life of
+              their roofs and save money on costly replacements. Roof Maxx is a
+              sustainable, eco-friendly roof rejuvenation treatment that helps
+              restore the natural oils in aging shingles, making them more
+              resistant to damage and wear. The process is simple, safe, and
+              effective and can be completed in just a few hours, depending on
+              the roof size. Our team of certified Roof Maxx technicians will
+              assess the roof's condition and determine if it is suitable for
+              treatment. We will then apply the treatment using a
+              state-of-the-art sprayer, covering the entire top evenly.
+              Homeowners in Daytona Beach who have received the Roof Maxx
+              treatment report that their roofs look new. They are pleased with
+              the extended lifespan of their shingles, making it a
+              cost-effective and sustainable solution for roof maintenance.
             </div>
             <div className={styles.dsc}>
               <button

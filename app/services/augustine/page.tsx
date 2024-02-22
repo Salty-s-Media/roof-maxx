@@ -23,16 +23,18 @@ export default function Page() {
           </div>
           <div className={styles.descriptionAndButton}>
             <div className={styles.desc}>
-              Roof Maxx is a sustainable roofing treatment that helps restore
-              the natural oils in aging shingles, extending their lifespan and
-              saving homeowners money on costly roof replacements. In a recent
-              Roof Maxx job in Ormond Beach, Florida, a team of certified
-              technicians assessed the condition of the clients roof and
-              determined that it could benefit from Roof Maxx treatment. They
-              applied the treatment using a state-of-the-art sprayer, and the
-              process was quick, safe, and effective. The client was pleased
-              with the results and happy to know that they could prolong the
-              life of their roof without compromising on quality or durability.
+              Roof Maxx is an innovative roof rejuvenation treatment that helps
+              to extend the life of aging shingles, saving homeowners money on
+              costly roof replacements. Recently, a Roof Maxx job was done in
+              St. Augustine, Florida, where our team of certified technicians
+              assessed the condition of the client's roof and determined that it
+              could benefit from the treatment. Using a state-of-the-art
+              sprayer, we applied the eco-friendly Roof Maxx treatment,
+              restoring the natural oils in the shingles and making them more
+              resistant to damage and wear. The process was quick, safe, and
+              effective, and the client was pleased with the results. They now
+              have the peace of mind of knowing that their roof is protected and
+              they have extended its lifespan for years to come.
             </div>
             <div className={styles.dsc}>
               <button

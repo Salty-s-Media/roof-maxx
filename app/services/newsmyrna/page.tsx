@@ -23,16 +23,19 @@ export default function Page() {
           </div>
           <div className={styles.descriptionAndButton}>
             <div className={styles.desc}>
-              Roof Maxx is a sustainable roofing treatment that helps restore
-              the natural oils in aging shingles, extending their lifespan and
-              saving homeowners money on costly roof replacements. In a recent
-              Roof Maxx job in Ormond Beach, Florida, a team of certified
-              technicians assessed the condition of the clients roof and
-              determined that it could benefit from Roof Maxx treatment. They
-              applied the treatment using a state-of-the-art sprayer, and the
-              process was quick, safe, and effective. The client was pleased
-              with the results and happy to know that they could prolong the
-              life of their roof without compromising on quality or durability.
+              New Smyrna Beach is a beautiful coastal city in Florida where a
+              recent Roof Maxx job was completed to restore an aging roof. Our
+              team of certified Roof Maxx technicians inspected the roof and
+              determined that it could benefit from the eco-friendly treatment.
+              They applied the treatment using a specialized sprayer, ensuring
+              even coverage of the shingles. The Roof Maxx treatment made them
+              more damage-resistant by rejuvenating the natural oils in the
+              shingles and extending their lifespan. The process was quick,
+              safe, and effective, and the client was thrilled with the results.
+              They now have a protected roof that can withstand Florida's harsh
+              weather conditions for years. Roof Maxx is a sustainable and
+              cost-effective solution for maintaining a healthy roof, saving
+              homeowners thousands of dollars in replacement costs.
             </div>
             <div className={styles.dsc}>
               <button
