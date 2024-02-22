@@ -53,8 +53,16 @@ export default function Contact() {
     setRoofAge(ageRoof);
   };
 
+  const progressPercentage = (currentPage / 3) * 100;
+
   return (
     <>
+      <div className={styles.progressContainer}>
+        <div
+          className={styles.progressBar}
+          style={{ width: `${progressPercentage}%` }}
+        ></div>
+      </div>
       {!isSubmitted && (
         <form
           action={async (formData) => {
@@ -439,6 +447,7 @@ export default function Contact() {
         </form>
       )}
       {isSubmitted && <div>Email Sent! Expect a response soon.</div>}
+      <div className={styles.message}>Your data is being protected.</div>
     </>
   );
 }
