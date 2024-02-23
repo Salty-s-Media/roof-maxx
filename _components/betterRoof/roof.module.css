@@ -59,6 +59,9 @@
   .masterContainer {
     min-height: 720px;
   }
+  .left {
+    padding-bottom: 0;
+  }
   .left h2 {
     font-size: 2rem;
   }

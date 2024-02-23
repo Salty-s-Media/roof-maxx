@@ -1,0 +1,62 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 30px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.card1,
+.card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-rad);
+  margin-top: 2rem;
+  padding: 20px;
+  background-image: var(--grad2);
+  width: 100%;
+  min-height: 350px;
+  max-width: 800px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.active {
+  opacity: 0;
+  display: none;
+}
+
+.toggleMenu {
+  display: fixed;
+  justify-content: space-evenly;
+  gap: 10px;
+  border-radius: var(--border-rad);
+  overflow: hidden;
+}
+
+.toggleMenu button {
+  background-color: #f9f9f9;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 930px) {
+  .card1,
+  .card2 {
+    max-width: 90%;
+  }
+
+  .toggleMenu {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
