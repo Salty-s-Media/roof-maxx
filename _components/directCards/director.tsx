@@ -17,8 +17,8 @@ export const DirectorCards = () => {
           <p>
             My brother and I could see the staggering number of roofs at risk
             across the country and wanted to do something about it. Now, through
-            Roof Maxx, we're looking out for asphalt roofs, the people under
-            them, their hard-earned money and the planet.
+            Roof Maxx, we&apos;re looking out for asphalt roofs, the people
+            under them, their hard-earned money and the planet.
           </p>
           <br />
           <h3>Mike Feazel</h3>

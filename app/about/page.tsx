@@ -27,7 +27,6 @@ export default function Page() {
             <p>Our founders</p>
           </div>
         </div>
-        {/* needs fixing. scale images properly and put one on the very left side and one on the very right side */}
         <div className={styles.row2}>
           <Image
             src="/sticker1.png"
@@ -47,7 +46,7 @@ export default function Page() {
 
         <div className={styles.grid2}>
           <div className={styles.ac}>
-            <h2>We've walked the walk as roofers.</h2>
+            <h2>We&aposve walked the walk as roofers.</h2>
             <br />
             <p>
               In 1988, brothers Mike and Todd Feazel established a roofing
@@ -75,7 +74,7 @@ export default function Page() {
         <div className={styles.grid2}>
           <div className={styles.ac}>
             <h2 style={{ color: "var(--btn-bg2)" }}>
-              Now we're proud to be roof preservers..
+              Now we&aposre proud to be roof preservers..
             </h2>
             <br />
             <p>
@@ -84,7 +83,7 @@ export default function Page() {
               technologies that could prolong the life of roofs, eliminating the
               need for premature replacements. During their research, they
               stumbled upon remarkable advancements from Battelle Laboratories,
-              the world's biggest private research and development company,
+              the world&aposs biggest private research and development company,
               which eventually led to the birth of Roof Maxx.
             </p>
           </div>
