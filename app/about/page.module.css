@@ -1,10 +1,142 @@
 .page {
   display: flex;
   margin: auto;
+  align-items: center;
   min-height: 100vh;
-  max-width: 90%;
+  max-width: 1130px;
   flex-direction: column;
-  margin-top: 150px;
+  margin-bottom: 2rem;
+}
+
+.page p {
+  color: var(--tg);
+}
+
+.moreSupport {
+  padding: 2rem;
+}
+
+.medCard {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.medCard img {
+  margin-bottom: 10px;
+}
+
+.medCard p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.grid {
+  display: grid;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.imag {
+  display: flex;
+  max-width: 100%;
+  max-height: 450px;
+  height: auto;
+  border-radius: var(--border-rad);
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.vc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-rad);
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bioSavings {
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bioSavings h1 {
+  font-size: 2.5rem;
+}
+
+.vc iframe {
+  max-height: 512px;
+}
+
+.ac {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.customVc h2 {
+  font-size: 2.5rem;
+}
+
+.moreSupport h1 {
+  font-size: 2.5rem;
+}
+
+.customAc {
+  grid-column: 1;
+}
+
+.customVc {
+  grid-column: 2;
+}
+
+.imag2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+  height: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid var(--btn-h2);
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+}
+
+.grid h1 {
+  font-size: 2.5rem;
 }
 
 .header {
@@ -13,16 +145,55 @@
   justify-content: center;
   align-items: center;
   background-image: var(--grad3);
-  font-size: 1.25rem;
   color: var(--btn-bg2);
   margin-top: 100px;
 }
 
 .header h1 {
+  font-size: 2.5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
   min-width: max-content;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Ensure equal spacing between items */
+  align-items: center;
+  padding: 10px;
+}
+
+.grid2 {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid2 h2 {
+  font-size: 2.5rem;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -34,5 +205,47 @@
 @media (max-width: 930px) {
   .page {
     max-width: 90%;
+  }
+
+  .row2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .imag2 {
+    margin-bottom: 20px;
+  }
+
+  .moreSupport h1 {
+    font-size: 2rem;
+  }
+  .bioSavings h1 {
+    font-size: 2rem;
+  }
+
+  .customVc h2 {
+    font-size: 2rem;
+  }
+  .customGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid2 h2 {
+    font-size: 2rem;
+  }
+
+  .grid h1 {
+    font-size: 2rem;
   }
 }
