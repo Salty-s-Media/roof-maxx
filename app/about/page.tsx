@@ -1,11 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import VideoPlayer from "@/_components/video/videoPlayer";
-import { BetterRoof } from "@/_components/betterRoof/roof";
 import { DirectorCards } from "@/_components/directCards/director";
 import { ExtendLifespan } from "@/_components/extend/extend";
 import { Cloud, Factory, Leaf } from "lucide-react";
-import Contact from "@/_components/contact/contactForm";
 
 export default function Page() {
   return (

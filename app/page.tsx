@@ -15,6 +15,7 @@ import { CustomerTestimony } from "@/_components/custCaro/custCaro";
 import { RoofReplacement } from "@/_components/roofRep/roofRep";
 import { TimeToChange } from "@/_components/timeChange/time";
 import { Blogs } from "@/_components/blogs/blogs";
+import { LocalDealer } from "@/_components/localDealer/localdeal";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Adds />
       <BioCard />
       <TimeToChange />
+      <LocalDealer />
       <BetterRoof />
       <CustomerTestimony />
       <div style={{ padding: "2rem" }}>

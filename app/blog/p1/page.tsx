@@ -50,7 +50,7 @@ export default function Page() {
             collections are shaped by their configurations, providing you the
             flexibility to create as many as your application demands. With each
             collection, a new instance is automatically set up in your selected
-            database, aligning with the fields you've defined. Picture
+            database, aligning with the fields youve defined. Picture
             collections as conventional database counterparts, each featuring a
             distinct URL, fields, labels, admin settings, and preferences for
             document authentication and uploads. For detailed information, refer
