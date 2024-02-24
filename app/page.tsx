@@ -29,7 +29,9 @@ export default function Home() {
       <TimeToChange />
       <BetterRoof />
       <CustomerTestimony />
-      <Blogs />
+      <div style={{ padding: "2rem" }}>
+        <Blogs />
+      </div>
       <GoogleReviews />
       <Toaster position="bottom-right" />
     </div>

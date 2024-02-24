@@ -9,9 +9,14 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 export const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showFAQDropdown, setShowFAQDropdown] = useState(false);
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
+  };
+
+  const toggleFAQDropdown = () => {
+    setShowFAQDropdown(!showFAQDropdown);
   };
 
   return (
@@ -40,6 +45,7 @@ export const Navbar = () => {
           {showDropdown && (
             <div
               className={styles.dropdownContent}
+              style={{ left: "0px" }}
               onMouseLeave={toggleDropdown}
             >
               <Link href="/services/ormond" className={styles.dropdownItem}>
@@ -70,9 +76,35 @@ export const Navbar = () => {
         <Link href="/about" className={styles.hoverUnderline}>
           About
         </Link>
-        <Link href="/faq" className={styles.hoverUnderline}>
-          FAQ
-        </Link>
+
+        <div
+          className={`${styles.dropdownContainer} ${styles.dropdownToggle}`}
+          onClick={toggleFAQDropdown}
+        >
+          <span className={styles.hoverUnderline}>
+            FAQ
+            {showFAQDropdown ? (
+              <ChevronUp size={14} />
+            ) : (
+              <ChevronDown size={14} />
+            )}
+          </span>
+
+          {showFAQDropdown && (
+            <div
+              className={styles.dropdownContent}
+              style={{ minWidth: "110px", right: "0px" }}
+              onMouseLeave={toggleFAQDropdown}
+            >
+              <Link href="/faq" className={styles.dropdownItem}>
+                All FAQs
+              </Link>
+              <Link href="/blog" className={styles.dropdownItem}>
+                Blog
+              </Link>
+            </div>
+          )}
+        </div>
       </div>
     </nav>
   );

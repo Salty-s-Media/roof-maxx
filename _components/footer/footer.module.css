@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--footbg);
+  background-image: var(--grad);
   padding: 10px 0;
   color: var(--text-color);
   box-shadow: 0px 0px 16px 0px var(--bxs);

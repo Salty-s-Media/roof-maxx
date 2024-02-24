@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import VideoPlayer from "../video/videoPlayer";
 import styles from "./cust.module.css";
+import { ContactForm } from "../contactForm/contactForm";
 
 export const CustomerTestimony = () => {
   const testimonials = [
@@ -8,20 +9,23 @@ export const CustomerTestimony = () => {
       description:
         "They have treated my own personal house twice. Please take my word for it. It does work.",
       author: "Jerry Linkhorn",
-      title: "Ohio's Top Home Inspector",
+      at: "Ohio's Top Home Inspector",
+      title: "Take my word for it - This stuff works.",
     },
 
     {
       description:
         "Roofs are costly, and we want to prolong ours as long as possible. That's why we chose Roof Maxx.",
       author: "Angie Barton",
-      title: "Roof Maxx Protects Your Entire Home",
+      at: "Roof Maxx Verified Customer",
+      title: "Roof Maxx Protects Your Entire Home.",
     },
     {
       description:
         "Since the Roof Maxx has been installed. We havent lost one shingle, and this roof is twenty years old.",
       author: "James Gonte",
-      title: "Not One Shingle Has Blown Off",
+      at: "Florida Home Inspector",
+      title: "Not One Shingle Has Blown Off.",
     },
   ];
   const videoId = ["plmaf0i77l", "6nt26wikvi", "roq95e7pkf"];
@@ -57,9 +61,7 @@ export const CustomerTestimony = () => {
           <button className="btn" style={{ fontSize: "1rem" }}>
             Call Now
           </button>
-          <button className="btn2" style={{ fontSize: "1rem" }}>
-            Get Free Quote
-          </button>
+          <ContactForm />
         </div>
       </div>
       <div
@@ -77,7 +79,20 @@ export const CustomerTestimony = () => {
           <div className={styles.right}>
             <h2>{testimonials[currentTestimonialIndex].title}</h2>
             <p>{testimonials[currentTestimonialIndex].description}</p>
-            <h3>{testimonials[currentTestimonialIndex].author}</h3>
+            <br />
+            <div
+              style={{
+                height: "40px",
+                borderLeft: "5px solid var(--btn-bg)",
+                paddingLeft: "10px",
+                textAlign: "left",
+              }}
+            >
+              <h3>{testimonials[currentTestimonialIndex].author}</h3>
+              <p style={{ color: "var(--tg)" }}>
+                {testimonials[currentTestimonialIndex].at}
+              </p>
+            </div>
           </div>
         </div>
       </div>
