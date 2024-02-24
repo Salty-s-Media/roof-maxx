@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from ".././page.module.css";
 import { BetterRoof } from "@/_components/betterRoof/roof";
+import { GoogleReviews } from "@/_components/GoogRev/googrev";
 
 export default function Page() {
   return (
@@ -47,6 +48,7 @@ export default function Page() {
             </div>
           </div>
         </div>
+        <GoogleReviews />
         <BetterRoof />
         <br />
       </div>

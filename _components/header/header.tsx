@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Contact from "@/_components/contact/contactForm";
 import { X } from "lucide-react";
+import { ContactForm } from "../contactForm/contactForm";
 
 export const Header = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -59,23 +60,9 @@ export const Header = () => {
           >
             Call Now
           </button>
-          <button
-            className="btn2"
-            aria-label="Free Quote"
-            onClick={toggleModal}
-          >
-            Free Quote
-          </button>
+          <ContactForm />
         </div>
       </div>
-      {showModal && (
-        <div className={styles.modalOverlayVisible}>
-          <button className={styles.closeButton} onClick={toggleModal}>
-            <X color="black" size={24} />
-          </button>
-          <Contact />
-        </div>
-      )}
     </>
   );
 };

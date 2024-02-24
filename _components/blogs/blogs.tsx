@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const Blogs = () => {
-  // Sample data for the blog posts
   const blogPosts = [
     {
       image: "/aug.png",

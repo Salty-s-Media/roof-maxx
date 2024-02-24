@@ -7,6 +7,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import VideoPlayer from "@/_components/video/videoPlayer";
 import { BetterRoof } from "@/_components/betterRoof/roof";
 import { GoogleReviews } from "@/_components/GoogRev/googrev";
+import { Blogs } from "@/_components/blogs/blogs";
 
 export default function Page() {
   const [activeDay, setActiveDay] = useState<number | null>(null);
@@ -134,9 +135,9 @@ export default function Page() {
         ))}
       </div>
       <div style={{ height: "2rem" }} />
+      <Blogs />
       <BetterRoof />
       <GoogleReviews />
-
       <div style={{ height: "2rem" }} />
     </div>
   );

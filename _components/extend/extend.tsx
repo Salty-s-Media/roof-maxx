@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./extend.module.css";
+import { ContactForm } from "../contactForm/contactForm";
 
 export const ExtendLifespan = () => {
   return (
@@ -11,7 +12,7 @@ export const ExtendLifespan = () => {
           <button className="btn" style={{ marginRight: "0.5rem" }}>
             Call Now
           </button>
-          <button className="btn2">Free Quote</button>
+          <ContactForm />
         </div>
         <div className={styles.imageContent}>
           <Image

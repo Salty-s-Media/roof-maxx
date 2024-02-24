@@ -5,6 +5,7 @@ import { BetterRoof } from "@/_components/betterRoof/roof";
 import { DirectorCards } from "@/_components/directCards/director";
 import { ExtendLifespan } from "@/_components/extend/extend";
 import { Cloud, Factory, Leaf } from "lucide-react";
+import Contact from "@/_components/contact/contactForm";
 
 export default function Page() {
   return (
@@ -35,6 +36,7 @@ export default function Page() {
             alt="gg"
             className={styles.imag2}
           />
+          <p>Mike and Todd in their early roofing days.</p>
           <Image
             src="/sticker2.png"
             width={180}
@@ -42,11 +44,15 @@ export default function Page() {
             alt="gg"
             className={styles.imag2}
           />
+          <p>
+            Mike and Todd the year they sold Feazel Roofing and moved on to roof
+            preservation.
+          </p>
         </div>
 
         <div className={styles.grid2}>
           <div className={styles.ac}>
-            <h2>We&aposve walked the walk as roofers.</h2>
+            <h2>We&apos;ve walked the walk as roofers.</h2>
             <br />
             <p>
               In 1988, brothers Mike and Todd Feazel established a roofing
@@ -69,12 +75,11 @@ export default function Page() {
             <VideoPlayer src="uavj84jjr5" />
           </div>
         </div>
-        <BetterRoof />
         <DirectorCards />
         <div className={styles.grid2}>
           <div className={styles.ac}>
             <h2 style={{ color: "var(--btn-bg2)" }}>
-              Now we&aposre proud to be roof preservers..
+              Now we&apos;re proud to be roof preservers..
             </h2>
             <br />
             <p>
@@ -83,7 +88,7 @@ export default function Page() {
               technologies that could prolong the life of roofs, eliminating the
               need for premature replacements. During their research, they
               stumbled upon remarkable advancements from Battelle Laboratories,
-              the world&aposs biggest private research and development company,
+              the world&apos;s biggest private research and development company,
               which eventually led to the birth of Roof Maxx.
             </p>
           </div>
@@ -98,7 +103,7 @@ export default function Page() {
           </div>
         </div>
         <div className={styles.grid2}>
-          <div className={styles.vc} style={{ gridColumn: "1" }}>
+          <div className={styles.vc}>
             <Image
               src="/easy2.png"
               width={600}
@@ -107,7 +112,7 @@ export default function Page() {
               className={styles.imag}
             />
           </div>
-          <div className={styles.ac} style={{ gridColumn: "2" }}>
+          <div className={styles.ac}>
             <h2>Keeping asphalt roofs alive and well.</h2>
             <br />
             <p>

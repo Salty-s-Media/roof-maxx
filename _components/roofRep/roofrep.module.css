@@ -20,6 +20,8 @@
 }
 
 .card p {
+  font-size: 15px;
+  color: var(--tg);
   margin-bottom: auto;
 }
 

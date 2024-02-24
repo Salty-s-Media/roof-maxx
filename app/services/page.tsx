@@ -16,7 +16,7 @@ export default function Page() {
           <Link href="/services/ormond" className={styles.lnk}>
             <div className={styles.locationCard}>
               <Image
-                src="/app.jpg"
+                src="/local.png"
                 width={512}
                 height={512}
                 alt="Ormond Beach"
@@ -34,7 +34,7 @@ export default function Page() {
           <Link href="/services/daytona" className={styles.lnk}>
             <div className={styles.locationCard}>
               <Image
-                src="/app.jpg"
+                src="/daytona.png"
                 width={512}
                 height={512}
                 alt="Daytona Beach"
@@ -52,7 +52,7 @@ export default function Page() {
           <Link href="/services/augustine" className={styles.lnk}>
             <div className={styles.locationCard}>
               <Image
-                src="/app.jpg"
+                src="/aug.png"
                 width={512}
                 height={512}
                 alt="St. Augustine"
@@ -69,7 +69,7 @@ export default function Page() {
           </Link>
           <Link href="/services/palmcoast" className={styles.lnk}>
             <div className={styles.locationCard}>
-              <Image src="/app.jpg" width={512} height={512} alt="Palm Coast" />
+              <Image src="/pc.png" width={512} height={512} alt="Palm Coast" />
               <div className={styles.locationCardSep}>
                 <MapPin
                   size={22}
@@ -83,7 +83,7 @@ export default function Page() {
           <Link href="/services/newsmyrna" className={styles.lnk}>
             <div className={styles.locationCard}>
               <Image
-                src="/app.jpg"
+                src="/nsb.png"
                 width={512}
                 height={512}
                 alt="New Smyrna Beach"
