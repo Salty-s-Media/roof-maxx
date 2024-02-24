@@ -22,7 +22,7 @@ export default function Page() {
               Best Roof Shingles in 2023: The Ultimate Buying Guide
             </h3>
             <p className={styles.blogExcerpt}>
-              "Many factors affect the cost of replacing shingles, and costs can
+              Many factors affect the cost of replacing shingles, and costs can
               range between...
             </p>
           </div>
@@ -40,7 +40,7 @@ export default function Page() {
             Best Roof Shingles in 2023: The Ultimate Buying Guide
           </h3>
           <p className={styles.blogExcerpt}>
-            "Many factors affect the cost of replacing shingles, and costs can
+            Many factors affect the cost of replacing shingles, and costs can
             range between...
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function Page() {
             Best Roof Shingles in 2023: The Ultimate Buying Guide
           </h3>
           <p className={styles.blogExcerpt}>
-            "Many factors affect the cost of replacing shingles, and costs can
+            Many factors affect the cost of replacing shingles, and costs can
             range between...
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function Page() {
             Best Roof Shingles in 2023: The Ultimate Buying Guide
           </h3>
           <p className={styles.blogExcerpt}>
-            "Many factors affect the cost of replacing shingles, and costs can
+            Many factors affect the cost of replacing shingles, and costs can
             range between...
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function Page() {
             Best Roof Shingles in 2023: The Ultimate Buying Guide
           </h3>
           <p className={styles.blogExcerpt}>
-            "Many factors affect the cost of replacing shingles, and costs can
+            Many factors affect the cost of replacing shingles, and costs can
             range between...
           </p>
         </div>
@@ -108,7 +108,7 @@ export default function Page() {
             Best Roof Shingles in 2023: The Ultimate Buying Guide
           </h3>
           <p className={styles.blogExcerpt}>
-            "Many factors affect the cost of replacing shingles, and costs can
+            Many factors affect the cost of replacing shingles, and costs can
             range between...
           </p>
         </div>
@@ -125,7 +125,7 @@ export default function Page() {
             Best Roof Shingles in 2023: The Ultimate Buying Guide
           </h3>
           <p className={styles.blogExcerpt}>
-            "Many factors affect the cost of replacing shingles, and costs can
+            Many factors affect the cost of replacing shingles, and costs can
             range between...
           </p>
         </div>
@@ -142,7 +142,7 @@ export default function Page() {
             Best Roof Shingles in 2023: The Ultimate Buying Guide
           </h3>
           <p className={styles.blogExcerpt}>
-            "Many factors affect the cost of replacing shingles, and costs can
+            Many factors affect the cost of replacing shingles, and costs can
             range between...
           </p>
         </div>
@@ -159,7 +159,7 @@ export default function Page() {
             Best Roof Shingles in 2023: The Ultimate Buying Guide
           </h3>
           <p className={styles.blogExcerpt}>
-            "Many factors affect the cost of replacing shingles, and costs can
+            Many factors affect the cost of replacing shingles, and costs can
             range between...
           </p>
         </div>
@@ -176,7 +176,7 @@ export default function Page() {
             Best Roof Shingles in 2023: The Ultimate Buying Guide
           </h3>
           <p className={styles.blogExcerpt}>
-            "Many factors affect the cost of replacing shingles, and costs can
+            Many factors affect the cost of replacing shingles, and costs can
             range between...
           </p>
         </div>
