@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./localdeal.module.css";
+import Link from "next/link";
 
 export const LocalDealer = () => {
   return (
@@ -22,7 +23,9 @@ export const LocalDealer = () => {
             Inspector in Florida.
           </p>
           <br />
-          <button className="btn2">Learn More</button>
+          <Link href="/about">
+            <button className="btn2">Learn More</button>
+          </Link>
         </div>
         <div className={styles.right}>
           <div className={styles.sticker}>

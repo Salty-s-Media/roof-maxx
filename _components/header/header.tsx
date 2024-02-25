@@ -1,30 +1,11 @@
-"use client";
-
 import styles from "./header.module.css";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import Contact from "@/_components/contact/contactForm";
-import { X } from "lucide-react";
 import { ContactForm } from "../contactForm/contactForm";
 
 export const Header = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [showModal, setShowModal] = useState(false);
-
-  const toggleModal = () => {
-    setShowModal(!showModal);
-  };
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1);
-  }, []);
-
   return (
     <>
       <div className={styles.main}>
-        {isLoading && <div className={styles.loadOverlay} />}
         <div className={styles.videoContainer}>
           <video
             src="/fadehero.mp4"
