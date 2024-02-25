@@ -20,7 +20,7 @@
   border-radius: var(--border-rad);
   margin-top: 2rem;
   padding: 20px;
-  background-image: var(--grad2);
+  background-color: var(--tmf);
   width: 100%;
   min-height: 350px;
   max-width: 800px;
@@ -43,7 +43,7 @@
 }
 
 .toggleMenu button {
-  background-color: #f9f9f9;
+  background-color: var(--btn-h2);
   border: none;
   padding: 10px;
   cursor: pointer;

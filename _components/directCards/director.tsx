@@ -22,7 +22,8 @@ export const DirectorCards = () => {
           </p>
           <br />
           <h3>Mike Feazel</h3>
-          <p>CEO, Roof Maxx</p>
+
+          <p style={{ fontSize: "14px" }}>CEO, Roof Maxx</p>
         </div>
       </div>
       <div className={`${styles.card2} ${isCard1 ? "" : styles.active}`}>
@@ -34,9 +35,10 @@ export const DirectorCards = () => {
           </p>
           <br />
           <h3>Barry McGraw</h3>
-          <p>
-            Director of Product Development and Commercialization, Ohio Soybean
-            Council
+
+          <p style={{ fontSize: "14px" }}>
+            Director of Product Development and Commercialization
+            <br /> Ohio Soybean Council
           </p>
         </div>
       </div>
