@@ -24,8 +24,9 @@ export default function Page() {
             projects across the United States. Among the many roofing materials
             available, asphalt shingles are the most popular due to their
             durability, affordability, and ease of installation. In this guide,
-            we've compiled a list of the top-rated roof shingle manufacturers to
-            help you choose the best roof shingles for your home.
+            we&apos;ve compiled a list of the top-rated roof shingle
+            manufacturers to help you choose the best roof shingles for your
+            home.
           </p>
 
           <h2>The Best Roof Shingle Brands of 2023</h2>
@@ -138,7 +139,7 @@ export default function Page() {
           <h3>What Is the Average Lifespan of Shingles?</h3>
           <p>
             The best roof shingles are marketed to last between 25 to 50 years,
-            but some roofs don't last more than 7 to 10 years. A variety of
+            but some roofs don&apos;t last more than 7 to 10 years. A variety of
             factors affect the lifespan of your roof, including climate, roof
             design, proper installation, correct maintenance, and using the
             right materials.

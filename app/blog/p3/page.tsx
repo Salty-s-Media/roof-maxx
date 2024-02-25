@@ -101,7 +101,7 @@ export default function Page() {
                 begin. Otherwise, the weight of the new materials wouldn’t be
                 adequately supported, which could shorten their lifespan and
                 increase the risk of other issues. Repair costs can vary
-                significantly depending on the damage's type, extent, and
+                significantly depending on the damage&apos;s type, extent, and
                 location.
               </p>
             </li>

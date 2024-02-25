@@ -21,8 +21,8 @@ export default function Page() {
           <p>
             Completing a new roof installation may be critical to protecting
             your property from the elements. Given the expense and effort
-            involved in installing a new roof, you'll want to be confident it's
-            exactly what you need before making any commitments.
+            involved in installing a new roof, you&apos;ll want to be confident
+            it&apos;s exactly what you need before making any commitments.
           </p>
           <p>
             By going through this list of things to consider when replacing a
@@ -33,7 +33,7 @@ export default function Page() {
           <p>
             As with every other component of your house, the roofing system was
             not designed to last forever. There are instances when you can fix
-            roof damage with simple repairs, but eventually, you'll need a
+            roof damage with simple repairs, but eventually, you&apos;ll need a
             complete roof replacement.
           </p>
           <p>
@@ -97,8 +97,8 @@ export default function Page() {
           </p>
           <p>
             You may also be concerned about the gutter system. Do gutters have
-            to be removed when replacing a roof? It's generally best to do so if
-            you don't want them to be damaged in the process.
+            to be removed when replacing a roof? It&apos;s generally best to do
+            so if you don&apos;t want them to be damaged in the process.
           </p>
           <h3>5. Examine Your Roof Framing</h3>
           <p>
