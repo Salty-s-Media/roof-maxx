@@ -7,7 +7,7 @@ export default function Page() {
     <div className={styles.container}>
       <div className={styles.main}>
         <Image
-          src="/shingle.jpg"
+          src="/blog/p4.jpg"
           width={720}
           height={512}
           alt="Blog Post Image"
@@ -18,16 +18,16 @@ export default function Page() {
         <div className={styles.content}>
           <p>
             Shingles are commonly used on both residential and commercial
-            properties. Whether you’re constructing a new building, considering
-            a roofing upgrade, or wondering about the effect of a few missing
-            shingles, it’s helpful to know what to expect regarding the cost of
-            shingles.
+            properties. Whether you&apos;re constructing a new building,
+            considering a roofing upgrade, or wondering about the effect of a
+            few missing shingles, it&apos;s helpful to know what to expect
+            regarding the cost of shingles.
           </p>
           <p>
-            The cost can vary dramatically depending on your roof’s shape and
-            the type of shingles you select. However, $160 per 100 square feet
-            is considered average for standard roofing in most locations. Each
-            square buys most shingles.
+            The cost can vary dramatically depending on your roof&apos;s shape
+            and the type of shingles you select. However, $160 per 100 square
+            feet is considered average for standard roofing in most locations.
+            Each square buys most shingles.
           </p>
           <h2>Which Roofing Shingles Should I Buy?</h2>
           <p>

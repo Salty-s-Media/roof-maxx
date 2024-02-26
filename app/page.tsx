@@ -16,6 +16,7 @@ import { RoofReplacement } from "@/_components/roofRep/roofRep";
 import { TimeToChange } from "@/_components/timeChange/time";
 import { Blogs } from "@/_components/blogs/blogs";
 import { LocalDealer } from "@/_components/localDealer/localdeal";
+import { RecentCustomers } from "@/_components/recentCustomer/recent";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <RoofReplacement />
       <Adds />
       <BioCard />
+      <RecentCustomers />
       <TimeToChange />
       <LocalDealer />
       <BetterRoof />

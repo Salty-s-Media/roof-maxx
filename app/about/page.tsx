@@ -4,6 +4,7 @@ import VideoPlayer from "@/_components/video/videoPlayer";
 import { DirectorCards } from "@/_components/directCards/director";
 import { ExtendLifespan } from "@/_components/extend/extend";
 import { Cloud, Factory, Leaf } from "lucide-react";
+import { ContactForm } from "@/_components/contactForm/contactForm";
 
 export default function Page() {
   return (
@@ -40,7 +41,7 @@ export default function Page() {
             width={180}
             height={180}
             alt="gg"
-            className={styles.imag2}
+            className={styles.imag3}
           />
           <p>
             Mike and Todd the year they sold Feazel Roofing and moved on to roof
@@ -214,7 +215,7 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <button className="btn">Contact Us</button>
+          <ContactForm />
         </div>
         <ExtendLifespan />
       </div>

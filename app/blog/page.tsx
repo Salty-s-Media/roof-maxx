@@ -11,7 +11,7 @@ export default function Page() {
         <Link href="/blog/p1">
           <div className={styles.blogCard}>
             <Image
-              src="/aug.png"
+              src="/blog/p1.jpg"
               alt="gg"
               width={512}
               height={512}
@@ -30,7 +30,7 @@ export default function Page() {
         <Link href="/blog/p2">
           <div className={styles.blogCard}>
             <Image
-              src="/aug.png"
+              src="/blog/p2.jpg"
               alt="gg"
               width={512}
               height={512}
@@ -49,7 +49,7 @@ export default function Page() {
         <Link href="/blog/p3">
           <div className={styles.blogCard}>
             <Image
-              src="/aug.png"
+              src="/blog/p3.jpg"
               alt="gg"
               width={512}
               height={512}
@@ -68,7 +68,7 @@ export default function Page() {
         <Link href="/blog/p4">
           <div className={styles.blogCard}>
             <Image
-              src="/aug.png"
+              src="/blog/p4.jpg"
               alt="gg"
               width={512}
               height={512}
@@ -87,7 +87,7 @@ export default function Page() {
         <Link href="/blog/p5">
           <div className={styles.blogCard}>
             <Image
-              src="/aug.png"
+              src="/blog/p5.jpg"
               alt="gg"
               width={512}
               height={512}
@@ -107,7 +107,7 @@ export default function Page() {
         <Link href="/blog/p6">
           <div className={styles.blogCard}>
             <Image
-              src="/aug.png"
+              src="/blog/p6.jpg"
               alt="gg"
               width={512}
               height={512}
@@ -127,7 +127,7 @@ export default function Page() {
         <Link href="/blog/p7">
           <div className={styles.blogCard}>
             <Image
-              src="/aug.png"
+              src="/blog/p7.jpg"
               alt="gg"
               width={512}
               height={512}
@@ -147,7 +147,7 @@ export default function Page() {
         <Link href="/blog/p8">
           <div className={styles.blogCard}>
             <Image
-              src="/aug.png"
+              src="/blog/p8.jpg"
               alt="gg"
               width={512}
               height={512}
@@ -155,7 +155,7 @@ export default function Page() {
             />
             <p className={styles.blogDate}>April 27, 2023</p>
             <h3 className={styles.blogTitle}>
-              Roof Warranty Guide: What Every Property Owner Needs to Know
+              Comprehensive Roof Warranty Guide
             </h3>
             <p className={styles.blogExcerpt}>
               When people think about protecting their roofs, they often think
@@ -166,7 +166,7 @@ export default function Page() {
         <Link href="/blog/p9">
           <div className={styles.blogCard}>
             <Image
-              src="/aug.png"
+              src="/blog/p9.jpg"
               alt="gg"
               width={512}
               height={512}
@@ -185,7 +185,7 @@ export default function Page() {
         <Link href="/blog/p10">
           <div className={styles.blogCard}>
             <Image
-              src="/aug.png"
+              src="/blog/p10.jpg"
               alt="gg"
               width={512}
               height={512}
@@ -202,6 +202,7 @@ export default function Page() {
           </div>
         </Link>
       </div>
+      <br />
     </div>
   );
 }
