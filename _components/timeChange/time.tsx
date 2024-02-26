@@ -33,7 +33,7 @@ export const TimeToChange = () => {
         </div>
         <div className={styles.contentArea}>
           <h1>Time for a change in Roofing!</h1>
-          <h3>Did you know?</h3>
+          <h2>Did you know?</h2>
           <div className={styles.featureList}>
             <div className={styles.listItemContainer}>
               <Check width={16} height={16} className={styles.checkIcon} />
