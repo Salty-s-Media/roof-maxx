@@ -7,7 +7,7 @@ export default function Page() {
     <div className={styles.container}>
       <div className={styles.main}>
         <Image
-          src="/shingle.jpg"
+          src="/blog/p5.jpg"
           width={720}
           height={512}
           alt="Blog Post Image"

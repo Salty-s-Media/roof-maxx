@@ -7,7 +7,7 @@ export default function Page() {
     <div className={styles.container}>
       <div className={styles.main}>
         <Image
-          src="/shingle.jpg"
+          src="/blog/p6.jpg"
           width={720}
           height={512}
           alt="Blog Post Image"
@@ -20,7 +20,7 @@ export default function Page() {
             Is your roof showing signs of wear and tear? Are you wondering about
             the dangers of an aging roof—and considering the cheapest roofing
             options that meet your needs? Chances are you have an asphalt roof
-            because they’re the most common, but there are other roofing
+            because they&apos;re the most common, but there are other roofing
             materials as well. Read through our rundown of the least expensive
             roofing material, and see how Roof Maxx can extend the life of
             asphalt shingle roofs by up to 15 years.
@@ -47,11 +47,11 @@ export default function Page() {
             holes.
           </p>
           <p>
-            Don’t forget to take into account the hail rating of any shingles
-            you look at. Shingles vary widely in quality, and the hail rating is
-            an excellent way to estimate durability and impact resistance. If
-            you can’t find the hail rating, consider a different brand of
-            shingles.
+            Don&apos;t forget to take into account the hail rating of any
+            shingles you look at. Shingles vary widely in quality, and the hail
+            rating is an excellent way to estimate durability and impact
+            resistance. If you can&apos;t find the hail rating, consider a
+            different brand of shingles.
           </p>
           <h4>3 KINDS OF ASPHALT SHINGLES</h4>
           <p>
@@ -150,8 +150,8 @@ export default function Page() {
               years
             </li>
             <li>
-              Can crack under a person’s weight, so take care if you need to go
-              on the roof
+              Can crack under a person&apos;s weight, so take care if you need
+              to go on the roof
             </li>
             <li>They may outlast the life of the house</li>
           </ul>
@@ -179,8 +179,9 @@ export default function Page() {
             Which roofing is least expensive depends on how much time you have
             and your budget. A more expensive roof will be an excellent
             long-term investment if you can afford the upfront costs. But what
-            if you can’t afford costly materials? Are you stuck with tearing
-            your asphalt shingles off the roof and replacing them with more?
+            if you can&apos;t afford costly materials? Are you stuck with
+            tearing your asphalt shingles off the roof and replacing them with
+            more?
           </p>
           <p>
             No. The cheapest roofing option is not to replace the roof.

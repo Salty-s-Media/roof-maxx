@@ -9,11 +9,18 @@
 
 .blogsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   gap: 1rem;
 }
 
+.blogsGrid p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .blogCard {
+  min-height: 350px;
   background-color: var(--tme2);
   border-radius: var(--border-rad);
   padding: 1rem;
@@ -25,6 +32,7 @@
 }
 
 .blogCard img {
+  max-height: 175px;
   border-radius: var(--border-rad);
 }
 
@@ -79,6 +87,13 @@
 .content {
   font-size: 16px;
   line-height: 1.6;
+}
+
+.content ul {
+  padding-left: 1.1rem;
+}
+.content ol {
+  padding-left: 1.1rem;
 }
 
 .content h3 {

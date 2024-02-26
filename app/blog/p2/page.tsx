@@ -7,7 +7,7 @@ export default function Page() {
     <div className={styles.container}>
       <div className={styles.main}>
         <Image
-          src="/shingle.jpg"
+          src="/blog/p2.jpg"
           width={720}
           height={512}
           alt="Blog Post Image"
@@ -103,8 +103,9 @@ export default function Page() {
           </p>
           <h3>METAL SHINGLE</h3>
           <p>
-            Metal roof shingles are about $3 per square foot. Be aware that it’s
-            louder when things hit a metal roof than it is with other materials.
+            Metal roof shingles are about $3 per square foot. Be aware that
+            it&apos;s louder when things hit a metal roof than it is with other
+            materials.
           </p>
           <h3>SLATE SHINGLE</h3>
           <p>

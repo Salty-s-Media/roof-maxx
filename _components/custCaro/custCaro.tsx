@@ -82,7 +82,7 @@ export const CustomerTestimony = () => {
             <br />
             <div
               style={{
-                height: "40px",
+                height: "45px",
                 borderLeft: "5px solid var(--btn-bg)",
                 paddingLeft: "10px",
                 textAlign: "left",

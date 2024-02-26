@@ -7,7 +7,7 @@ export default function Page() {
     <div className={styles.container}>
       <div className={styles.main}>
         <Image
-          src="/shingle.jpg"
+          src="/blog/p7.jpg"
           width={720}
           height={512}
           alt="Blog Post Image"
@@ -71,7 +71,7 @@ export default function Page() {
             results.
           </p>
           <p>
-            When selecting a contractor to replace a roof, it’s critical to
+            When selecting a contractor to replace a roof, it&apos;s critical to
             consider their reputation, expertise, and credentials.
           </p>
           <h3>3. There Will Be Noise</h3>
@@ -105,18 +105,18 @@ export default function Page() {
             To help your roof last longer, take advantage of a roof replacement
             to check for leaks and do any necessary repairs. The roof framing
             supports your roofing material and prevents water from entering your
-            home. It’s also routine for roofers to examine the flashing or
+            home. It&apos;s also routine for roofers to examine the flashing or
             framing on the vents so they can determine if any rust or rot
             requires vent replacement.
           </p>
           <h3>6. Review the Contract Carefully</h3>
           <p>
-            It’s crucial to have a written contract in any home improvement
+            It&apos;s crucial to have a written contract in any home improvement
             project to avoid miscommunication between you and your contractor.
             Make sure your contract includes materials, quality of service,
-            total cost, schedule, and other details you’ve specified with the
-            roofer. Also, don’t sign on the dotted line unless you address all
-            issues and fully understand everything on the contract.
+            total cost, schedule, and other details you&apos;ve specified with
+            the roofer. Also, don&apos;t sign on the dotted line unless you
+            address all issues and fully understand everything on the contract.
           </p>
           <h3>7. Acquire Other Essential Documents</h3>
           <p>
@@ -151,11 +151,11 @@ export default function Page() {
             <li>Correcting mistakes, costing you time and money</li>
           </ul>
           <p>
-            While it’s possible to do the project yourself, it’s better left to
-            professionals. It is more cost-effective in the long run and a safer
-            option for you. Roofing contractors have the knowledge, expertise,
-            and equipment to get the job done faster and more efficiently than
-            you.
+            While it&apos;s possible to do the project yourself, it&apos;s
+            better left to professionals. It is more cost-effective in the long
+            run and a safer option for you. Roofing contractors have the
+            knowledge, expertise, and equipment to get the job done faster and
+            more efficiently than you.
           </p>
           <h2>You Might Not Need to Replace Your Roof Yet</h2>
           <p>
@@ -166,15 +166,15 @@ export default function Page() {
           </p>
           <p>
             We understand that time and cost are two of the most important
-            things to consider when replacing a roof, which is why we’ve
+            things to consider when replacing a roof, which is why we&apos;ve
             developed a treatment for aging asphalt roofs. Roof Maxx is a quick,
             affordable alternative to roof replacements. Our soy fusion
             technology covers asphalt shingles in natural plant-based bio-oil to
-            restore what they’ve lost over time that made them dry, brittle, and
-            weakened.
+            restore what they&apos;ve lost over time that made them dry,
+            brittle, and weakened.
           </p>
           <p>
-            One application improves your roof’s condition, allowing it to
+            One application improves your roof&apos;s condition, allowing it to
             withstand weather fluctuations and extreme temperatures like a newly
             installed roof would. Contact us today to learn more!
           </p>

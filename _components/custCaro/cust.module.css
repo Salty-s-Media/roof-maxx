@@ -8,8 +8,9 @@
   margin-right: 2rem;
   border-radius: 10px;
   padding: 1rem;
-  background-color: #494949;
-  color: var(--bg);
+  background-color: var(--g3);
+  border: 5px solid var(--btn-h1);
+  color: var(--text-color);
 }
 
 .header {
@@ -71,8 +72,8 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: var(--btn-h1);
+  color: var(--text-color);
   border: none;
   font-size: 16px;
   cursor: pointer;
@@ -81,11 +82,11 @@
 }
 
 .activeCircleButton {
-  background-color: #cacaca;
+  background-color: var(--btn-bg);
 }
 
 .circleButton:hover {
-  background-color: #cacaca;
+  background-color: var(--btn-bg);
 }
 
 .fadeInAnimation {

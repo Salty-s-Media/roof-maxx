@@ -7,7 +7,7 @@ export default function Page() {
     <div className={styles.container}>
       <div className={styles.main}>
         <Image
-          src="/shingle.jpg"
+          src="/blog/p3.jpg"
           width={720}
           height={512}
           alt="Blog Post Image"
@@ -20,11 +20,12 @@ export default function Page() {
             When the time comes for a new roof on your home, several factors
             must be considered, including the benefits each material provides,
             what will look best, and the replacement cost. Unfortunately,
-            determining which roof option is cheapest isn’t always cut and dry,
-            as what appears to cost less may cost you more when considering the
-            roof’s life expectancy, energy efficiency, and impact on property
-            value. We provide an in-depth look at the cost of metal roofs vs.
-            shingles and the factors that impact the overall cost of a new roof.
+            determining which roof option is cheapest isn&apos;t always cut and
+            dry, as what appears to cost less may cost you more when considering
+            the roof&apos;s life expectancy, energy efficiency, and impact on
+            property value. We provide an in-depth look at the cost of metal
+            roofs vs. shingles and the factors that impact the overall cost of a
+            new roof.
           </p>
           <h3>6 Factors That Impact the Cost of Your Roof</h3>
           <p>
@@ -41,21 +42,21 @@ export default function Page() {
                 average of $160 per 100 square feet in material costs.
                 Higher-quality shingle options may increase the total bill, but
                 the materials on the average asphalt roofing project cost
-                between $5,000 and $10,000. That range doesn’t include
+                between $5,000 and $10,000. That range doesn&apos;t include
                 installation costs. Metal roofs cost considerably more upfront,
-                with materials costing about two to three times more than you’d
-                spend on asphalt shingles. However, metal roofs typically last
-                much longer, require fewer repairs, provide greater energy
-                efficiency, and aid in increasing the home value.
+                with materials costing about two to three times more than
+                you&apos;d spend on asphalt shingles. However, metal roofs
+                typically last much longer, require fewer repairs, provide
+                greater energy efficiency, and aid in increasing the home value.
               </p>
             </li>
             <li>
               <strong>Labor Costs</strong>
               <p>
                 When comparing the labor costs for installing metal roofs vs.
-                shingle roofs, you’ll find that they differ widely, just like
-                the material costs. Installing a shingle roof will usually cost
-                around $200–$300 per square foot, while metal roofing
+                shingle roofs, you&apos;ll find that they differ widely, just
+                like the material costs. Installing a shingle roof will usually
+                cost around $200–$300 per square foot, while metal roofing
                 installation might be closer to $300–$500 per square foot. For a
                 1,500-square-foot roof, the total labor cost of metal roofs vs.
                 shingles may come in at around:
@@ -63,10 +64,10 @@ export default function Page() {
                   <li>$4,500–$7,500 for a metal roof</li>
                   <li>$3,000–$4,500 for a shingle roof</li>
                 </ul>
-                Unfortunately, roof size isn’t the only factor when determining
-                labor expenses. Metal roofs take longer and can be more
-                challenging to install. But the type of metal or shingles used
-                for your roof also factors into labor costs.
+                Unfortunately, roof size isn&apos;t the only factor when
+                determining labor expenses. Metal roofs take longer and can be
+                more challenging to install. But the type of metal or shingles
+                used for your roof also factors into labor costs.
               </p>
             </li>
             <li>
@@ -74,7 +75,7 @@ export default function Page() {
               <p>
                 Whether you choose metal or shingles for your new roof, the size
                 and complexity will impact the total cost. The more complex your
-                roof’s design, the more manpower and time it will take to
+                roof&apos;s design, the more manpower and time it will take to
                 complete your roofing installation, which means the labor costs
                 will increase. In addition to roof features and steepness, other
                 factors come into play. These include:
@@ -98,8 +99,8 @@ export default function Page() {
                 sustained severe water damage, causing the underlying wood
                 structures to rot, the deck would need to be replaced and the
                 surrounding damage repaired before the replacement service could
-                begin. Otherwise, the weight of the new materials wouldn’t be
-                adequately supported, which could shorten their lifespan and
+                begin. Otherwise, the weight of the new materials wouldn&apos;t
+                be adequately supported, which could shorten their lifespan and
                 increase the risk of other issues. Repair costs can vary
                 significantly depending on the damage&apos;s type, extent, and
                 location.
@@ -127,8 +128,8 @@ export default function Page() {
               <strong>Maintenance</strong>
               <p>
                 Roof maintenance includes regular inspections and prompt repairs
-                when damage occurs, and it’s essential to keep up with it to
-                help your roof last as long as possible. The cost to maintain
+                when damage occurs, and it&apos;s essential to keep up with it
+                to help your roof last as long as possible. The cost to maintain
                 your roof depends on the materials used and their age. Metal
                 roofs are generally more expensive to repair than asphalt roofs
                 because of higher material and labor costs. However, asphalt
@@ -143,7 +144,7 @@ export default function Page() {
             replacement by working with the team at Roof Maxx. We offer roof
             preservation services, helping asphalt shingles last longer. Our
             company is committed to providing our customers with the best and
-            most affordable roofing solutions. We’ve helped thousands of
+            most affordable roofing solutions. We&apos;ve helped thousands of
             homeowners avoid costly roof replacements by extending the lifespans
             of existing roofs. Get your free estimate today!
           </p>
