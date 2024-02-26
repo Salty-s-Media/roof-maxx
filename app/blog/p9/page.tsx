@@ -21,7 +21,7 @@ export default function Page() {
           <p>
             Harsh winter weather tends to expose the flaws and hazards of an
             aging roof. If you decide to replace your roof, you may be
-            wondering, "Can a new roof be put on in the winter?"
+            wondering, &quot;Can a new roof be put on in the winter?&quot;
           </p>
           <p>
             Yes, skilled roofers know how to replace roofs even in cold weather.
