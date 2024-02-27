@@ -54,6 +54,14 @@
     z-index: 2;
     color: var(--text-color);
     gap: 2rem;
+    font-size: 1rem;
+  }
+
+  .fullMenuPg a {
+    padding: 10px 10px;
+    color: var(--bg);
+    background-color: var(--btn-bg);
+    border-radius: var(--border-rad);
   }
 
   .linksContainer {

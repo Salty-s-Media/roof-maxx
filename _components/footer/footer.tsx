@@ -2,6 +2,7 @@
 import Image from "next/image";
 import styles from "./footer.module.css";
 import Link from "next/link";
+import { ContactForm } from "../contactForm/contactForm";
 
 export const Footer = () => {
   const goToTop = () => {
@@ -32,6 +33,9 @@ export const Footer = () => {
               <Link href="/about">About</Link>
             </li>
             <li>
+              <Link href="/about">Blog</Link>
+            </li>
+            <li>
               <Link href="/faq">FAQ</Link>
             </li>
           </ul>
@@ -40,7 +44,7 @@ export const Footer = () => {
           <h3>Help and Advice</h3>
           <ul>
             <li>
-              <Link href="#">Contact Form</Link>
+              <ContactForm />
             </li>
           </ul>
         </div>

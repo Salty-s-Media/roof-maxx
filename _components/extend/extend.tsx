@@ -19,7 +19,7 @@ export const ExtendLifespan = () => {
             src="/local.png"
             width={450}
             height={450}
-            alt="gg"
+            alt="finished job"
             className={styles.imag}
           />
         </div>

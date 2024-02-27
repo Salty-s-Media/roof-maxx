@@ -34,7 +34,7 @@ export default function Page() {
             <div className={styles.smallVc}>
               <Image
                 src="/stepsToQualify.jpg"
-                alt="gg"
+                alt="Helping"
                 width={512}
                 height={512}
                 className={styles.imag}
@@ -68,7 +68,7 @@ export default function Page() {
             <div className={styles.smallVc}>
               <Image
                 src="/app.jpg"
-                alt="gg"
+                alt="Service"
                 width={512}
                 height={512}
                 className={styles.imag}
@@ -98,7 +98,7 @@ export default function Page() {
             <div className={styles.smallVc}>
               <Image
                 src="/fyg.jpg"
-                alt="gg"
+                alt="RoofService"
                 width={512}
                 height={512}
                 className={styles.imag}

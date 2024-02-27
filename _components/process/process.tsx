@@ -64,7 +64,7 @@ export const Process = () => {
                         src="/stepsToQualify.jpg"
                         width={512}
                         height={512}
-                        alt="gg"
+                        alt="Helping"
                       />
                     </div>
                   </li>
@@ -82,7 +82,12 @@ export const Process = () => {
                       a couple of hours max.
                     </div>
                     <div>
-                      <Image src="/nsb.png" width={512} height={512} alt="gg" />
+                      <Image
+                        src="/nsb.png"
+                        width={512}
+                        height={512}
+                        alt="roof treatment"
+                      />
                     </div>
                   </li>
                 </>
@@ -98,7 +103,12 @@ export const Process = () => {
                       transferable if you end up moving within that time.
                     </div>
                     <div>
-                      <Image src="/pc.png" width={512} height={512} alt="gg" />
+                      <Image
+                        src="/pc.png"
+                        width={512}
+                        height={512}
+                        alt="lawnsign"
+                      />
                     </div>
                   </li>
                 </>

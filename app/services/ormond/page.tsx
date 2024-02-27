@@ -15,7 +15,7 @@ export default function Page() {
         <div className={styles.main}>
           <div className={styles.imageContainer}>
             <Image
-              alt="gg"
+              alt="RoofCare"
               src="/local.png"
               width={800}
               height={800}

@@ -14,28 +14,28 @@ export const TailoredSolutions = () => {
           src="/aug.png"
           width={300}
           height={300}
-          alt="gg"
+          alt="car in driveway"
           className={styles.imag2}
         />
         <Image
           src="/nsb.png"
           width={300}
           height={300}
-          alt="gg"
+          alt="roof treatment"
           className={styles.imag2}
         />
         <Image
           src="/local.png"
           width={300}
           height={300}
-          alt="gg"
+          alt="friendly"
           className={styles.imag2}
         />
         <Image
           src="/pc.png"
           width={300}
           height={300}
-          alt="gg"
+          alt="lawn card"
           className={styles.imag2}
         />
       </div>
@@ -89,7 +89,7 @@ export const TailoredSolutions = () => {
             src="/deal.JPG"
             width={450}
             height={450}
-            alt="gg"
+            alt="certified"
             className={styles.imag}
           />
         </div>
@@ -118,7 +118,7 @@ export const TailoredSolutions = () => {
             src="/noah.jpg"
             width={450}
             height={450}
-            alt="gg"
+            alt="noah collins"
             className={styles.imag3}
           />
         </div>
