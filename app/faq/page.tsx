@@ -83,7 +83,7 @@ export default function Page() {
                         src="/stepsToQualify.jpg"
                         width={512}
                         height={512}
-                        alt="gg"
+                        alt="Helping"
                       />
                     </div>
                   </li>
@@ -142,7 +142,12 @@ export default function Page() {
                       roofs and asphalt shingles, reducing waste.
                     </div>
                     <div>
-                      <Image src="/pc.png" width={512} height={512} alt="gg" />
+                      <Image
+                        src="/pc.png"
+                        width={512}
+                        height={512}
+                        alt="LawnCard"
+                      />
                     </div>
                   </li>
                 </>

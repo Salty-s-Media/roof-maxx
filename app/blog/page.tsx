@@ -12,7 +12,7 @@ export default function Page() {
           <div className={styles.blogCard}>
             <Image
               src="/blog/p1.jpg"
-              alt="gg"
+              alt="Ultimate Buying Guide"
               width={512}
               height={512}
               className={styles.blogImage}
@@ -31,7 +31,7 @@ export default function Page() {
           <div className={styles.blogCard}>
             <Image
               src="/blog/p2.jpg"
-              alt="gg"
+              alt="A Homeowners Guide"
               width={512}
               height={512}
               className={styles.blogImage}
@@ -50,7 +50,7 @@ export default function Page() {
           <div className={styles.blogCard}>
             <Image
               src="/blog/p3.jpg"
-              alt="gg"
+              alt="Metal Roof vs Shingles"
               width={512}
               height={512}
               className={styles.blogImage}
@@ -69,7 +69,7 @@ export default function Page() {
           <div className={styles.blogCard}>
             <Image
               src="/blog/p4.jpg"
-              alt="gg"
+              alt="Roofing Shingles Cost"
               width={512}
               height={512}
               className={styles.blogImage}
@@ -88,7 +88,7 @@ export default function Page() {
           <div className={styles.blogCard}>
             <Image
               src="/blog/p5.jpg"
-              alt="gg"
+              alt="Void Your Roof Warranty"
               width={512}
               height={512}
               className={styles.blogImage}
@@ -108,7 +108,7 @@ export default function Page() {
           <div className={styles.blogCard}>
             <Image
               src="/blog/p6.jpg"
-              alt="gg"
+              alt="Cheapest Roofing Options"
               width={512}
               height={512}
               className={styles.blogImage}
@@ -128,7 +128,7 @@ export default function Page() {
           <div className={styles.blogCard}>
             <Image
               src="/blog/p7.jpg"
-              alt="gg"
+              alt="Replacing a Roof"
               width={512}
               height={512}
               className={styles.blogImage}
@@ -148,7 +148,7 @@ export default function Page() {
           <div className={styles.blogCard}>
             <Image
               src="/blog/p8.jpg"
-              alt="gg"
+              alt="Roof Warranty Guide"
               width={512}
               height={512}
               className={styles.blogImage}
@@ -167,7 +167,7 @@ export default function Page() {
           <div className={styles.blogCard}>
             <Image
               src="/blog/p9.jpg"
-              alt="gg"
+              alt="Roofs in the Winter"
               width={512}
               height={512}
               className={styles.blogImage}
@@ -186,7 +186,7 @@ export default function Page() {
           <div className={styles.blogCard}>
             <Image
               src="/blog/p10.jpg"
-              alt="gg"
+              alt="Gutters On Your House"
               width={512}
               height={512}
               className={styles.blogImage}

@@ -33,7 +33,7 @@ export const LocalDealer = () => {
               src="/5starnoah.png"
               width={180}
               height={142}
-              alt="gg"
+              alt="5StarTreatment"
               style={{ marginTop: "0.75rem" }}
             />
           </div>
@@ -47,7 +47,7 @@ export const LocalDealer = () => {
             loop={true}
             playsInline={true}
             disablePictureInPicture={true}
-            aria-label="background video"
+            aria-disabled={true}
           />
         </div>
       </div>

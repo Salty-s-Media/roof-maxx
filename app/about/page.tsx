@@ -19,7 +19,7 @@ export default function Page() {
             src="/mikeandtodd.png"
             width={480}
             height={409}
-            alt="gg"
+            alt="mike and todd the founders"
             className={styles.imag}
           />
           <div className={styles.head}>
@@ -32,7 +32,7 @@ export default function Page() {
             src="/sticker1.png"
             width={175}
             height={175}
-            alt="gg"
+            alt="early1"
             className={styles.imag2}
           />
           <p>Mike and Todd in their early roofing days.</p>
@@ -40,7 +40,7 @@ export default function Page() {
             src="/sticker2.png"
             width={180}
             height={180}
-            alt="gg"
+            alt="early2"
             className={styles.imag3}
           />
           <p>
@@ -96,7 +96,7 @@ export default function Page() {
               src="/easy.png"
               width={600}
               height={469}
-              alt="gg"
+              alt="easy process"
               className={styles.imag}
             />
           </div>
@@ -107,7 +107,7 @@ export default function Page() {
               src="/easy2.png"
               width={600}
               height={501}
-              alt="gg"
+              alt="protection"
               className={styles.imag}
             />
           </div>
@@ -146,7 +146,7 @@ export default function Page() {
               src="/easy3.png"
               width={600}
               height={501}
-              alt="gg"
+              alt="bio savings"
               className={styles.imag}
             />
           </div>
@@ -176,21 +176,19 @@ export default function Page() {
           <br />
           <div className={styles.grid4}>
             <div className={styles.medCard}>
-              <Image src="/1.png" width={129} height={70} alt="gg" />
+              <Image src="/1.png" width={129} height={70} alt="USDA" />
               <p>
                 Roof Maxx has been certified by the USDA as a plant-based
                 product with 86% bio-based content.
               </p>
             </div>
             <div className={styles.medCard}>
-              <Image src="/2.png" width={175} height={70} alt="gg" />
-              <p>
-                Roof Maxx has been certified by the USDA as a plant-based
-                product with 86% bio-based content.
-              </p>
-            </div>
-            <div className={styles.medCard}>
-              <Image src="/3.png" width={70} height={70} alt="gg" />
+              <Image
+                src="/2.png"
+                width={175}
+                height={70}
+                alt="World Bio Markets"
+              />
               <p>
                 World Bio Markets, a leading conference driving change in the
                 global bio-economy, named Roof Maxx one of the 10 most dynamic
@@ -198,7 +196,25 @@ export default function Page() {
               </p>
             </div>
             <div className={styles.medCard}>
-              <Image src="/4.png" width={139} height={70} alt="gg" />
+              <Image
+                src="/3.png"
+                width={70}
+                height={70}
+                alt="5 year warranty"
+              />
+              <p>
+                Our fully transferable warranty guarantees that asphalt shingles
+                we treat with Roof Maxx will remain flexible for at least five
+                years from the date of treatment.
+              </p>
+            </div>
+            <div className={styles.medCard}>
+              <Image
+                src="/4.png"
+                width={139}
+                height={70}
+                alt="BioInnovations"
+              />
               <p>
                 Roof Maxx has been certified by the USDA as a plant-We were a
                 2018 Bio-based Material of the Year award finalist for our
@@ -207,7 +223,7 @@ export default function Page() {
               </p>
             </div>
             <div className={styles.medCard}>
-              <Image src="/5.png" width={70} height={70} alt="gg" />
+              <Image src="/5.png" width={70} height={70} alt="EcoLeaders" />
               <p>
                 Roof Maxx honored as a 2022 recipient of the Real Leaders Eco
                 Innovation Award, which applies to companies with innovative
