@@ -1,14 +1,23 @@
+"use client";
+
 import styles from "./header.module.css";
 import Image from "next/image";
 import { ContactForm } from "../contactForm/contactForm";
+import { useEffect, useState } from "react";
 
 export const Header = () => {
+  const [videoSrc, setSrc] = useState("/fadehero.mp4");
+  useEffect(() => {
+    if (window.innerWidth < 930) {
+      setSrc("/fadehero2.mp4");
+    }
+  }, []);
   return (
     <>
       <div className={styles.main}>
         <div className={styles.videoContainer}>
           <video
-            src="/fadehero.mp4"
+            src={videoSrc}
             width="100%"
             height="100%"
             className={styles.imag}
@@ -17,7 +26,7 @@ export const Header = () => {
             loop={true}
             playsInline={true}
             disablePictureInPicture={true}
-            aria-label="background video"
+            aria-disabled={true}
           />
         </div>
         <div className={styles.heading}>
