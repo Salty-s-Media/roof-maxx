@@ -1,41 +1,21 @@
-"use client";
-
 import styles from "./header.module.css";
 import Image from "next/image";
 import { ContactForm } from "../contactForm/contactForm";
-import { useEffect, useRef } from "react";
 
 export const Header = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      const playPromise = video.play();
-
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            console.log("Video play started successfully");
-          })
-          .catch((error) => {
-            console.error("Video play failed:", error);
-          });
-      }
-    }
-  }, []);
   return (
     <>
       <div className={styles.main}>
         <div id="hero" className={styles.videoContainer}>
           <video
-            ref={videoRef}
+            preload="auto"
+            muted={true}
             width="100%"
             height="100%"
             className={styles.imag}
             autoPlay={true}
-            muted={true}
-            loop={true}
             playsInline={true}
+            loop={true}
             disablePictureInPicture={true}
             aria-disabled={true}
           >
