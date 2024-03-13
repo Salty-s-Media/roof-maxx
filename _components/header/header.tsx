@@ -8,7 +8,6 @@ export const Header = () => {
       <div className={styles.main}>
         <div className={styles.videoContainer}>
           <video
-            src="/fadehero.mp4"
             width="100%"
             height="100%"
             className={styles.imag}
@@ -18,7 +17,9 @@ export const Header = () => {
             playsInline={true}
             disablePictureInPicture={true}
             aria-disabled={true}
-          />
+          >
+            <source src="/fadehero.mp4" />
+          </video>
         </div>
         <div className={styles.heading}>
           <h1>
