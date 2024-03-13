@@ -9,6 +9,7 @@ export const Header = () => {
         <div id="hero" className={styles.videoContainer}>
           <video
             preload="auto"
+            poster="/out1.png"
             muted={true}
             width="100%"
             height="100%"
