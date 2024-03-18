@@ -6,11 +6,10 @@ export const Header = () => {
   return (
     <>
       <div className={styles.main}>
-        <div className={styles.videoContainer}>
+        <div id="hero" className={styles.videoContainer}>
           <video
             preload="auto"
             poster="/out1.png"
-            controls={false}
             muted={true}
             width="100%"
             height="100%"

@@ -41,6 +41,7 @@ input[type="radio"] {
   padding: 12px 20px;
   font-size: 0.8em;
   font-weight: 500;
+  color: var(--bg);
   border: 2px solid var(--btn-bg);
   background-color: var(--btn-bg);
   border-radius: var(--border-rad);
@@ -51,6 +52,7 @@ input[type="radio"] {
   padding: 12px 20px;
   font-size: 0.8em;
   font-weight: 500;
+  color: var(--bg);
   background-color: var(--btn-h2);
   border: 2px solid var(--btn-h2);
   border-radius: var(--border-rad);
