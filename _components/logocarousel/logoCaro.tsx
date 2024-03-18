@@ -3,17 +3,15 @@ import styles from "./logo.module.css";
 import Image from "next/image";
 
 const logos = [
+  "/caro/forbes.png",
+  "/caro/entr.png",
+  "/caro/inc.png",
+  "/caro/usa.png",
   "/caro/cbs.png",
   "/caro/ri.png",
-  "/caro/entr.png",
   "/caro/nbc.png",
-  "/caro/usa.png",
   "/caro/clean1.png",
   "/caro/clean2.png",
-  "/caro/clean3.png",
-  "/caro/forbes.png",
-  "/caro/usa.png",
-  "/caro/inc.png",
 ];
 
 export const Carousel = () => {
@@ -21,13 +19,13 @@ export const Carousel = () => {
 
   return (
     <div className={styles.carousel}>
-      <div className={styles["carousel-inner"]}>
+      <div className={styles.carouselInner}>
         {extendedLogos.map((logo, i) => (
           <div key={`logo-${i}`} className={styles.logo}>
             <Image
               src={logo}
-              width={240}
-              height={240}
+              width={115}
+              height={100}
               alt={logos[i % logos.length]}
             />
           </div>

@@ -1,9 +1,28 @@
-.carousel-inner {
+.carousel {
   display: flex;
-  animation: spinHorizontally 60s linear infinite;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    var(--tsp),
+    var(--bg) 20%,
+    var(--bg) 80%,
+    var(--tsp) 100%
+  );
+  mask-size: 100% 100%;
+  mask-repeat: repeat;
+  mask-position: 0 0;
+}
+
+.carouselInner {
+  display: flex;
+  animation: spinHorizontally 120s linear infinite;
   gap: 3rem;
   width: 100%;
-  padding-left: calc(100% / 11);
+  padding-left: calc(100% / 9);
 }
 
 @keyframes spinHorizontally {
@@ -15,27 +34,9 @@
   }
 }
 
-.carousel {
-  display: flex;
-  width: 95%;
-  justify-content: center;
-  align-items: center;
-  min-height: 3.14rem;
-  overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    var(--tsp),
-    var(--bg) 50%,
-    var(--tsp) 100%
-  );
-  mask-size: 100% 100%;
-  mask-repeat: repeat;
-  mask-position: 0 0;
-}
-
 .logo {
   flex: 0 0 auto;
-  width: calc(100% / 11);
+  width: calc(100% / 9);
   margin: auto;
 }
 
@@ -45,7 +46,7 @@
 }
 
 @media (max-width: 930px) {
-  .carousel {
-    width: 95%;
+  .logo {
+    width: calc(100% / 4);
   }
 }

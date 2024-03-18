@@ -14,7 +14,7 @@ export const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.logoContainer}>
           <Link href="/">
-            <Image src="/logoMobile.svg" alt="logo" width={225} height={50} />
+            <Image src="/logo.svg" alt="logo" width={225} height={50} />
           </Link>
         </div>
         <div className={styles.column}>
