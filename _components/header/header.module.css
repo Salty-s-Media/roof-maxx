@@ -86,12 +86,12 @@
   color: var(--bg);
 }
 
-.heading h1 {
-  font-size: 2.5rem;
+.heading span {
+  color: var(--btn-h2);
 }
 
-.main span {
-  color: var(--btn-h2);
+.heading h1 {
+  font-size: 2.5rem;
 }
 
 .ctaArea {

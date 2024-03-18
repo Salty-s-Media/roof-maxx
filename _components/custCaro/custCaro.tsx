@@ -12,7 +12,6 @@ export const CustomerTestimony = () => {
       at: "Ohio's Top Home Inspector",
       title: "Take my word for it - This stuff works.",
     },
-
     {
       description:
         "Roofs are costly, and we want to prolong ours as long as possible. That's why we chose Roof Maxx.",
@@ -31,27 +30,6 @@ export const CustomerTestimony = () => {
   const videoId = ["plmaf0i77l", "6nt26wikvi", "roq95e7pkf"];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(true);
-
-  const handleTestimonialIndexChange = (index: number) => {
-    setCurrentTestimonialIndex(index);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible(false);
-      setTimeout(() => {
-        setCurrentTestimonialIndex(
-          (prevIndex) => (prevIndex + 1) % testimonials.length
-        );
-        setIsVisible(true);
-      }, 500);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [testimonials.length]);
-
-  const { description, author, title } = testimonials[currentTestimonialIndex];
 
   return (
     <>
@@ -64,41 +42,38 @@ export const CustomerTestimony = () => {
           <ContactForm />
         </div>
       </div>
-      <div
-        className={isVisible ? styles.fadeInAnimation : styles.fadeOutAnimation}
-      >
-        <div className={styles.masterContainer}>
-          <div className={styles.left}>
-            <div className={styles.vc}>
-              <VideoPlayer
-                key={currentTestimonialIndex}
-                src={videoId[currentTestimonialIndex]}
-              />
-            </div>
+
+      <div className={styles.masterContainer}>
+        <div className={styles.left}>
+          <div className={styles.vc}>
+            <VideoPlayer
+              key={currentTestimonialIndex}
+              src={videoId[currentTestimonialIndex]}
+            />
           </div>
-          <div className={styles.right}>
-            <h2>{testimonials[currentTestimonialIndex].title}</h2>
-            <p>{testimonials[currentTestimonialIndex].description}</p>
-            <br />
-            <div
-              style={{
-                height: "45px",
-                borderLeft: "5px solid var(--btn-bg)",
-                paddingLeft: "10px",
-                textAlign: "left",
-              }}
-            >
-              <h3>{testimonials[currentTestimonialIndex].author}</h3>
-              <p style={{ color: "var(--tg)" }}>
-                {testimonials[currentTestimonialIndex].at}
-              </p>
-            </div>
+        </div>
+        <div className={styles.right}>
+          <h2>{testimonials[currentTestimonialIndex].title}</h2>
+          <p>{testimonials[currentTestimonialIndex].description}</p>
+          <br />
+          <div
+            style={{
+              height: "45px",
+              borderLeft: "5px solid var(--btn-bg)",
+              paddingLeft: "10px",
+              textAlign: "left",
+            }}
+          >
+            <h3>{testimonials[currentTestimonialIndex].author}</h3>
+            <p style={{ color: "var(--tg)" }}>
+              {testimonials[currentTestimonialIndex].at}
+            </p>
           </div>
         </div>
       </div>
       <div className={styles.buttonsContainer}>
         <button
-          onClick={() => handleTestimonialIndexChange(0)}
+          onClick={() => setCurrentTestimonialIndex(0)}
           className={`${styles.circleButton} ${
             currentTestimonialIndex === 0 ? styles.activeCircleButton : ""
           }`}
@@ -106,7 +81,7 @@ export const CustomerTestimony = () => {
           1
         </button>
         <button
-          onClick={() => handleTestimonialIndexChange(1)}
+          onClick={() => setCurrentTestimonialIndex(1)}
           className={`${styles.circleButton} ${
             currentTestimonialIndex === 1 ? styles.activeCircleButton : ""
           }`}
@@ -114,7 +89,7 @@ export const CustomerTestimony = () => {
           2
         </button>
         <button
-          onClick={() => handleTestimonialIndexChange(2)}
+          onClick={() => setCurrentTestimonialIndex(2)}
           className={`${styles.circleButton} ${
             currentTestimonialIndex === 2 ? styles.activeCircleButton : ""
           }`}

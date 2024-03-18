@@ -8,17 +8,21 @@ export const Header = () => {
       <div className={styles.main}>
         <div className={styles.videoContainer}>
           <video
-            src="/fadehero.mp4"
+            preload="auto"
+            poster="/out1.png"
+            controls={false}
+            muted={true}
             width="100%"
             height="100%"
             className={styles.imag}
             autoPlay={true}
-            muted={true}
-            loop={true}
             playsInline={true}
+            loop={true}
             disablePictureInPicture={true}
             aria-disabled={true}
-          />
+          >
+            <source src="/fadehero.mp4" />
+          </video>
         </div>
         <div className={styles.heading}>
           <h1>

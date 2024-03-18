@@ -23,7 +23,7 @@ export const Navbar = () => {
     <nav className={styles.nav}>
       <div className={styles.logoContainer}>
         <a href="/">
-          <Image src={logo} alt="logo" priority />
+          <Image src={logo} alt="logo" priority unoptimized />
         </a>
       </div>
       <div className={styles.linksContainer} aria-label="Menu Area">
