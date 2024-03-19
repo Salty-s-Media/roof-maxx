@@ -41,6 +41,11 @@
   margin-right: auto;
 }
 
+.logoContainer img {
+  max-width: 18rem;
+  height: auto;
+}
+
 .linksContainer {
   display: flex;
   font-size: 1rem;
