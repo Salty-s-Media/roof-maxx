@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./navbar.module.css";
-import logo from "@/public/logo.svg";
+import logo from "@/public/logo.png";
 import Image from "next/image";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
@@ -23,7 +23,9 @@ export const Navbar = () => {
     <nav className={styles.nav}>
       <div className={styles.logoContainer}>
         <a href="/">
-          <Image src={logo} alt="logo" priority unoptimized />
+          <div style={{ height: "100%", position: "relative" }}>
+            <Image src={logo} alt="logo" priority />
+          </div>
         </a>
       </div>
       <div className={styles.linksContainer} aria-label="Menu Area">
