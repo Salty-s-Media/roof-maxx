@@ -38,9 +38,9 @@
 }
 
 .readMoreButton {
+  place-self: center;
   text-align: center;
-  width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.5rem;
   font-size: 1rem;
   color: var(--bg);
 }

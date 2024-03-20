@@ -98,11 +98,17 @@
   font-size: 1.15rem;
 }
 
+.leftM {
+  margin: auto;
+}
+
 .task img {
   width: 100%;
-  height: auto;
+  min-width: 460px;
+  max-width: 512px;
+  height: 100%;
   border-radius: var(--border-rad);
-  max-height: 260px;
+  max-height: 320px;
   object-fit: cover;
 }
 

@@ -59,7 +59,7 @@ export const Process = () => {
                       you know why and whether we&apos;ve discovered leaks or
                       other major issues that need repairing.
                     </div>
-                    <div>
+                    <div className={styles.leftM}>
                       <Image
                         src="/stepsToQualify.jpg"
                         width={512}
@@ -81,9 +81,9 @@ export const Process = () => {
                       and then apply Roof Maxx. The whole process usually takes
                       a couple of hours max.
                     </div>
-                    <div>
+                    <div className={styles.leftM}>
                       <Image
-                        src="/nsb.png"
+                        src="/nsb2.png"
                         width={512}
                         height={512}
                         alt="roof treatment"
@@ -102,9 +102,9 @@ export const Process = () => {
                       maximum property protection. And our warranty is
                       transferable if you end up moving within that time.
                     </div>
-                    <div>
+                    <div className={styles.leftM}>
                       <Image
-                        src="/pc.png"
+                        src="/pc2.png"
                         width={512}
                         height={512}
                         alt="lawnsign"

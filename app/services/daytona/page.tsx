@@ -33,12 +33,9 @@ export default function Page() {
               effective and can be completed in just a few hours, depending on
               the roof size. Our team of certified Roof Maxx technicians will
               assess the roof&apos;s condition and determine if it is suitable
-              for treatment. We will then apply the treatment using a
-              state-of-the-art sprayer, covering the entire top evenly.
-              Homeowners in Daytona Beach who have received the Roof Maxx
-              treatment report that their roofs look new. They are pleased with
-              the extended lifespan of their shingles, making it a
-              cost-effective and sustainable solution for roof maintenance.
+              for treatment. The client was pleased with the results and happy
+              to know that they could prolong the life of their roof without
+              compromising on quality or durability.
             </div>
             <div className={styles.dsc}>
               <button

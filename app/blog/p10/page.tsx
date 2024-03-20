@@ -98,11 +98,11 @@ export default function Page() {
             blockages from your gutters and making sure they stay completely
             secured to the roof.
           </p>
+          <h2>Find Out How to Keep Your Roof Strong While Saving Money</h2>
           <p>
-            Find Out How to Keep Your Roof Strong While Saving Money: Keeping
-            your gutters in good shape is only part of the equation. You also
-            need to make sure your shingles stay strong and function as they
-            should. As shingles age, they lose their ability to expand and
+            Keeping your gutters in good shape is only part of the equation. You
+            also need to make sure your shingles stay strong and function as
+            they should. As shingles age, they lose their ability to expand and
             contract with changes in the weather. They can then crack and allow
             water to penetrate your roof and cause damage beneath.
           </p>

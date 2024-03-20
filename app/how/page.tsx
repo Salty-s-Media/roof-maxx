@@ -128,7 +128,7 @@ export default function Page() {
           onClick={() => window.open("tel:3863562866")}
           aria-label="Call Now"
           style={{
-            width: "70%",
+            padding: "12px 30px",
             textAlign: "center",
             fontSize: "1rem",
             marginTop: "2rem",
