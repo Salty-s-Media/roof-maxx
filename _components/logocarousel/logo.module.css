@@ -15,6 +15,7 @@
   mask-size: 100% 100%;
   mask-repeat: repeat;
   mask-position: 0 0;
+  padding-bottom: 1rem;
 }
 
 .carouselInner {
@@ -36,13 +37,14 @@
 
 .logo {
   flex: 0 0 auto;
-  width: calc(100% / 9);
   margin: auto;
+  padding-left: 2rem;
 }
 
 .logo img {
-  max-width: 100%;
+  width: auto;
   height: auto;
+  max-height: 40px;
 }
 
 @media (max-width: 930px) {
