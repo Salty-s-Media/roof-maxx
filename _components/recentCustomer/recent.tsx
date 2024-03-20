@@ -41,8 +41,8 @@ export const RecentCustomers = () => {
             >
               <Image
                 src={image.src}
-                width={512}
-                height={512}
+                width={1080}
+                height={720}
                 alt={image.alt}
                 className={styles.imag}
               />
