@@ -17,6 +17,7 @@ export default function Contact() {
   const [managedType, setSelectedManagedType] = useState("No");
   const [asphaltRoof, setAsphalt] = useState("Yes");
   const [ageRoof, setRoofAge] = useState("0-4");
+  const [state, setStateAdd] = useState("FL");
 
   const [hpv, setHPV] = useState("");
 
@@ -26,6 +27,13 @@ export default function Contact() {
 
   const handleBack = () => {
     setCurrentPage((prevPage) => prevPage - 1);
+  };
+
+  const handleStateTypeChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const state = event.target.value;
+    setStateAdd(state);
   };
 
   const handlePropertyTypeChange = (
@@ -86,6 +94,7 @@ export default function Contact() {
           className={styles.form}
         >
           <div className={styles.container}>
+            {/* Page 1 */}
             <div
               className={`${styles.section} ${
                 currentPage === 1 ? styles.visible : ""
@@ -322,9 +331,13 @@ export default function Contact() {
                   defaultValue={ageRoof}
                 />
               </div>
-
               <div className={styles.buttonContainer}>
-                <button type="button" className="btn2" onClick={handleNext}>
+                <button
+                  type="button"
+                  style={{ padding: "12px 32px" }}
+                  className="btn2"
+                  onClick={handleNext}
+                >
                   Next
                 </button>
               </div>
@@ -340,8 +353,12 @@ export default function Contact() {
                 <label className={styles.label} htmlFor="zip">
                   Zip Code
                 </label>
-
-                <input type="text" id="zip" name="zip" placeholder="ZIP Code" />
+                <input
+                  type="text"
+                  id="zip"
+                  name="zip"
+                  placeholder="Insert your zip code here"
+                />
               </div>
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="street">
@@ -351,32 +368,84 @@ export default function Contact() {
                   type="text"
                   id="street"
                   name="street"
-                  placeholder="Address"
+                  placeholder="E.g., Melrose Avenue"
                 />
               </div>
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="city">
                   City
                 </label>
-                <input type="text" id="city" name="city" placeholder="City" />
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="E.g., Columbus"
+                />
               </div>
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="state">
                   State
                 </label>
-                <input
-                  type="text"
+                <select
                   id="state"
                   name="state"
-                  placeholder="State"
-                />
+                  onChange={handleStateTypeChange}
+                >
+                  <option value="">Select your state</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                  <option value="DC">District of Columbia</option>
+                </select>
               </div>
               <div className={styles.buttonContainer}>
-                {currentPage !== 1 && (
-                  <button type="button" className="btn" onClick={handleBack}>
-                    Back
-                  </button>
-                )}
                 <button type="button" className="btn2" onClick={handleNext}>
                   Next
                 </button>
@@ -394,12 +463,7 @@ export default function Contact() {
                 <label className={styles.label} htmlFor="Fname">
                   First Name
                 </label>
-                <input
-                  type="text"
-                  id="Fname"
-                  name="Fname"
-                  placeholder="First Name"
-                />
+                <input type="text" id="Fname" name="Fname" placeholder="Nick" />
               </div>
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="Lname">
@@ -409,7 +473,7 @@ export default function Contact() {
                   type="text"
                   id="Lname"
                   name="Lname"
-                  placeholder="Last Name"
+                  placeholder="James"
                 />
               </div>
               <div className={styles.inputGroup}>
@@ -420,7 +484,7 @@ export default function Contact() {
                   type="email"
                   id="senderEmail"
                   name="senderEmail"
-                  placeholder="Email"
+                  placeholder="Your email address"
                 />
               </div>
               <div className={styles.inputGroup}>
@@ -431,15 +495,10 @@ export default function Contact() {
                   type="tel"
                   id="senderPhone"
                   name="senderPhone"
-                  placeholder="Phone Number"
+                  placeholder="E.g., 555-867-6784"
                 />
               </div>
               <div className={styles.buttonContainer}>
-                {currentPage !== 1 && (
-                  <button type="button" className="btn" onClick={handleBack}>
-                    Back
-                  </button>
-                )}
                 <SubmitBtn />
               </div>
             </div>
@@ -447,7 +506,25 @@ export default function Contact() {
         </form>
       )}
       {isSubmitted && <div>Email Sent! Expect a response soon.</div>}
-      <div className={styles.message}>Your data is being protected.</div>
+      <div className={styles.message}>
+        By submitting this form you opt-in for email messages and may opt-out at
+        any time.
+        <a
+          href="https://roofmaxx.com/terms-conditions/"
+          style={{ color: "blue" }}
+        >
+          Terms &amp; Conditions
+        </a>
+      </div>
+      <div className={styles.message2}>
+        We will not share your information.{" "}
+        <a
+          href="https://roofmaxx.com/privacy-policy/"
+          style={{ color: "blue" }}
+        >
+          Privacy Policy
+        </a>
+      </div>
     </>
   );
 }
