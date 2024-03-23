@@ -8,6 +8,7 @@ import { toast } from "react-hot-toast";
 import { Building, Building2, Home } from "lucide-react";
 
 export default function Contact() {
+  const [hpv, setHPV] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [isManagedVisible, setIsManagedVisible] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -17,23 +18,25 @@ export default function Contact() {
   const [managedType, setSelectedManagedType] = useState("No");
   const [asphaltRoof, setAsphalt] = useState("Yes");
   const [ageRoof, setRoofAge] = useState("0-4");
-  const [state, setStateAdd] = useState("FL");
 
-  const [hpv, setHPV] = useState("");
+  const [state, setStateAdd] = useState("");
+  const [street, setStreet] = useState("");
+  const [zip, setZip] = useState("");
+  const [city, setCity] = useState("");
 
-  const handleNext = () => {
-    setCurrentPage((prevPage) => prevPage + 1);
+  const handleStreet = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setStreet(event.target.value);
   };
-
-  const handleBack = () => {
-    setCurrentPage((prevPage) => prevPage - 1);
+  const handleZip = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setZip(event.target.value);
   };
-
+  const handleCity = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCity(event.target.value);
+  };
   const handleStateTypeChange = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
-    const state = event.target.value;
-    setStateAdd(state);
+    setStateAdd(event.target.value);
   };
 
   const handlePropertyTypeChange = (
@@ -53,12 +56,25 @@ export default function Contact() {
     setSelectedManagedType(managedType);
   };
   const handleAS = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const asphaltRoof = event.target.value;
-    setAsphalt(asphaltRoof);
+    setAsphalt(event.target.value);
   };
   const handleRoof = (event: React.ChangeEvent<HTMLInputElement>) => {
     const ageRoof = event.target.value;
     setRoofAge(ageRoof);
+  };
+
+  const handleNext = () => {
+    setCurrentPage((prevPage) => prevPage + 1);
+    // Page 2 Validation
+    if (currentPage === 2 && zip && street && city && state !== "") {
+      setCurrentPage(3);
+    } else if (currentPage === 2) {
+      if (zip == "") toast.error("Please provide a ZIP code");
+      if (street == "") toast.error("Please provide a street address");
+      if (city == "") toast.error("Please provide a city name");
+      if (state == "") toast.error("Please select a state");
+      setCurrentPage(2);
+    }
   };
 
   const progressPercentage = (currentPage / 3) * 100;
@@ -76,13 +92,11 @@ export default function Contact() {
           action={async (formData) => {
             const { data, error } = await sendEmail(formData);
 
-            console.log(formData.get("propertyType"));
-
             if (hpv !== "") {
               toast.error("Form submission failed.");
               return;
             }
-
+            // Page 3 Integrated
             if (error) {
               toast.error(error);
             } else {
@@ -94,7 +108,7 @@ export default function Contact() {
           className={styles.form}
         >
           <div className={styles.container}>
-            {/* Page 1 */}
+            {/* Page 1 - Does not need validation, DEFAULT === CHECKED*/}
             <div
               className={`${styles.section} ${
                 currentPage === 1 ? styles.visible : ""
@@ -231,14 +245,7 @@ export default function Contact() {
               {/* Traditional Roof */}
               <div className={styles.inputGroup}>
                 <h3 className={styles.label}>
-                  Do you have a{" "}
-                  <a
-                    style={{ textDecoration: "underline" }}
-                    target="_blank"
-                    href="https://www.thespruce.com/thmb/S4qMZ7a2Y1_ewMHhGcGLBL6YycI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Fotolia_23945426_S-56a4a2c23df78cf772835cd4.jpg"
-                  >
-                    Traditional Asphalt Roof?
-                  </a>
+                  Do you have a Traditional Asphalt Roof?
                   <p
                     style={{
                       textAlign: "left",
@@ -342,7 +349,7 @@ export default function Contact() {
                 </button>
               </div>
             </div>
-            {/* Page 2 */}
+            {/* Page 2 - Zip, Street, City, State */}
             <div
               className={`${styles.section} ${
                 currentPage === 2 ? styles.visible : ""
@@ -358,6 +365,7 @@ export default function Contact() {
                   id="zip"
                   name="zip"
                   placeholder="Insert your zip code here"
+                  onChange={handleZip}
                 />
               </div>
               <div className={styles.inputGroup}>
@@ -369,6 +377,7 @@ export default function Contact() {
                   id="street"
                   name="street"
                   placeholder="E.g., Melrose Avenue"
+                  onChange={handleStreet}
                 />
               </div>
               <div className={styles.inputGroup}>
@@ -380,6 +389,7 @@ export default function Contact() {
                   id="city"
                   name="city"
                   placeholder="E.g., Columbus"
+                  onChange={handleCity}
                 />
               </div>
               <div className={styles.inputGroup}>
@@ -389,7 +399,7 @@ export default function Contact() {
                 <select
                   id="state"
                   name="state"
-                  onChange={handleStateTypeChange}
+                  onChange={(e) => handleStateTypeChange(e)}
                 >
                   <option value="">Select your state</option>
                   <option value="AL">Alabama</option>
@@ -451,7 +461,7 @@ export default function Contact() {
                 </button>
               </div>
             </div>
-            {/* Page 3 */}
+            {/* Page 3 - First, Last, Email, Phone */}
             <div
               className={`${styles.section} ${
                 currentPage === 3 ? styles.visible : ""
