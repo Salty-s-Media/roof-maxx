@@ -30,7 +30,12 @@ export default function SubmitBtn() {
   }, [pending]);
 
   return (
-    <button type="submit" className="btn2" disabled={isButtonDisabled}>
+    <button
+      type="submit"
+      className="btn2"
+      style={{ marginLeft: "0px" }}
+      disabled={isButtonDisabled}
+    >
       {pending ? "Sending..." : "Get Free Estimate"}
     </button>
   );
