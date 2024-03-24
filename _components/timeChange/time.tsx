@@ -20,6 +20,7 @@ export const TimeToChange = () => {
             height={512}
             alt="Placeholder"
             className={styles.imag}
+            style={{ marginTop: "-2rem" }}
           />
           <div className={styles.overlayImageContainer}>
             <Image
