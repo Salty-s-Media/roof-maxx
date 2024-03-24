@@ -1,0 +1,54 @@
+.carousel {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    var(--tsp),
+    var(--bg) 20%,
+    var(--bg) 80%,
+    var(--tsp) 100%
+  );
+  mask-size: 100% 100%;
+  mask-repeat: repeat;
+  mask-position: 0 0;
+  padding-bottom: 1rem;
+}
+
+.carouselInner {
+  display: flex;
+  animation: spinHorizontally 120s linear infinite;
+  gap: 3rem;
+  width: 100%;
+  padding-left: calc(100% / 9);
+}
+
+@keyframes spinHorizontally {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2640px);
+  }
+}
+
+.logo {
+  flex: 0 0 auto;
+  margin: auto;
+  padding-left: 2rem;
+}
+
+.logo img {
+  width: auto;
+  height: auto;
+  max-height: 40px;
+}
+
+@media (max-width: 930px) {
+  .logo {
+    width: calc(100% / 4);
+  }
+}

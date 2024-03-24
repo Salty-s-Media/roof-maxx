@@ -21,8 +21,8 @@ export const DirectorCards = () => {
             under them, their hard-earned money and the planet.
           </p>
           <br />
+          <br />
           <h3>Mike Feazel</h3>
-
           <p style={{ fontSize: "14px" }}>CEO, Roof Maxx</p>
         </div>
       </div>
@@ -34,8 +34,8 @@ export const DirectorCards = () => {
             as low as 20% of the costs of replacing an old roof.
           </p>
           <br />
+          <br />
           <h3>Barry McGraw</h3>
-
           <p style={{ fontSize: "14px" }}>
             Director of Product Development and Commercialization
             <br /> Ohio Soybean Council

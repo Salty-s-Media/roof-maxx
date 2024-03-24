@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { Carousel } from "../logocarousel/logoCaro";
 import styles from "./tailor.module.css";
 import VideoPlayer from "../video/videoPlayer";
 import { ExtendLifespan } from "../extend/extend";
+import { Carousel2 } from "../logocarousel2/logoCaro";
 
 export const TailoredSolutions = () => {
   return (
@@ -94,7 +94,7 @@ export const TailoredSolutions = () => {
           />
         </div>
       </div>
-      <Carousel />
+      <Carousel2 />
       <div className={styles.grid}>
         <div className={styles.textContent2}>
           <h1>
