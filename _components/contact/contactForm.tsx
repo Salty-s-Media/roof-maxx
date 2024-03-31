@@ -190,6 +190,15 @@ export default function Contact() {
                   defaultValue={propertyType}
                 />
               </div>
+              <div
+                style={{
+                  height: "0.5px",
+                  backgroundColor: "grey",
+                  marginTop: "15px",
+                  marginBottom: "5px",
+                }}
+              ></div>
+
               <div style={{ display: "none" }}>
                 <input
                   type="text"
@@ -291,7 +300,14 @@ export default function Contact() {
                   defaultValue={asphaltRoof}
                 />
               </div>
-
+              <div
+                style={{
+                  height: "0.5px",
+                  backgroundColor: "grey",
+                  marginTop: "15px",
+                  marginBottom: "5px",
+                }}
+              ></div>
               {/* Roof Age */}
               <div className={styles.inputGroup}>
                 <h3 className={styles.label}>How old is your roof?</h3>
@@ -338,6 +354,7 @@ export default function Contact() {
                   defaultValue={ageRoof}
                 />
               </div>
+
               <div className={styles.buttonContainer}>
                 <button
                   type="button"
@@ -355,7 +372,8 @@ export default function Contact() {
                 currentPage === 2 ? styles.visible : ""
               }`}
             >
-              <h2>Where are you located?</h2>
+              <h2 style={{ paddingBottom: "1rem" }}>Where are you located?</h2>
+
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="zip">
                   Zip Code
@@ -368,6 +386,7 @@ export default function Contact() {
                   onChange={handleZip}
                 />
               </div>
+              <br />
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="street">
                   Street Address
@@ -380,6 +399,7 @@ export default function Contact() {
                   onChange={handleStreet}
                 />
               </div>
+              <br />
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="city">
                   City
@@ -392,6 +412,7 @@ export default function Contact() {
                   onChange={handleCity}
                 />
               </div>
+              <br />
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="state">
                   State
@@ -455,6 +476,7 @@ export default function Contact() {
                   <option value="DC">District of Columbia</option>
                 </select>
               </div>
+
               <div className={styles.buttonContainer}>
                 <button type="button" className="btn2" onClick={handleNext}>
                   Next
@@ -467,7 +489,9 @@ export default function Contact() {
                 currentPage === 3 ? styles.visible : ""
               }`}
             >
-              <h2>Let&apos;s get in contact...</h2>
+              <h2 style={{ paddingBottom: "1rem" }}>
+                Let&apos;s get in contact...
+              </h2>
 
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="Fname">
@@ -475,6 +499,7 @@ export default function Contact() {
                 </label>
                 <input type="text" id="Fname" name="Fname" placeholder="Nick" />
               </div>
+              <br />
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="Lname">
                   Last Name
@@ -486,6 +511,7 @@ export default function Contact() {
                   placeholder="James"
                 />
               </div>
+              <br />
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="senderEmail">
                   Email
@@ -497,6 +523,7 @@ export default function Contact() {
                   placeholder="Your email address"
                 />
               </div>
+              <br />
               <div className={styles.inputGroup}>
                 <label className={styles.label} htmlFor="senderPhone">
                   Phone Number
@@ -508,6 +535,7 @@ export default function Contact() {
                   placeholder="E.g., 555-867-6784"
                 />
               </div>
+
               <div className={styles.buttonContainer}>
                 <SubmitBtn />
               </div>
