@@ -28,17 +28,17 @@
 
 .message {
   position: absolute;
-  bottom: 1.25rem;
+  bottom: 0.75rem;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #6c757d;
   margin-top: auto;
 }
 .message2 {
   position: absolute;
-  bottom: 4rem;
+  bottom: 2.75rem;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #6c757d;
   margin-top: auto;
 }
@@ -137,7 +137,7 @@ input[type="radio"]:checked + .labelNew2 {
 }
 
 .section h2 {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .buttonContainer {
