@@ -44,14 +44,6 @@ export const sendEmail = async (formData: FormData) => {
     "senderPhone",
   ];
 
-  for (const field of requiredFields) {
-    if (!formData.get(field)) {
-      return {
-        error: `The ${field} field is required.`,
-      };
-    }
-  }
-
   if (!validateSelectOption(asphaltRoof)) {
     return {
       error: "Please select an answer regarding your roof",
@@ -81,7 +73,7 @@ export const sendEmail = async (formData: FormData) => {
 
   if (!validateString(senderPhone, 22) || !validatePhoneNumber(senderPhone)) {
     return {
-      error: "Expected Phone Format: 123 123 1234",
+      error: "Expected Phone Format: 123-123-1234",
     };
   }
 
@@ -119,13 +111,21 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
+  for (const field of requiredFields) {
+    if (!formData.get(field)) {
+      return {
+        error: `The ${field} field is required.`,
+      };
+    }
+  }
+
   let data;
 
   try {
     data = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: "web@saltysmedia.com",
-      subject: "Message from Roof Maxx Contact Form",
+      from: "Roof Amp Website <info@roofamp.com>",
+      to: "info@saltysmedia.com",
+      subject: "Roof Maxx Contact Form Message",
       react: React.createElement(ContactFormEmail, {
         fname: fname,
         lname: lname,
