@@ -124,7 +124,7 @@ export const sendEmail = async (formData: FormData) => {
   try {
     data = await resend.emails.send({
       from: "Roof Amp Website <info@roofamp.com>",
-      to: "info@saltysmedia.com",
+      to: ["info@saltysmedia.com", "ncollins@roofmaxx.com"],
       subject: "Roof Maxx Contact Form Message",
       react: React.createElement(ContactFormEmail, {
         fname: fname,
