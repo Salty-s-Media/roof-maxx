@@ -70,7 +70,7 @@ export default function ContactFormEmail({
             </Heading>
             <Hr />
             <Text>
-              {fname} {lname}s home is an {propertyType}. {managed}, it{" "}
+              {fname} {lname}s home is an {propertyType}.
             </Text>
             {managed == "No" ? (
               <Text>It is not part of a property management group.</Text>
@@ -81,13 +81,9 @@ export default function ContactFormEmail({
               {fname} {lname}s roof is {age} years old.
             </Text>
             {asphaltRoof == "Yes" ? (
-              <Text>
-                {fname} {lname}s roof is made of asphalt.
-              </Text>
+              <Text>The roof is made of asphalt.</Text>
             ) : (
-              <Text>
-                {fname} {lname}s roof is not made of asphalt
-              </Text>
+              <Text>The roof is not made of asphalt</Text>
             )}
             <Text>
               {fname} {lname}s address is {street}, {city}, {state}, {zip}
