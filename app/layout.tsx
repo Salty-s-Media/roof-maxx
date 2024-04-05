@@ -6,6 +6,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { MobileNav } from "@/_components/mobileNav/m-nav";
 import { Navbar } from "@/_components/navbar/navbar";
 import { Footer } from "@/_components/footer/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const pjs = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
         <MobileNav />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
