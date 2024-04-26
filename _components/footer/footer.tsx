@@ -18,7 +18,7 @@ export const Footer = () => {
           </Link>
         </div>
         <div className={styles.column}>
-          <h3>Our Company</h3>
+          <div className={styles.c3}>Our Company</div>
           <ul>
             <li>
               <Link href="/how">How It Works</Link>
@@ -41,7 +41,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className={styles.column}>
-          <h3>Help and Advice</h3>
+          <div className={styles.c3}>Help and Advice</div>
           <ul>
             <li>
               <ContactForm />
@@ -49,7 +49,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className={styles.column}>
-          <h3>Social Media</h3>
+          <div className={styles.c3}>Social Media</div>
           <ul>
             <li>
               <Link href="https://www.instagram.com/roofamp/">Instagram</Link>

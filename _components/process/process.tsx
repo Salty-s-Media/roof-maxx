@@ -34,12 +34,12 @@ export const Process = () => {
         {dayNames.map((day, index) => (
           <div className={styles.day} key={index}>
             <div className={styles.dayheader} onClick={() => toggleDay(index)}>
-              <h2>{day}</h2>
+              <div className={styles.d2}>{day}</div>
               <div className={styles.chevronIcons}>
                 {activeDay === index ? <ChevronUp /> : <ChevronDown />}
               </div>
             </div>
-            <ul
+            <div
               className={
                 activeDay === index
                   ? `${styles.tasklist} ${styles.visible}`
@@ -51,7 +51,7 @@ export const Process = () => {
                   <div className={styles.systemcontainerh3}>
                     Professional Assessment
                   </div>
-                  <li className={styles.task}>
+                  <div className={styles.task}>
                     <div>
                       We&apos;ll assess your roof and decide if it&apos;s a good
                       candidate for Roof Maxx. If it is, we&apos;ll make an
@@ -67,7 +67,7 @@ export const Process = () => {
                         alt="Helping"
                       />
                     </div>
-                  </li>
+                  </div>
                 </>
               )}
               {index === 1 && (
@@ -75,7 +75,7 @@ export const Process = () => {
                   <div className={styles.systemcontainerh3}>
                     Bio-Oil Treatment
                   </div>
-                  <li className={styles.task}>
+                  <div className={styles.task}>
                     <div>
                       We&apos;ll perform a roof tune-up during our appointment
                       and then apply Roof Maxx. The whole process usually takes
@@ -89,13 +89,13 @@ export const Process = () => {
                         alt="roof treatment"
                       />
                     </div>
-                  </li>
+                  </div>
                 </>
               )}
               {index === 2 && (
                 <>
                   <div className={styles.systemcontainerh3}>Our Guarantee</div>
-                  <li className={styles.task}>
+                  <div className={styles.task}>
                     <div>
                       Our rejuvenating oil will restore your shingles&apos;
                       flexibility and waterproofing for five years, ensuring
@@ -110,10 +110,10 @@ export const Process = () => {
                         alt="lawnsign"
                       />
                     </div>
-                  </li>
+                  </div>
                 </>
               )}
-            </ul>
+            </div>
           </div>
         ))}
       </div>
