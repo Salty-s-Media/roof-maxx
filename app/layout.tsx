@@ -15,7 +15,7 @@ const pjs = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.roofamp.com"),
+  metadataBase: new URL("https://roofamp.com"),
   keywords: [
     "roof maxx",
     "roofing services",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         alt: "Roof Amp Logo",
       },
     ],
-    url: "https://www.roofamp.com",
+    url: "https://roofamp.com",
     siteName: "Roof Amp",
     locale: "en_US",
     type: "website",
